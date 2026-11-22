@@ -1,0 +1,1 @@
+"""NextDeal local application."""

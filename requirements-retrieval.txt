@@ -1,0 +1,3 @@
+# CPU PyTorch is sufficient; keep GPU memory available for Ollama.
+# On constrained machines, first install torch from https://download.pytorch.org/whl/cpu
+sentence-transformers>=3

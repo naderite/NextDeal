@@ -1,0 +1,4 @@
+,gain (pts),95% CI low,95% CI high,episodes,companies
+LogReg vs Popularity · all,3.2,0.1,6.5,440.0,299.0
+LogReg vs Popularity · long-tail,22.2,15.8,29.6,171.0,137.0
+RandomForest vs Popularity · long-tail,21.4,14.3,29.2,171.0,137.0

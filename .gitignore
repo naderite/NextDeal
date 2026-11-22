@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+frontend/node_modules/
+frontend/.next/
+runtime/
+*.pyc
+*.log
+.env
+models/app_*.joblib
+models/e5-small/
+frontend/test-results/
+frontend/playwright-report/
+reports/notebook_runs/*
+!reports/notebook_runs/execution_results.json
+
+**/.ipynb_checkpoints/

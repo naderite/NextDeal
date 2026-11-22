@@ -1,0 +1,7 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+scikit-learn>=1.6
+jupyterlab>=4.0
+# optional: adds CatBoost to the model comparison in notebook 04
+catboost>=1.2

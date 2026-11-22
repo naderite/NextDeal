@@ -1,0 +1,18 @@
+[
+  {
+    "notebook": "01_business_understanding.ipynb",
+    "status": "passed"
+  },
+  {
+    "notebook": "02_data_understanding.ipynb",
+    "status": "passed"
+  },
+  {
+    "notebook": "03_data_preparation.ipynb",
+    "status": "passed"
+  },
+  {
+    "notebook": "04_modeling_baseline.ipynb",
+    "status": "passed"
+  }
+]

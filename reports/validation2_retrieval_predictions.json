@@ -1,0 +1,1837 @@
+[
+  {
+    "question": "Days to report a car accident",
+    "language": "English",
+    "key_phrase": "5 jours ouvrables en cas d'accident",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "faq-assurances#12"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-automobile-professionnels#7",
+      "professionnels-entreprises__assurance-automobile-entreprises#7",
+      "professionnels-entreprises__assurance-automobile-professionnels#3",
+      "professionnels-entreprises__assurance-automobile-entreprises#3",
+      "faq-assurances#10"
+    ]
+  },
+  {
+    "question": "Combien de jours ai-je pour d\u00e9clarer un accident de voiture ?",
+    "language": "French",
+    "key_phrase": "5 jours ouvrables en cas d'accident",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "faq-assurances#12"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "faq-assurances#12",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#4"
+    ]
+  },
+  {
+    "question": "Deadline to report a stolen vehicle",
+    "language": "English",
+    "key_phrase": "deux jours ouvrables en cas de vol",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "faq-assurances#12"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-automobile-entreprises#4",
+      "professionnels-entreprises__assurance-automobile-professionnels#4",
+      "faq-assurances#6",
+      "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "professionnels-entreprises__assurance-automobile-entreprises#9"
+    ]
+  },
+  {
+    "question": "Quel est le d\u00e9lai pour d\u00e9clarer le vol de mon v\u00e9hicule ?",
+    "language": "French",
+    "key_phrase": "deux jours ouvrables en cas de vol",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "faq-assurances#12"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#12",
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#4"
+    ]
+  },
+  {
+    "question": "Replacement-vehicle days for a utility vehicle",
+    "language": "English",
+    "key_phrase": "5 jours pour un utilitaire",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 0.6666666666666666,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#4",
+      "professionnels-entreprises__assurance-automobile-professionnels#4"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#6",
+      "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "professionnels-entreprises__assurance-automobile-entreprises#9",
+      "professionnels-entreprises__assurance-automobile-entreprises#4",
+      "professionnels-entreprises__assurance-automobile-professionnels#4"
+    ]
+  },
+  {
+    "question": "Pendant combien de temps ai-je droit \u00e0 un v\u00e9hicule de remplacement pour un utilitaire ?",
+    "language": "French",
+    "key_phrase": "5 jours pour un utilitaire",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#4",
+      "professionnels-entreprises__assurance-automobile-professionnels#4"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-professionnels#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#4",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "particuliers__assurance-automobile#4"
+    ]
+  },
+  {
+    "question": "Documents a company provides for motor insurance",
+    "language": "English",
+    "key_phrase": "le RNE pour personne morale",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 0.75,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#6",
+      "professionnels-entreprises__assurance-automobile-professionnels#6",
+      "faq-assurances#5"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-automobile-entreprises#6",
+      "faq-assurances#5",
+      "professionnels-entreprises__assurance-automobile-professionnels#6",
+      "particuliers__assurance-automobile#7",
+      "professionnels-entreprises__assurance-automobile-entreprises#2"
+    ]
+  },
+  {
+    "question": "Quels documents une soci\u00e9t\u00e9 doit fournir pour assurer ses voitures ?",
+    "language": "French",
+    "key_phrase": "le RNE pour personne morale",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 0.75,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#6",
+      "professionnels-entreprises__assurance-automobile-professionnels#6",
+      "faq-assurances#5"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-automobile-entreprises#6",
+      "faq-assurances#5",
+      "professionnels-entreprises__assurance-automobile-professionnels#6",
+      "particuliers__assurance-automobile#7",
+      "faq-assurances#4"
+    ]
+  },
+  {
+    "question": "Is towing limited in distance?",
+    "language": "English",
+    "key_phrase": "sans limite kilom\u00e9trique",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#3",
+      "professionnels-entreprises__assurance-automobile-professionnels#3"
+    ],
+    "retrieved_ids": []
+  },
+  {
+    "question": "Le d\u00e9pannage remorquage est-il limit\u00e9 en kilom\u00e8tres ?",
+    "language": "French",
+    "key_phrase": "sans limite kilom\u00e9trique",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#3",
+      "professionnels-entreprises__assurance-automobile-professionnels#3"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-automobile#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#3",
+      "professionnels-entreprises__assurance-automobile-professionnels#3",
+      "faq-assurances#6",
+      "professionnels-entreprises__assurance-bris-machine#1"
+    ]
+  },
+  {
+    "question": "What is the S2A service?",
+    "language": "English",
+    "key_phrase": "S2A est notre service d'assistance automobile",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#9",
+      "professionnels-entreprises__assurance-automobile-entreprises#9",
+      "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "faq-assurances#6"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#6",
+      "professionnels-entreprises__assurance-automobile-entreprises#9",
+      "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "particuliers__assurance-automobile#9",
+      "particuliers__assurance-automobile#7"
+    ]
+  },
+  {
+    "question": "C'est quoi le service S2A ?",
+    "language": "French",
+    "key_phrase": "S2A est notre service d'assistance automobile",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#9",
+      "professionnels-entreprises__assurance-automobile-entreprises#9",
+      "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "faq-assurances#6"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#6",
+      "professionnels-entreprises__assurance-automobile-entreprises#9",
+      "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "particuliers__assurance-automobile#9",
+      "professionnels-entreprises__assurance-frais-sante#3"
+    ]
+  },
+  {
+    "question": "Main motor insurance formulas",
+    "language": "English",
+    "key_phrase": "les 3 grandes cat\u00e9gories d'assurance automobile",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 0.2,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#5",
+      "particuliers__assurance-automobile#6",
+      "professionnels-entreprises__assurance-automobile-entreprises#5",
+      "professionnels-entreprises__assurance-automobile-professionnels#5",
+      "faq-assurances#1"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#1",
+      "professionnels-entreprises__assurance-automobile-professionnels#6",
+      "professionnels-entreprises__assurance-automobile-entreprises#6",
+      "professionnels-entreprises__assurance-automobile-professionnels#0",
+      "professionnels-entreprises__assurance-automobile-entreprises#0"
+    ]
+  },
+  {
+    "question": "Quelles sont les grandes formules d'assurance auto ?",
+    "language": "French",
+    "key_phrase": "les 3 grandes cat\u00e9gories d'assurance automobile",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 0.8,
+    "relevant_ids": [
+      "particuliers__assurance-automobile#5",
+      "particuliers__assurance-automobile#6",
+      "professionnels-entreprises__assurance-automobile-entreprises#5",
+      "professionnels-entreprises__assurance-automobile-professionnels#5",
+      "faq-assurances#1"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#1",
+      "particuliers__assurance-automobile#6",
+      "particuliers__assurance-automobile#0",
+      "professionnels-entreprises__assurance-automobile-entreprises#5",
+      "professionnels-entreprises__assurance-automobile-professionnels#5"
+    ]
+  },
+  {
+    "question": "Discount for subscribing Darna online",
+    "language": "English",
+    "key_phrase": "50% de remise",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-multirisque-habitation#2",
+      "faq-assurances#11"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-multirisque-habitation#0",
+      "particuliers__assurance-multirisque-habitation#2",
+      "faq-assurances#11",
+      "particuliers__assurance-multirisque-habitation#1",
+      "particuliers__assurance-incendie#0"
+    ]
+  },
+  {
+    "question": "Y a-t-il une r\u00e9duction si je souscris l'habitation Darna sur internet ?",
+    "language": "French",
+    "key_phrase": "50% de remise",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-multirisque-habitation#2",
+      "faq-assurances#11"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-multirisque-habitation#2",
+      "faq-assurances#11",
+      "particuliers__assurance-multirisque-habitation#1",
+      "particuliers__assurance-multirisque-habitation#0",
+      "particuliers__assurance-incendie#0"
+    ]
+  },
+  {
+    "question": "Home assistance for plumbing",
+    "language": "English",
+    "key_phrase": "plomberie, serrurerie",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-multirisque-habitation#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-multirisque-habitation#1",
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "assistance-sinistre#0",
+      "particuliers__assurance-incendie#0",
+      "faq-assurances#11"
+    ]
+  },
+  {
+    "question": "L'assurance habitation m'aide-t-elle en cas de fuite de plomberie ?",
+    "language": "French",
+    "key_phrase": "plomberie, serrurerie",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-multirisque-habitation#1"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#11",
+      "particuliers__assurance-multirisque-habitation#1",
+      "particuliers__assurance-multirisque-habitation#2",
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-incendie-professionnels#0"
+    ]
+  },
+  {
+    "question": "Minimum monthly saving for Amali",
+    "language": "English",
+    "key_phrase": "50 DT par mois",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#3",
+      "particuliers__assurance-bourse-etude#0",
+      "particuliers__assurance-bourse-etude#2",
+      "particuliers__assurance-bourse-etude#1"
+    ]
+  },
+  {
+    "question": "Quel montant minimum faut-il \u00e9pargner chaque mois pour la bourse d'\u00e9tudes ?",
+    "language": "French",
+    "key_phrase": "50 DT par mois",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#2",
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-bourse-etude#0"
+    ]
+  },
+  {
+    "question": "Age at which the child receives Amali savings",
+    "language": "English",
+    "key_phrase": "18\u00e8me anniversaire",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "particuliers__assurance-bourse-etude#0",
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-bourse-etude#4"
+    ]
+  },
+  {
+    "question": "\u00c0 quel \u00e2ge mon enfant touche-t-il l'\u00e9pargne Amali ?",
+    "language": "French",
+    "key_phrase": "18\u00e8me anniversaire",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#0",
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-bourse-etude#2"
+    ]
+  },
+  {
+    "question": "Documents to subscribe Amali",
+    "language": "English",
+    "key_phrase": "extrait de naissance de votre enfant",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#3",
+      "particuliers__assurance-bourse-etude#4",
+      "particuliers__assurance-bourse-etude#0",
+      "faq-assurances#5"
+    ]
+  },
+  {
+    "question": "Quelles pi\u00e8ces faut-il pour souscrire la bourse d'\u00e9tudes ?",
+    "language": "French",
+    "key_phrase": "extrait de naissance de votre enfant",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#0",
+      "particuliers__assurance-bourse-etude#4",
+      "particuliers__assurance-bourse-etude#1"
+    ]
+  },
+  {
+    "question": "Tax-deduction cap for Amali premiums",
+    "language": "English",
+    "key_phrase": "d\u00e9ductibles fiscalement dans la limite de 10 000 DT",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#0",
+      "particuliers__assurance-bourse-etude#2",
+      "particuliers__assurance-bourse-etude#3",
+      "particuliers__assurance-bourse-etude#1",
+      "faq-assurances#4"
+    ]
+  },
+  {
+    "question": "Jusqu'\u00e0 quel montant les primes Amali sont-elles d\u00e9ductibles ?",
+    "language": "French",
+    "key_phrase": "d\u00e9ductibles fiscalement dans la limite de 10 000 DT",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-bourse-etude#3",
+      "particuliers__assurance-prevoyance-deces#2",
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#0"
+    ]
+  },
+  {
+    "question": "What the child receives if the subscriber dies",
+    "language": "English",
+    "key_phrase": "10 fois la prime annuelle",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-prevoyance-deces#1",
+      "particuliers__assurance-voyage#8",
+      "particuliers__assurance-automobile#2"
+    ]
+  },
+  {
+    "question": "Si je d\u00e9c\u00e8de, que re\u00e7oit mon enfant avec Amali ?",
+    "language": "French",
+    "key_phrase": "10 fois la prime annuelle",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-bourse-etude#1"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#4",
+      "particuliers__assurance-bourse-etude#3",
+      "particuliers__assurance-bourse-etude#0",
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-bourse-etude#4"
+    ]
+  },
+  {
+    "question": "Tax-deduction cap for Horizon",
+    "language": "English",
+    "key_phrase": "retraite sont d\u00e9ductibles fiscalement dans la limite de 100 000 DT",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-epargne-retraite#3",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "faq-assurances#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "particuliers__assurance-epargne-retraite#5"
+    ]
+  },
+  {
+    "question": "Quel plafond de d\u00e9duction fiscale pour l'\u00e9pargne retraite Horizon ?",
+    "language": "French",
+    "key_phrase": "retraite sont d\u00e9ductibles fiscalement dans la limite de 100 000 DT",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-epargne-retraite#3",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "particuliers__assurance-epargne-retraite#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1"
+    ]
+  },
+  {
+    "question": "Does Horizon refund hospital costs?",
+    "language": "English",
+    "key_phrase": "dans la limite de 5000 DT par an",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-epargne-retraite#3",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "particuliers__assurance-epargne-retraite#5"
+    ]
+  },
+  {
+    "question": "Horizon rembourse-t-il des frais d'hospitalisation ?",
+    "language": "French",
+    "key_phrase": "dans la limite de 5000 DT par an",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-epargne-retraite#3",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#3",
+      "particuliers__assurance-epargne-retraite#5",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "professionnels-entreprises__assurance-frais-sante#2"
+    ]
+  },
+  {
+    "question": "Death before the end of the retirement contract",
+    "language": "English",
+    "key_phrase": "verse l'\u00e9pargne constitu\u00e9e \u00e0 la date du d\u00e9c\u00e8s",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-epargne-retraite#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "particuliers__assurance-epargne-retraite#1",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2"
+    ]
+  },
+  {
+    "question": "Que touche ma famille si je meurs avant la fin du contrat retraite ?",
+    "language": "French",
+    "key_phrase": "verse l'\u00e9pargne constitu\u00e9e \u00e0 la date du d\u00e9c\u00e8s",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-epargne-retraite#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2",
+      "particuliers__assurance-epargne-retraite#1",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1",
+      "particuliers__assurance-prevoyance-deces#2",
+      "faq-assurances#3"
+    ]
+  },
+  {
+    "question": "Who funds Horizon+",
+    "language": "English",
+    "key_phrase": "financ\u00e9e conjointement par l'employeur et l'employ\u00e9",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "faq-assurances#3"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
+    ]
+  },
+  {
+    "question": "Qui paie les cotisations du contrat retraite collective ?",
+    "language": "French",
+    "key_phrase": "financ\u00e9e conjointement par l'employeur et l'employ\u00e9",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "faq-assurances#3"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "faq-assurances#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2"
+    ]
+  },
+  {
+    "question": "Is the employer premium a benefit in kind?",
+    "language": "English",
+    "key_phrase": "n'est pas \u00e0 consid\u00e9rer comme un avantage en nature",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2"
+    ],
+    "retrieved_ids": []
+  },
+  {
+    "question": "La cotisation retraite pay\u00e9e par l'entreprise compte-t-elle comme avantage en nature ?",
+    "language": "French",
+    "key_phrase": "n'est pas \u00e0 consid\u00e9rer comme un avantage en nature",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "professionnels-entreprises__assurance-frais-sante#0",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
+    ]
+  },
+  {
+    "question": "When contributions are waived in case of incapacity",
+    "language": "English",
+    "key_phrase": "91\u00e8me jour d'incapacit\u00e9",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-prevoyance-deces#2"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-prevoyance-deces#2",
+      "particuliers__assurance-prevoyance-deces#1",
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-individuelle-contre-accidents-corporels#1",
+      "particuliers__assurance-bourse-etude#2"
+    ]
+  },
+  {
+    "question": "\u00c0 partir de quand suis-je exon\u00e9r\u00e9 des versements en cas d'incapacit\u00e9 de travail ?",
+    "language": "French",
+    "key_phrase": "91\u00e8me jour d'incapacit\u00e9",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-prevoyance-deces#2"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-prevoyance-deces#2",
+      "particuliers__assurance-prevoyance-deces#1",
+      "particuliers__assurance-prevoyance-deces#3",
+      "particuliers__assurance-individuelle-contre-accidents-corporels#0",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#5"
+    ]
+  },
+  {
+    "question": "Key-person cover",
+    "language": "English",
+    "key_phrase": "Homme Cl\u00e9",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-prevoyance-deces#0",
+      "particuliers__assurance-prevoyance-deces#1"
+    ],
+    "retrieved_ids": []
+  },
+  {
+    "question": "Puis-je prot\u00e9ger mon entreprise contre le d\u00e9c\u00e8s d'un dirigeant essentiel ?",
+    "language": "French",
+    "key_phrase": "Homme Cl\u00e9",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-prevoyance-deces#0",
+      "particuliers__assurance-prevoyance-deces#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-prevoyance-deces#1",
+      "particuliers__assurance-prevoyance-deces#0",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "particuliers__assurance-individuelle-contre-accidents-corporels#0",
+      "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#0"
+    ]
+  },
+  {
+    "question": "What personal-accident insurance covers",
+    "language": "English",
+    "key_phrase": "Les invalidit\u00e9s accidentelles",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-individuelle-contre-accidents-corporels#1",
+      "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-individuelle-contre-accidents-corporels#1",
+      "professionnels-entreprises__assurance-automobile-professionnels#0",
+      "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#1",
+      "professionnels-entreprises__assurance-automobile-entreprises#0",
+      "professionnels-entreprises__assurance-automobile-professionnels#3"
+    ]
+  },
+  {
+    "question": "Quels dommages couvre l'assurance accidents corporels ?",
+    "language": "French",
+    "key_phrase": "Les invalidit\u00e9s accidentelles",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-individuelle-contre-accidents-corporels#1",
+      "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-individuelle-contre-accidents-corporels#1",
+      "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#1",
+      "particuliers__assurance-individuelle-contre-accidents-corporels#0",
+      "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#0",
+      "faq-assurances#11"
+    ]
+  },
+  {
+    "question": "Aircraft falling on the building",
+    "language": "English",
+    "key_phrase": "chute des appareils de navigation a\u00e9rienne",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0"
+    ],
+    "retrieved_ids": []
+  },
+  {
+    "question": "L'assurance incendie couvre-t-elle la chute d'un avion sur le b\u00e2timent ?",
+    "language": "French",
+    "key_phrase": "chute des appareils de navigation a\u00e9rienne",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 0.75,
+    "relevant_ids": [
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1",
+      "faq-assurances#11"
+    ]
+  },
+  {
+    "question": "Maximum trip length covered",
+    "language": "English",
+    "key_phrase": "s\u00e9jour maximum de 90 jours",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#0",
+      "professionnels-entreprises__assurance-voyage-professionnels#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#0",
+      "professionnels-entreprises__assurance-voyage-professionnels#0",
+      "particuliers__assurance-automobile#4",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-voyage#12"
+    ]
+  },
+  {
+    "question": "Combien de temps peut durer le s\u00e9jour couvert par l'assurance voyage ?",
+    "language": "French",
+    "key_phrase": "s\u00e9jour maximum de 90 jours",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#0",
+      "professionnels-entreprises__assurance-voyage-professionnels#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-voyage-professionnels#0",
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#9",
+      "particuliers__assurance-voyage#1",
+      "particuliers__assurance-voyage#6"
+    ]
+  },
+  {
+    "question": "Countries in zone I",
+    "language": "English",
+    "key_phrase": "ZONE I : Tous les pays du monde, sauf la Tunisie, les USA",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#1",
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#7",
+      "particuliers__assurance-voyage#4"
+    ]
+  },
+  {
+    "question": "Quels pays sont inclus dans la zone I ?",
+    "language": "French",
+    "key_phrase": "ZONE I : Tous les pays du monde, sauf la Tunisie, les USA",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#1",
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#4",
+      "particuliers__assurance-voyage#7"
+    ]
+  },
+  {
+    "question": "Medical cap of the Business plan",
+    "language": "English",
+    "key_phrase": "40 000\u20ac",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#3"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#2",
+      "professionnels-entreprises__assurance-frais-sante#0",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0",
+      "particuliers__assurance-voyage#4",
+      "particuliers__assurance-voyage#0"
+    ]
+  },
+  {
+    "question": "Quel est le plafond des frais m\u00e9dicaux du plan business ?",
+    "language": "French",
+    "key_phrase": "40 000\u20ac",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#3"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#2",
+      "professionnels-entreprises__assurance-frais-sante#0",
+      "particuliers__assurance-voyage#4",
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#7"
+    ]
+  },
+  {
+    "question": "Age limit of the student plan",
+    "language": "English",
+    "key_phrase": "Limite d'age : 50 ans",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#7"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#7",
+      "particuliers__assurance-voyage#6",
+      "professionnels-entreprises__assurance-voyage-professionnels#1",
+      "particuliers__assurance-voyage#10",
+      "particuliers__assurance-voyage#2"
+    ]
+  },
+  {
+    "question": "Y a-t-il une limite d'\u00e2ge pour le plan \u00e9tudiant ?",
+    "language": "French",
+    "key_phrase": "Limite d'age : 50 ans",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#7"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#7",
+      "faq-assurances#8",
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-voyage#0"
+    ]
+  },
+  {
+    "question": "Is the PCR test refunded?",
+    "language": "English",
+    "key_phrase": "test de d\u00e9tection PCR",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-automobile#8",
+      "particuliers__assurance-voyage#7"
+    ]
+  },
+  {
+    "question": "Le test PCR est-il rembours\u00e9 pendant le voyage ?",
+    "language": "French",
+    "key_phrase": "test de d\u00e9tection PCR",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#9",
+      "particuliers__assurance-voyage#1",
+      "faq-assurances#9",
+      "professionnels-entreprises__assurance-voyage-professionnels#0"
+    ]
+  },
+  {
+    "question": "Lost luggage in the basic plan",
+    "language": "English",
+    "key_phrase": "Perte de bagages enregistr\u00e9s 250$",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#2"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-voyage#4",
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#7"
+    ]
+  },
+  {
+    "question": "Combien rembourse le plan basique en cas de perte de bagages ?",
+    "language": "French",
+    "key_phrase": "Perte de bagages enregistr\u00e9s 250$",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-voyage#2"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-voyage#4",
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-voyage#9",
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#6"
+    ]
+  },
+  {
+    "question": "Accidents covered for construction machinery",
+    "language": "English",
+    "key_phrase": "Collisions, chutes, renversements, d\u00e9raillements",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-engins-chantier#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-engins-chantier#0",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
+      "professionnels-entreprises__assurance-engins-chantier#1",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#0",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1"
+    ]
+  },
+  {
+    "question": "Quels accidents sont couverts pour nos engins de chantier ?",
+    "language": "French",
+    "key_phrase": "Collisions, chutes, renversements, d\u00e9raillements",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-engins-chantier#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-engins-chantier#0",
+      "professionnels-entreprises__assurance-engins-chantier#1"
+    ]
+  },
+  {
+    "question": "Machinery covered while moved between sites",
+    "language": "English",
+    "key_phrase": "lors de leur transport d'un site \u00e0 un autre",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-engins-chantier#0"
+    ],
+    "retrieved_ids": []
+  },
+  {
+    "question": "Nos engins sont-ils couverts quand on les d\u00e9place d'un chantier \u00e0 l'autre ?",
+    "language": "French",
+    "key_phrase": "lors de leur transport d'un site \u00e0 un autre",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-engins-chantier#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-engins-chantier#0",
+      "professionnels-entreprises__assurance-engins-chantier#1",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#2",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#0",
+      "faq-assurances#10"
+    ]
+  },
+  {
+    "question": "Event categories of machinery breakdown",
+    "language": "English",
+    "key_phrase": "Causes Internes",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-bris-machine#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-bris-machine#0",
+      "professionnels-entreprises__assurance-automobile-entreprises#5",
+      "professionnels-entreprises__assurance-automobile-professionnels#5",
+      "faq-assurances#1",
+      "particuliers__assurance-automobile#5"
+    ]
+  },
+  {
+    "question": "Quelles cat\u00e9gories d'\u00e9v\u00e9nements couvre le bris de machines ?",
+    "language": "French",
+    "key_phrase": "Causes Internes",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-bris-machine#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-bris-machine#0",
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "professionnels-entreprises__assurance-bris-machine#2"
+    ]
+  },
+  {
+    "question": "Optional covers of contractors' all risks",
+    "language": "English",
+    "key_phrase": "Responsabilit\u00e9 civile crois\u00e9e",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-automobile#3",
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-automobile-entreprises#3"
+    ]
+  },
+  {
+    "question": "Quelles garanties peut-on ajouter au tous risques chantier ?",
+    "language": "French",
+    "key_phrase": "Responsabilit\u00e9 civile crois\u00e9e",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#0",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
+      "professionnels-entreprises__assurance-engins-chantier#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#2"
+    ]
+  },
+  {
+    "question": "Is decennial liability mandatory?",
+    "language": "English",
+    "key_phrase": "responsabilit\u00e9 d\u00e9cennale est obligatoire",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "particuliers__assurance-bourse-etude#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1"
+    ]
+  },
+  {
+    "question": "La d\u00e9cennale est-elle obligatoire pour une entreprise du b\u00e2timent ?",
+    "language": "French",
+    "key_phrase": "responsabilit\u00e9 d\u00e9cennale est obligatoire",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#3",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2"
+    ]
+  },
+  {
+    "question": "Duration of decennial cover",
+    "language": "English",
+    "key_phrase": "Dur\u00e9e : 10 ans",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-automobile#8",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-epargne-retraite#3",
+      "particuliers__assurance-automobile#9"
+    ]
+  },
+  {
+    "question": "Combien de temps dure la garantie d\u00e9cennale ?",
+    "language": "French",
+    "key_phrase": "Dur\u00e9e : 10 ans",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
+      "particuliers__assurance-prevoyance-deces#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "particuliers__assurance-automobile#8"
+    ]
+  },
+  {
+    "question": "Demolition costs under decennial cover",
+    "language": "English",
+    "key_phrase": "\u00e0 concurrence de 20%",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-incendie#0",
+      "particuliers__assurance-automobile#4",
+      "particuliers__assurance-bourse-etude#1"
+    ]
+  },
+  {
+    "question": "Les frais de d\u00e9molition sont-ils pris en charge par la d\u00e9cennale ?",
+    "language": "French",
+    "key_phrase": "\u00e0 concurrence de 20%",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#3",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1"
+    ]
+  },
+  {
+    "question": "Who signs the single-site decennial contract",
+    "language": "English",
+    "key_phrase": "souscrit par le ma\u00eetre d'ouvrage pour le compte de tous les intervenants",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-automobile#7",
+      "particuliers__assurance-bourse-etude#2",
+      "particuliers__assurance-bourse-etude#3",
+      "particuliers__assurance-automobile#8"
+    ]
+  },
+  {
+    "question": "Qui signe le contrat d\u00e9cennal unique pour le chantier ?",
+    "language": "French",
+    "key_phrase": "souscrit par le ma\u00eetre d'ouvrage pour le compte de tous les intervenants",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#0"
+    ]
+  },
+  {
+    "question": "Transport modes for cargo insurance",
+    "language": "English",
+    "key_phrase": "transport a\u00e9rien, terrestre et maritime",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#0",
+      "professionnels-entreprises__assurance-transport-marchandises#2",
+      "professionnels-entreprises__assurance-transport-marchandises#1",
+      "particuliers__assurance-voyage#3",
+      "particuliers__assurance-voyage#7"
+    ]
+  },
+  {
+    "question": "Pour quels modes de transport puis-je assurer mes marchandises ?",
+    "language": "French",
+    "key_phrase": "transport a\u00e9rien, terrestre et maritime",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#0",
+      "professionnels-entreprises__assurance-transport-marchandises#1",
+      "professionnels-entreprises__assurance-transport-marchandises#2",
+      "faq-assurances#9",
+      "particuliers__assurance-voyage#10"
+    ]
+  },
+  {
+    "question": "Meaning of FAP Sauf",
+    "language": "English",
+    "key_phrase": "Franc d'Avaries Particuliers Sauf",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#1",
+      "particuliers__assurance-automobile#5",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-voyage#0"
+    ]
+  },
+  {
+    "question": "Que signifie FAP Sauf ?",
+    "language": "French",
+    "key_phrase": "Franc d'Avaries Particuliers Sauf",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-transport-marchandises#1",
+      "particuliers__assurance-automobile#5",
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-automobile#9"
+    ]
+  },
+  {
+    "question": "Data restoration after a loss",
+    "language": "English",
+    "key_phrase": "reconstitution des donn\u00e9es",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-informatique#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-automobile#4",
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-automobile#8"
+    ]
+  },
+  {
+    "question": "Si nos serveurs perdent des donn\u00e9es, la restauration est-elle couverte ?",
+    "language": "French",
+    "key_phrase": "reconstitution des donn\u00e9es",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-informatique#0"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-multirisque-informatique#0",
+      "faq-assurances#11",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#0",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#0",
+      "professionnels-entreprises__assurance-automobile-entreprises#9"
+    ]
+  },
+  {
+    "question": "Power surge on computers",
+    "language": "English",
+    "key_phrase": "court-circuit, de surtension",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-informatique#1"
+    ],
+    "retrieved_ids": []
+  },
+  {
+    "question": "Une surtension \u00e9lectrique sur nos ordinateurs est-elle couverte ?",
+    "language": "French",
+    "key_phrase": "court-circuit, de surtension",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-informatique#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-multirisque-informatique#1",
+      "professionnels-entreprises__assurance-bris-machine#0",
+      "particuliers__assurance-automobile#9",
+      "particuliers__assurance-automobile#5",
+      "particuliers__assurance-automobile#8"
+    ]
+  },
+  {
+    "question": "Theft of the shop safe",
+    "language": "English",
+    "key_phrase": "coffre forts",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "professionnels-entreprises__assurance-automobile-entreprises#3",
+      "professionnels-entreprises__assurance-automobile-professionnels#3",
+      "professionnels-entreprises__assurance-bris-machine#2",
+      "professionnels-entreprises__assurance-automobile-entreprises#1"
+    ]
+  },
+  {
+    "question": "Le vol du coffre-fort du magasin est-il couvert ?",
+    "language": "French",
+    "key_phrase": "coffre forts",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1",
+      "faq-assurances#11",
+      "professionnels-entreprises__assurance-automobile-entreprises#2",
+      "professionnels-entreprises__assurance-automobile-professionnels#2"
+    ]
+  },
+  {
+    "question": "Business interruption after a fire",
+    "language": "English",
+    "key_phrase": "pertes d'exploitation apr\u00e8s incendie",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0",
+      "professionnels-entreprises__assurance-automobile-entreprises#2",
+      "professionnels-entreprises__assurance-automobile-entreprises#1",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1",
+      "professionnels-entreprises__assurance-automobile-entreprises#3"
+    ]
+  },
+  {
+    "question": "La multirisque pro couvre-t-elle la perte de chiffre d'affaires apr\u00e8s un incendie ?",
+    "language": "French",
+    "key_phrase": "pertes d'exploitation apr\u00e8s incendie",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0",
+      "faq-assurances#11",
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "particuliers__assurance-incendie#0"
+    ]
+  },
+  {
+    "question": "Loss of clients after a professional error",
+    "language": "English",
+    "key_phrase": "la perte de la client\u00e8le, de la notori\u00e9t\u00e9",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#0",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#0",
+      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-voyage#2"
+    ]
+  },
+  {
+    "question": "La RC pro couvre-t-elle la perte de clients apr\u00e8s une erreur ?",
+    "language": "French",
+    "key_phrase": "la perte de la client\u00e8le, de la notori\u00e9t\u00e9",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#0",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#0",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1"
+    ]
+  },
+  {
+    "question": "Fire spreading to neighbours",
+    "language": "English",
+    "key_phrase": "Recours des voisins et des tiers",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "professionnels-entreprises__assurance-bris-machine#2",
+      "professionnels-entreprises__assurance-bris-machine#1"
+    ]
+  },
+  {
+    "question": "Si l'incendie de mon usine touche les voisins, suis-je couvert ?",
+    "language": "French",
+    "key_phrase": "Recours des voisins et des tiers",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-bris-machine#2",
+      "professionnels-entreprises__assurance-incendie-professionnels#0"
+    ]
+  },
+  {
+    "question": "Does group health cover assisted reproduction?",
+    "language": "English",
+    "key_phrase": "aide \u00e0 la procr\u00e9ation",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-frais-sante#2"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-frais-sante#4",
+      "professionnels-entreprises__assurance-frais-sante#2",
+      "faq-assurances#9",
+      "professionnels-entreprises__assurance-voyage-professionnels#0",
+      "professionnels-entreprises__assurance-frais-sante#3"
+    ]
+  },
+  {
+    "question": "La compl\u00e9mentaire sant\u00e9 entreprise couvre-t-elle la PMA ?",
+    "language": "French",
+    "key_phrase": "aide \u00e0 la procr\u00e9ation",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-frais-sante#2"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-frais-sante#0",
+      "professionnels-entreprises__assurance-frais-sante#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "faq-assurances#7",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
+    ]
+  },
+  {
+    "question": "Where to get a care form",
+    "language": "English",
+    "key_phrase": "relais RH",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "faq-assurances#2"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-bourse-etude#4",
+      "particuliers__assurance-corps-plaisance#1",
+      "particuliers__assurance-prevoyance-deces#3",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-incendie#1"
+    ]
+  },
+  {
+    "question": "O\u00f9 obtenir un bulletin de soins ?",
+    "language": "French",
+    "key_phrase": "relais RH",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "faq-assurances#2"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#2",
+      "particuliers__assurance-bourse-etude#4",
+      "faq-assurances#0",
+      "professionnels-entreprises__assurance-frais-sante#2",
+      "particuliers__assurance-voyage#8"
+    ]
+  },
+  {
+    "question": "Salvage costs for a stranded fishing boat",
+    "language": "English",
+    "key_phrase": "frais de sauvetage et le refoulement",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-corps-navire-peche#1"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-corps-plaisance#0",
+      "particuliers__assurance-automobile#4",
+      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-voyage#8"
+    ]
+  },
+  {
+    "question": "Les frais de sauvetage d'un bateau de p\u00eache \u00e9chou\u00e9 sont-ils couverts ?",
+    "language": "French",
+    "key_phrase": "frais de sauvetage et le refoulement",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "professionnels-entreprises__assurance-corps-navire-peche#1"
+    ],
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-corps-navire-peche#1",
+      "professionnels-entreprises__assurance-corps-navire-peche#0",
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0",
+      "particuliers__assurance-corps-plaisance#0",
+      "professionnels-entreprises__assurance-multirisque-informatique#0"
+    ]
+  },
+  {
+    "question": "Pleasure boats that can be insured",
+    "language": "English",
+    "key_phrase": "voiliers, vos bateaux \u00e0 moteurs et vos hors bords",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-corps-plaisance#0",
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-corps-plaisance#0",
+      "particuliers__assurance-corps-plaisance#1",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0"
+    ]
+  },
+  {
+    "question": "Quels types de bateaux de plaisance peut-on assurer ?",
+    "language": "French",
+    "key_phrase": "voiliers, vos bateaux \u00e0 moteurs et vos hors bords",
+    "answerable": true,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
+    "relevant_ids": [
+      "particuliers__assurance-corps-plaisance#0",
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-corps-plaisance#0",
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0",
+      "particuliers__assurance-corps-plaisance#1",
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#1",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1"
+    ]
+  },
+  {
+    "question": "Phone number for towing",
+    "language": "English",
+    "key_phrase": "G\u00e9n\u00e9rale Assistance +216 70 015 000",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "assistance-sinistre#0"
+    ],
+    "retrieved_ids": [
+      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-automobile#1",
+      "particuliers__assurance-automobile#5",
+      "particuliers__assurance-automobile#7",
+      "particuliers__assurance-automobile#4"
+    ]
+  },
+  {
+    "question": "Quel num\u00e9ro appeler pour un remorquage ?",
+    "language": "French",
+    "key_phrase": "G\u00e9n\u00e9rale Assistance +216 70 015 000",
+    "answerable": true,
+    "hit_at_5": false,
+    "recall_at_5": 0.0,
+    "relevant_ids": [
+      "assistance-sinistre#0"
+    ],
+    "retrieved_ids": [
+      "faq-assurances#10",
+      "professionnels-entreprises__assurance-automobile-entreprises#7",
+      "professionnels-entreprises__assurance-automobile-professionnels#7",
+      "particuliers__assurance-automobile#4",
+      "particuliers__assurance-automobile#7"
+    ]
+  }
+]

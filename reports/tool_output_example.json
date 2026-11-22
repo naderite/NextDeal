@@ -1,0 +1,54 @@
+{
+  "tool_schema": {
+    "name": "recommend_products",
+    "description": "Rank k unheld insurance products for a corporate client of BH Assurance using relative model scores; return the insurance line. Scores are not calibrated purchase probabilities.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "client_id": {
+          "type": "integer",
+          "description": "REF_pm of the company"
+        },
+        "k": {
+          "type": "integer",
+          "default": 3,
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "required": [
+        "client_id"
+      ]
+    }
+  },
+  "example_call": {
+    "client_id": 29893,
+    "k": 3
+  },
+  "example_output": {
+    "client_id": 29893,
+    "category": "CONSTRUCTION & REAL ESTATE",
+    "sector": "CONSTRUCTION",
+    "held": [
+      "AUTOMOBILE"
+    ],
+    "recommendations": [
+      {
+        "product": "AUTOMOBILE II",
+        "line": "AUTOMOBILE",
+        "score": 0.495
+      },
+      {
+        "product": "POLICE ABONNEMENT(FACULTE MARITIME)",
+        "line": "TRANSPORT",
+        "score": 0.147
+      },
+      {
+        "product": "MULTIRISQUES PROFESSIONNELLES CENTRALISE",
+        "line": "INCENDIE",
+        "score": 0.082
+      }
+    ],
+    "model": "logreg-v0.1 (validation 1 baseline)"
+  }
+}

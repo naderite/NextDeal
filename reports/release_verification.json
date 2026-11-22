@@ -1,0 +1,142 @@
+{
+  "api_tests": "17 passed in 5.78s",
+  "browser_tests": "3 passed (3.3s)",
+  "notebooks": [
+    {
+      "notebook": "01_business_understanding.ipynb",
+      "status": "passed"
+    },
+    {
+      "notebook": "02_data_understanding.ipynb",
+      "status": "passed"
+    },
+    {
+      "notebook": "03_data_preparation.ipynb",
+      "status": "passed"
+    },
+    {
+      "notebook": "04_modeling_baseline.ipynb",
+      "status": "passed"
+    }
+  ],
+  "raw_data": {
+    "reference": "original local validation package ZIP",
+    "checked": 39,
+    "mismatches": [],
+    "raw_files_unchanged": true
+  },
+  "models": [
+    {
+      "name": "qwen3:4b-instruct",
+      "model": "qwen3:4b-instruct",
+      "modified_at": "2026-11-22T21:13:23.467405691+01:00",
+      "size": 2497293803,
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2560
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "name": "qwen3:4b",
+      "model": "qwen3:4b",
+      "modified_at": "2026-11-22T20:58:24.46317518+01:00",
+      "size": 2497293931,
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2560
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    }
+  ],
+  "python": "3.13.5",
+  "source_sha256": {
+    "backend/governance.py": "c414765b320676392bc9bc8be66aad0f74a92d9d5a93e5377d30169f4e84829c",
+    "backend/db.py": "ccf1cb8c3b118d500cfe0f8ee7c21b1271e96d4f94b2caa6f6bbe9166f79472d",
+    "backend/__init__.py": "6b09f9cc6c51085f767b2bc4d3eacf57802a60ed1c18febdb4a43b3761e15469",
+    "backend/main.py": "d712c8c2a4d6983f18b6663d2f82aefd80b8ef9c37b606df781ae67516937f50",
+    "backend/config.py": "0fdebd2793e313f1229f385e44515f451c5d86ae6ef5f68b50702ab0505dc6b0",
+    "backend/services.py": "1737dd0823c2e2705758c2bee4438ed0013fea2b61d03c4ed27608e5122900dc",
+    "backend/agent.py": "05c6bd9c1b1fcbd15896f436e44a874f96502ef0bce654b1d827a4f0eeab5988",
+    "backend/artifacts.py": "4a9b4b0d7c737c94d2e9f644bc2e2a26999a17dd8352eb18a162d7f6a1c2bc98",
+    "frontend/app/layout.jsx": "9dd03ef9e793c444e0c779c48cf25918b32fc01a236506f9fc9bd2e36af245b7",
+    "frontend/app/page.jsx": "01a96b1fc0b040af54b7c78a7ecdee96763f0df6d7248ccf50394da71068f190",
+    "frontend/app/globals.css": "c413533e80f7e27c82989ceea4b3e73a25c934edefbd28b5bdd164db3e1247c5",
+    "scripts/check.sh": "3b0bf2c29772eb0819775f4eef635d926e1af2110c5c48b02fd263a02229d8bb",
+    "scripts/setup.sh": "65c64aaadb2a5aeab9fda8e593d8eaa4d62515c4c5996adf7964011dc69d8ad6",
+    "scripts/build_report.py": "e003354a9316167156e1b4153dd0c5b59d9c51a4b483948211547d052ffbef06",
+    "scripts/run_notebooks.py": "76625dcc32b81a1361e0efe5f014312b9e6100009b3f0a87dca45580e1c74a72",
+    "scripts/start.sh": "62e58f6b0e5fdd2a5f88cc2981e4ea09683786a1ad1be4a42ad16c2be630a825",
+    "scripts/evaluate.py": "23bc425cd81e8b9d46e0dcee7d86a0f5191cdb7be4ca1ab983099a0da086ffa7",
+    "scripts/prepare_retrieval.py": "d54b96d020e57ed30663b43610f2f0fe52ba3a46eca6836cdf27eb95c70d1fc5",
+    "scripts/live_validation.py": "30dd8508aea414947b73d2de135c076cc8253821fdc04544f9b73e9b9c5f0e1e",
+    "tests/test_workflows.py": "df5ce229641610f32befd299d93b38778e821890e6b4a9076b2ec16f5923894e"
+  },
+  "startup_smoke": {
+    "frontend_status": 200,
+    "health": {
+      "status": "ok",
+      "version": "nextdeal-v2.0",
+      "ollama": {
+        "available": true,
+        "models": [
+          "qwen3:4b-instruct",
+          "qwen3:4b"
+        ],
+        "selected": "qwen3:4b-instruct"
+      },
+      "demo_date": "2025-08-01",
+      "retrieval": "hybrid",
+      "source_type": "public product pages"
+    },
+    "seed_case_status": "awaiting_review",
+    "seed_error": null,
+    "live_tools": [
+      [
+        "recommend_products",
+        true
+      ],
+      [
+        "search_conditions",
+        true
+      ],
+      [
+        "search_conditions",
+        true
+      ]
+    ]
+  },
+  "frontend_build": "passed (Next.js 16.4.6)",
+  "live_validation": {
+    "scenarios": 50,
+    "valid_scenario_rate": 1.0,
+    "correct_route_rate": 1.0,
+    "full_workflows_passed": 3,
+    "human_acceptance_evidence": false
+  }
+}

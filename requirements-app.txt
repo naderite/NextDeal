@@ -1,0 +1,11 @@
+-r requirements.txt
+fastapi>=0.115
+uvicorn>=0.30
+httpx>=0.28
+langgraph>=0.2
+joblib>=1.4
+pypdf>=5
+beautifulsoup4>=4.12
+pytest>=8
+nbclient>=0.10
+ipykernel>=6

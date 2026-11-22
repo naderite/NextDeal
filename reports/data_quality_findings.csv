@@ -1,0 +1,14 @@
+dataset,issue,evidence,decision,impact
+A,Target leakage,Bought ≡ (candidate == held product); stored score AUC 0.997,Drop score/Bought as-is; rebuild a leave-one-out next-product target,High
+A,Missing values,Sector NaN 9.2 %; activity 'NON DEFINI' 8.3 %,"Normalise placeholders → NaN; impute sector from activity, else 'UNKNOWN'",Medium
+A,Granularity,Rows repeat the client profile for each candidate,Aggregate to one row per company + multi-hot portfolio,High
+A,Outliers,age_contract = 0 for 89 %; IQR fence = 0,Binarise (has_history) + keep max age per product,Low
+A,PII / constant,Single e-mail value for all rows,"Drop (no information, privacy)",Low
+A,Imbalance,Mono-product clients = 69 %,"Ranking metrics (HitRate@k), client-grouped CV",Medium
+B,Broken field,Age = 0 for 319/320 clients,Exclude; request re-extraction,Medium
+B,Implausible values,nb_sinistres_2025 median = 50 claims per individual,Flag as unreliable; exclude from models until clarified,Medium
+B,Duplicates,4 duplicated user_id (several contracts); 'decision' stored twice,Keep: unit = contract; dedupe on Num_Contrat; drop constant columns,Low
+B,Generic proposals,Same 3 riders proposed to 284 death-cover holders,Personalise guarantee upsell (DSO2.2),Medium
+B,Multi-valued text,Guarantees stored as 'A;B;C' strings,Split + multi-hot encode,Medium
+B,Rare target,Only 12 unpaid contracts (3.8 %),Too few for a risk model → collect more history (DSO2.1),High
+B,Hidden missing,Category 'Non classé' / 'Non défini' = 46 %,Map to UNKNOWN; rebuild category from sector,Medium

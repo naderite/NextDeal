@@ -1,0 +1,2522 @@
+[
+  {
+    "left": {
+      "id": "a0",
+      "kind": "individual",
+      "label": "Client 0 Trading",
+      "email": "client0@example.test"
+    },
+    "right": {
+      "id": "b0",
+      "kind": "individual",
+      "label": "Client 0 Trding",
+      "email": "client0@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.839,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.96"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a1",
+      "kind": "corporate",
+      "label": "Client 1 Trading",
+      "email": "client1@example.test"
+    },
+    "right": {
+      "id": "b1",
+      "kind": "corporate",
+      "label": "Different 1 Partners",
+      "email": "other1@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.241,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a2",
+      "kind": "individual",
+      "label": "Client 2 Trading",
+      "email": "client2@example.test"
+    },
+    "right": {
+      "id": "b2",
+      "kind": "individual",
+      "label": "Different 2 Partners",
+      "email": "other2@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.241,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a3",
+      "kind": "corporate",
+      "label": "Client 3 Trading",
+      "email": "client3@example.test"
+    },
+    "right": {
+      "id": "b3",
+      "kind": "corporate",
+      "label": "Client 3 Trding",
+      "email": "client3@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.839,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.96"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a4",
+      "kind": "individual",
+      "label": "Client 4 Trading",
+      "email": "client4@example.test"
+    },
+    "right": {
+      "id": "b4",
+      "kind": "individual",
+      "label": "Different 4 Partners",
+      "email": "other4@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.241,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a5",
+      "kind": "corporate",
+      "label": "Client 5 Trading",
+      "email": "client5@example.test"
+    },
+    "right": {
+      "id": "b5",
+      "kind": "individual",
+      "label": "Different 5 Partners",
+      "email": "other5@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a6",
+      "kind": "individual",
+      "label": "Client 6 Trading",
+      "email": "client6@example.test"
+    },
+    "right": {
+      "id": "b6",
+      "kind": "individual",
+      "label": "Client 6 Trding",
+      "email": "client6@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.839,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.96"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a7",
+      "kind": "corporate",
+      "label": "Client 7 Trading",
+      "email": "client7@example.test"
+    },
+    "right": {
+      "id": "b7",
+      "kind": "corporate",
+      "label": "Different 7 Partners",
+      "email": "other7@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.241,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a8",
+      "kind": "individual",
+      "label": "Client 8 Trading",
+      "email": "client8@example.test"
+    },
+    "right": {
+      "id": "b8",
+      "kind": "individual",
+      "label": "Different 8 Partners",
+      "email": "other8@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.241,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a9",
+      "kind": "corporate",
+      "label": "Client 9 Trading",
+      "email": "client9@example.test"
+    },
+    "right": {
+      "id": "b9",
+      "kind": "corporate",
+      "label": "Client 9 Trding",
+      "email": "client9@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.839,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.96"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a10",
+      "kind": "individual",
+      "label": "Client 10 Trading",
+      "email": "client10@example.test"
+    },
+    "right": {
+      "id": "b10",
+      "kind": "corporate",
+      "label": "Different 10 Partners",
+      "email": "other10@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a11",
+      "kind": "corporate",
+      "label": "Client 11 Trading",
+      "email": "client11@example.test"
+    },
+    "right": {
+      "id": "b11",
+      "kind": "corporate",
+      "label": "Different 11 Partners",
+      "email": "other11@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a12",
+      "kind": "individual",
+      "label": "Client 12 Trading",
+      "email": "client12@example.test"
+    },
+    "right": {
+      "id": "b12",
+      "kind": "individual",
+      "label": "Client 12 Trding",
+      "email": "client12@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a13",
+      "kind": "corporate",
+      "label": "Client 13 Trading",
+      "email": "client13@example.test"
+    },
+    "right": {
+      "id": "b13",
+      "kind": "corporate",
+      "label": "Different 13 Partners",
+      "email": "other13@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a14",
+      "kind": "individual",
+      "label": "Client 14 Trading",
+      "email": "client14@example.test"
+    },
+    "right": {
+      "id": "b14",
+      "kind": "individual",
+      "label": "Different 14 Partners",
+      "email": "other14@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a15",
+      "kind": "corporate",
+      "label": "Client 15 Trading",
+      "email": "client15@example.test"
+    },
+    "right": {
+      "id": "b15",
+      "kind": "corporate",
+      "label": "Client 15 Trding",
+      "email": "client15@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a16",
+      "kind": "individual",
+      "label": "Client 16 Trading",
+      "email": "client16@example.test"
+    },
+    "right": {
+      "id": "b16",
+      "kind": "individual",
+      "label": "Different 16 Partners",
+      "email": "other16@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a17",
+      "kind": "corporate",
+      "label": "Client 17 Trading",
+      "email": "client17@example.test"
+    },
+    "right": {
+      "id": "b17",
+      "kind": "corporate",
+      "label": "Different 17 Partners",
+      "email": "other17@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a18",
+      "kind": "individual",
+      "label": "Client 18 Trading",
+      "email": "client18@example.test"
+    },
+    "right": {
+      "id": "b18",
+      "kind": "individual",
+      "label": "Client 18 Trding",
+      "email": "client18@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a19",
+      "kind": "corporate",
+      "label": "Client 19 Trading",
+      "email": "client19@example.test"
+    },
+    "right": {
+      "id": "b19",
+      "kind": "corporate",
+      "label": "Different 19 Partners",
+      "email": "other19@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a20",
+      "kind": "individual",
+      "label": "Client 20 Trading",
+      "email": "client20@example.test"
+    },
+    "right": {
+      "id": "b20",
+      "kind": "corporate",
+      "label": "Different 20 Partners",
+      "email": "other20@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a21",
+      "kind": "corporate",
+      "label": "Client 21 Trading",
+      "email": "client21@example.test"
+    },
+    "right": {
+      "id": "b21",
+      "kind": "corporate",
+      "label": "Client 21 Trding",
+      "email": "client21@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a22",
+      "kind": "individual",
+      "label": "Client 22 Trading",
+      "email": "client22@example.test"
+    },
+    "right": {
+      "id": "b22",
+      "kind": "individual",
+      "label": "Different 22 Partners",
+      "email": "other22@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a23",
+      "kind": "corporate",
+      "label": "Client 23 Trading",
+      "email": "client23@example.test"
+    },
+    "right": {
+      "id": "b23",
+      "kind": "corporate",
+      "label": "Different 23 Partners",
+      "email": "other23@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a24",
+      "kind": "individual",
+      "label": "Client 24 Trading",
+      "email": "client24@example.test"
+    },
+    "right": {
+      "id": "b24",
+      "kind": "individual",
+      "label": "Client 24 Trding",
+      "email": "client24@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a25",
+      "kind": "corporate",
+      "label": "Client 25 Trading",
+      "email": "client25@example.test"
+    },
+    "right": {
+      "id": "b25",
+      "kind": "individual",
+      "label": "Different 25 Partners",
+      "email": "other25@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a26",
+      "kind": "individual",
+      "label": "Client 26 Trading",
+      "email": "client26@example.test"
+    },
+    "right": {
+      "id": "b26",
+      "kind": "individual",
+      "label": "Different 26 Partners",
+      "email": "other26@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a27",
+      "kind": "corporate",
+      "label": "Client 27 Trading",
+      "email": "client27@example.test"
+    },
+    "right": {
+      "id": "b27",
+      "kind": "corporate",
+      "label": "Client 27 Trding",
+      "email": "client27@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a28",
+      "kind": "individual",
+      "label": "Client 28 Trading",
+      "email": "client28@example.test"
+    },
+    "right": {
+      "id": "b28",
+      "kind": "individual",
+      "label": "Different 28 Partners",
+      "email": "other28@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a29",
+      "kind": "corporate",
+      "label": "Client 29 Trading",
+      "email": "client29@example.test"
+    },
+    "right": {
+      "id": "b29",
+      "kind": "corporate",
+      "label": "Different 29 Partners",
+      "email": "other29@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a30",
+      "kind": "individual",
+      "label": "Client 30 Trading",
+      "email": "client30@example.test"
+    },
+    "right": {
+      "id": "b30",
+      "kind": "individual",
+      "label": "Client 30 Trding",
+      "email": "client30@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a31",
+      "kind": "corporate",
+      "label": "Client 31 Trading",
+      "email": "client31@example.test"
+    },
+    "right": {
+      "id": "b31",
+      "kind": "corporate",
+      "label": "Different 31 Partners",
+      "email": "other31@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a32",
+      "kind": "individual",
+      "label": "Client 32 Trading",
+      "email": "client32@example.test"
+    },
+    "right": {
+      "id": "b32",
+      "kind": "individual",
+      "label": "Different 32 Partners",
+      "email": "other32@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a33",
+      "kind": "corporate",
+      "label": "Client 33 Trading",
+      "email": "client33@example.test"
+    },
+    "right": {
+      "id": "b33",
+      "kind": "corporate",
+      "label": "Client 33 Trding",
+      "email": "client33@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a34",
+      "kind": "individual",
+      "label": "Client 34 Trading",
+      "email": "client34@example.test"
+    },
+    "right": {
+      "id": "b34",
+      "kind": "individual",
+      "label": "Different 34 Partners",
+      "email": "other34@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a35",
+      "kind": "corporate",
+      "label": "Client 35 Trading",
+      "email": "client35@example.test"
+    },
+    "right": {
+      "id": "b35",
+      "kind": "individual",
+      "label": "Different 35 Partners",
+      "email": "other35@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a36",
+      "kind": "individual",
+      "label": "Client 36 Trading",
+      "email": "client36@example.test"
+    },
+    "right": {
+      "id": "b36",
+      "kind": "individual",
+      "label": "Client 36 Trding",
+      "email": "client36@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a37",
+      "kind": "corporate",
+      "label": "Client 37 Trading",
+      "email": "client37@example.test"
+    },
+    "right": {
+      "id": "b37",
+      "kind": "corporate",
+      "label": "Different 37 Partners",
+      "email": "other37@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a38",
+      "kind": "individual",
+      "label": "Client 38 Trading",
+      "email": "client38@example.test"
+    },
+    "right": {
+      "id": "b38",
+      "kind": "individual",
+      "label": "Different 38 Partners",
+      "email": "other38@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a39",
+      "kind": "corporate",
+      "label": "Client 39 Trading",
+      "email": "client39@example.test"
+    },
+    "right": {
+      "id": "b39",
+      "kind": "corporate",
+      "label": "Client 39 Trding",
+      "email": "client39@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a40",
+      "kind": "individual",
+      "label": "Client 40 Trading",
+      "email": "client40@example.test"
+    },
+    "right": {
+      "id": "b40",
+      "kind": "corporate",
+      "label": "Different 40 Partners",
+      "email": "other40@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a41",
+      "kind": "corporate",
+      "label": "Client 41 Trading",
+      "email": "client41@example.test"
+    },
+    "right": {
+      "id": "b41",
+      "kind": "corporate",
+      "label": "Different 41 Partners",
+      "email": "other41@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a42",
+      "kind": "individual",
+      "label": "Client 42 Trading",
+      "email": "client42@example.test"
+    },
+    "right": {
+      "id": "b42",
+      "kind": "individual",
+      "label": "Client 42 Trding",
+      "email": "client42@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a43",
+      "kind": "corporate",
+      "label": "Client 43 Trading",
+      "email": "client43@example.test"
+    },
+    "right": {
+      "id": "b43",
+      "kind": "corporate",
+      "label": "Different 43 Partners",
+      "email": "other43@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a44",
+      "kind": "individual",
+      "label": "Client 44 Trading",
+      "email": "client44@example.test"
+    },
+    "right": {
+      "id": "b44",
+      "kind": "individual",
+      "label": "Different 44 Partners",
+      "email": "other44@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a45",
+      "kind": "corporate",
+      "label": "Client 45 Trading",
+      "email": "client45@example.test"
+    },
+    "right": {
+      "id": "b45",
+      "kind": "corporate",
+      "label": "Client 45 Trding",
+      "email": "client45@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a46",
+      "kind": "individual",
+      "label": "Client 46 Trading",
+      "email": "client46@example.test"
+    },
+    "right": {
+      "id": "b46",
+      "kind": "individual",
+      "label": "Different 46 Partners",
+      "email": "other46@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a47",
+      "kind": "corporate",
+      "label": "Client 47 Trading",
+      "email": "client47@example.test"
+    },
+    "right": {
+      "id": "b47",
+      "kind": "corporate",
+      "label": "Different 47 Partners",
+      "email": "other47@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a48",
+      "kind": "individual",
+      "label": "Client 48 Trading",
+      "email": "client48@example.test"
+    },
+    "right": {
+      "id": "b48",
+      "kind": "individual",
+      "label": "Client 48 Trding",
+      "email": "client48@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a49",
+      "kind": "corporate",
+      "label": "Client 49 Trading",
+      "email": "client49@example.test"
+    },
+    "right": {
+      "id": "b49",
+      "kind": "corporate",
+      "label": "Different 49 Partners",
+      "email": "other49@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a50",
+      "kind": "individual",
+      "label": "Client 50 Trading",
+      "email": "client50@example.test"
+    },
+    "right": {
+      "id": "b50",
+      "kind": "corporate",
+      "label": "Different 50 Partners",
+      "email": "other50@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a51",
+      "kind": "corporate",
+      "label": "Client 51 Trading",
+      "email": "client51@example.test"
+    },
+    "right": {
+      "id": "b51",
+      "kind": "corporate",
+      "label": "Client 51 Trding",
+      "email": "client51@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a52",
+      "kind": "individual",
+      "label": "Client 52 Trading",
+      "email": "client52@example.test"
+    },
+    "right": {
+      "id": "b52",
+      "kind": "individual",
+      "label": "Different 52 Partners",
+      "email": "other52@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a53",
+      "kind": "corporate",
+      "label": "Client 53 Trading",
+      "email": "client53@example.test"
+    },
+    "right": {
+      "id": "b53",
+      "kind": "corporate",
+      "label": "Different 53 Partners",
+      "email": "other53@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a54",
+      "kind": "individual",
+      "label": "Client 54 Trading",
+      "email": "client54@example.test"
+    },
+    "right": {
+      "id": "b54",
+      "kind": "individual",
+      "label": "Client 54 Trding",
+      "email": "client54@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a55",
+      "kind": "corporate",
+      "label": "Client 55 Trading",
+      "email": "client55@example.test"
+    },
+    "right": {
+      "id": "b55",
+      "kind": "individual",
+      "label": "Different 55 Partners",
+      "email": "other55@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a56",
+      "kind": "individual",
+      "label": "Client 56 Trading",
+      "email": "client56@example.test"
+    },
+    "right": {
+      "id": "b56",
+      "kind": "individual",
+      "label": "Different 56 Partners",
+      "email": "other56@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a57",
+      "kind": "corporate",
+      "label": "Client 57 Trading",
+      "email": "client57@example.test"
+    },
+    "right": {
+      "id": "b57",
+      "kind": "corporate",
+      "label": "Client 57 Trding",
+      "email": "client57@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a58",
+      "kind": "individual",
+      "label": "Client 58 Trading",
+      "email": "client58@example.test"
+    },
+    "right": {
+      "id": "b58",
+      "kind": "individual",
+      "label": "Different 58 Partners",
+      "email": "other58@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a59",
+      "kind": "corporate",
+      "label": "Client 59 Trading",
+      "email": "client59@example.test"
+    },
+    "right": {
+      "id": "b59",
+      "kind": "corporate",
+      "label": "Different 59 Partners",
+      "email": "other59@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a60",
+      "kind": "individual",
+      "label": "Client 60 Trading",
+      "email": "client60@example.test"
+    },
+    "right": {
+      "id": "b60",
+      "kind": "individual",
+      "label": "Client 60 Trding",
+      "email": "client60@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a61",
+      "kind": "corporate",
+      "label": "Client 61 Trading",
+      "email": "client61@example.test"
+    },
+    "right": {
+      "id": "b61",
+      "kind": "corporate",
+      "label": "Different 61 Partners",
+      "email": "other61@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a62",
+      "kind": "individual",
+      "label": "Client 62 Trading",
+      "email": "client62@example.test"
+    },
+    "right": {
+      "id": "b62",
+      "kind": "individual",
+      "label": "Different 62 Partners",
+      "email": "other62@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a63",
+      "kind": "corporate",
+      "label": "Client 63 Trading",
+      "email": "client63@example.test"
+    },
+    "right": {
+      "id": "b63",
+      "kind": "corporate",
+      "label": "Client 63 Trding",
+      "email": "client63@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a64",
+      "kind": "individual",
+      "label": "Client 64 Trading",
+      "email": "client64@example.test"
+    },
+    "right": {
+      "id": "b64",
+      "kind": "individual",
+      "label": "Different 64 Partners",
+      "email": "other64@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a65",
+      "kind": "corporate",
+      "label": "Client 65 Trading",
+      "email": "client65@example.test"
+    },
+    "right": {
+      "id": "b65",
+      "kind": "individual",
+      "label": "Different 65 Partners",
+      "email": "other65@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a66",
+      "kind": "individual",
+      "label": "Client 66 Trading",
+      "email": "client66@example.test"
+    },
+    "right": {
+      "id": "b66",
+      "kind": "individual",
+      "label": "Client 66 Trding",
+      "email": "client66@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a67",
+      "kind": "corporate",
+      "label": "Client 67 Trading",
+      "email": "client67@example.test"
+    },
+    "right": {
+      "id": "b67",
+      "kind": "corporate",
+      "label": "Different 67 Partners",
+      "email": "other67@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a68",
+      "kind": "individual",
+      "label": "Client 68 Trading",
+      "email": "client68@example.test"
+    },
+    "right": {
+      "id": "b68",
+      "kind": "individual",
+      "label": "Different 68 Partners",
+      "email": "other68@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a69",
+      "kind": "corporate",
+      "label": "Client 69 Trading",
+      "email": "client69@example.test"
+    },
+    "right": {
+      "id": "b69",
+      "kind": "corporate",
+      "label": "Client 69 Trding",
+      "email": "client69@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a70",
+      "kind": "individual",
+      "label": "Client 70 Trading",
+      "email": "client70@example.test"
+    },
+    "right": {
+      "id": "b70",
+      "kind": "corporate",
+      "label": "Different 70 Partners",
+      "email": "other70@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a71",
+      "kind": "corporate",
+      "label": "Client 71 Trading",
+      "email": "client71@example.test"
+    },
+    "right": {
+      "id": "b71",
+      "kind": "corporate",
+      "label": "Different 71 Partners",
+      "email": "other71@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a72",
+      "kind": "individual",
+      "label": "Client 72 Trading",
+      "email": "client72@example.test"
+    },
+    "right": {
+      "id": "b72",
+      "kind": "individual",
+      "label": "Client 72 Trding",
+      "email": "client72@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a73",
+      "kind": "corporate",
+      "label": "Client 73 Trading",
+      "email": "client73@example.test"
+    },
+    "right": {
+      "id": "b73",
+      "kind": "corporate",
+      "label": "Different 73 Partners",
+      "email": "other73@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a74",
+      "kind": "individual",
+      "label": "Client 74 Trading",
+      "email": "client74@example.test"
+    },
+    "right": {
+      "id": "b74",
+      "kind": "individual",
+      "label": "Different 74 Partners",
+      "email": "other74@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a75",
+      "kind": "corporate",
+      "label": "Client 75 Trading",
+      "email": "client75@example.test"
+    },
+    "right": {
+      "id": "b75",
+      "kind": "corporate",
+      "label": "Client 75 Trding",
+      "email": "client75@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a76",
+      "kind": "individual",
+      "label": "Client 76 Trading",
+      "email": "client76@example.test"
+    },
+    "right": {
+      "id": "b76",
+      "kind": "individual",
+      "label": "Different 76 Partners",
+      "email": "other76@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a77",
+      "kind": "corporate",
+      "label": "Client 77 Trading",
+      "email": "client77@example.test"
+    },
+    "right": {
+      "id": "b77",
+      "kind": "corporate",
+      "label": "Different 77 Partners",
+      "email": "other77@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a78",
+      "kind": "individual",
+      "label": "Client 78 Trading",
+      "email": "client78@example.test"
+    },
+    "right": {
+      "id": "b78",
+      "kind": "individual",
+      "label": "Client 78 Trding",
+      "email": "client78@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a79",
+      "kind": "corporate",
+      "label": "Client 79 Trading",
+      "email": "client79@example.test"
+    },
+    "right": {
+      "id": "b79",
+      "kind": "corporate",
+      "label": "Different 79 Partners",
+      "email": "other79@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a80",
+      "kind": "individual",
+      "label": "Client 80 Trading",
+      "email": "client80@example.test"
+    },
+    "right": {
+      "id": "b80",
+      "kind": "corporate",
+      "label": "Different 80 Partners",
+      "email": "other80@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a81",
+      "kind": "corporate",
+      "label": "Client 81 Trading",
+      "email": "client81@example.test"
+    },
+    "right": {
+      "id": "b81",
+      "kind": "corporate",
+      "label": "Client 81 Trding",
+      "email": "client81@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a82",
+      "kind": "individual",
+      "label": "Client 82 Trading",
+      "email": "client82@example.test"
+    },
+    "right": {
+      "id": "b82",
+      "kind": "individual",
+      "label": "Different 82 Partners",
+      "email": "other82@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a83",
+      "kind": "corporate",
+      "label": "Client 83 Trading",
+      "email": "client83@example.test"
+    },
+    "right": {
+      "id": "b83",
+      "kind": "corporate",
+      "label": "Different 83 Partners",
+      "email": "other83@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a84",
+      "kind": "individual",
+      "label": "Client 84 Trading",
+      "email": "client84@example.test"
+    },
+    "right": {
+      "id": "b84",
+      "kind": "individual",
+      "label": "Client 84 Trding",
+      "email": "client84@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a85",
+      "kind": "corporate",
+      "label": "Client 85 Trading",
+      "email": "client85@example.test"
+    },
+    "right": {
+      "id": "b85",
+      "kind": "individual",
+      "label": "Different 85 Partners",
+      "email": "other85@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a86",
+      "kind": "individual",
+      "label": "Client 86 Trading",
+      "email": "client86@example.test"
+    },
+    "right": {
+      "id": "b86",
+      "kind": "individual",
+      "label": "Different 86 Partners",
+      "email": "other86@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a87",
+      "kind": "corporate",
+      "label": "Client 87 Trading",
+      "email": "client87@example.test"
+    },
+    "right": {
+      "id": "b87",
+      "kind": "corporate",
+      "label": "Client 87 Trding",
+      "email": "client87@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a88",
+      "kind": "individual",
+      "label": "Client 88 Trading",
+      "email": "client88@example.test"
+    },
+    "right": {
+      "id": "b88",
+      "kind": "individual",
+      "label": "Different 88 Partners",
+      "email": "other88@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a89",
+      "kind": "corporate",
+      "label": "Client 89 Trading",
+      "email": "client89@example.test"
+    },
+    "right": {
+      "id": "b89",
+      "kind": "corporate",
+      "label": "Different 89 Partners",
+      "email": "other89@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a90",
+      "kind": "individual",
+      "label": "Client 90 Trading",
+      "email": "client90@example.test"
+    },
+    "right": {
+      "id": "b90",
+      "kind": "individual",
+      "label": "Client 90 Trding",
+      "email": "client90@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a91",
+      "kind": "corporate",
+      "label": "Client 91 Trading",
+      "email": "client91@example.test"
+    },
+    "right": {
+      "id": "b91",
+      "kind": "corporate",
+      "label": "Different 91 Partners",
+      "email": "other91@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a92",
+      "kind": "individual",
+      "label": "Client 92 Trading",
+      "email": "client92@example.test"
+    },
+    "right": {
+      "id": "b92",
+      "kind": "individual",
+      "label": "Different 92 Partners",
+      "email": "other92@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a93",
+      "kind": "corporate",
+      "label": "Client 93 Trading",
+      "email": "client93@example.test"
+    },
+    "right": {
+      "id": "b93",
+      "kind": "corporate",
+      "label": "Client 93 Trding",
+      "email": "client93@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a94",
+      "kind": "individual",
+      "label": "Client 94 Trading",
+      "email": "client94@example.test"
+    },
+    "right": {
+      "id": "b94",
+      "kind": "individual",
+      "label": "Different 94 Partners",
+      "email": "other94@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a95",
+      "kind": "corporate",
+      "label": "Client 95 Trading",
+      "email": "client95@example.test"
+    },
+    "right": {
+      "id": "b95",
+      "kind": "individual",
+      "label": "Different 95 Partners",
+      "email": "other95@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a96",
+      "kind": "individual",
+      "label": "Client 96 Trading",
+      "email": "client96@example.test"
+    },
+    "right": {
+      "id": "b96",
+      "kind": "individual",
+      "label": "Client 96 Trding",
+      "email": "client96@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a97",
+      "kind": "corporate",
+      "label": "Client 97 Trading",
+      "email": "client97@example.test"
+    },
+    "right": {
+      "id": "b97",
+      "kind": "corporate",
+      "label": "Different 97 Partners",
+      "email": "other97@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a98",
+      "kind": "individual",
+      "label": "Client 98 Trading",
+      "email": "client98@example.test"
+    },
+    "right": {
+      "id": "b98",
+      "kind": "individual",
+      "label": "Different 98 Partners",
+      "email": "other98@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.259,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a99",
+      "kind": "corporate",
+      "label": "Client 99 Trading",
+      "email": "client99@example.test"
+    },
+    "right": {
+      "id": "b99",
+      "kind": "corporate",
+      "label": "Client 99 Trding",
+      "email": "client99@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a100",
+      "kind": "individual",
+      "label": "Client 100 Trading",
+      "email": "client100@example.test"
+    },
+    "right": {
+      "id": "b100",
+      "kind": "corporate",
+      "label": "Different 100 Partners",
+      "email": "other100@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a101",
+      "kind": "corporate",
+      "label": "Client 101 Trading",
+      "email": "client101@example.test"
+    },
+    "right": {
+      "id": "b101",
+      "kind": "corporate",
+      "label": "Different 101 Partners",
+      "email": "other101@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a102",
+      "kind": "individual",
+      "label": "Client 102 Trading",
+      "email": "client102@example.test"
+    },
+    "right": {
+      "id": "b102",
+      "kind": "individual",
+      "label": "Client 102 Trding",
+      "email": "client102@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a103",
+      "kind": "corporate",
+      "label": "Client 103 Trading",
+      "email": "client103@example.test"
+    },
+    "right": {
+      "id": "b103",
+      "kind": "corporate",
+      "label": "Different 103 Partners",
+      "email": "other103@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a104",
+      "kind": "individual",
+      "label": "Client 104 Trading",
+      "email": "client104@example.test"
+    },
+    "right": {
+      "id": "b104",
+      "kind": "individual",
+      "label": "Different 104 Partners",
+      "email": "other104@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a105",
+      "kind": "corporate",
+      "label": "Client 105 Trading",
+      "email": "client105@example.test"
+    },
+    "right": {
+      "id": "b105",
+      "kind": "corporate",
+      "label": "Client 105 Trding",
+      "email": "client105@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a106",
+      "kind": "individual",
+      "label": "Client 106 Trading",
+      "email": "client106@example.test"
+    },
+    "right": {
+      "id": "b106",
+      "kind": "individual",
+      "label": "Different 106 Partners",
+      "email": "other106@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a107",
+      "kind": "corporate",
+      "label": "Client 107 Trading",
+      "email": "client107@example.test"
+    },
+    "right": {
+      "id": "b107",
+      "kind": "corporate",
+      "label": "Different 107 Partners",
+      "email": "other107@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a108",
+      "kind": "individual",
+      "label": "Client 108 Trading",
+      "email": "client108@example.test"
+    },
+    "right": {
+      "id": "b108",
+      "kind": "individual",
+      "label": "Client 108 Trding",
+      "email": "client108@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a109",
+      "kind": "corporate",
+      "label": "Client 109 Trading",
+      "email": "client109@example.test"
+    },
+    "right": {
+      "id": "b109",
+      "kind": "corporate",
+      "label": "Different 109 Partners",
+      "email": "other109@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a110",
+      "kind": "individual",
+      "label": "Client 110 Trading",
+      "email": "client110@example.test"
+    },
+    "right": {
+      "id": "b110",
+      "kind": "corporate",
+      "label": "Different 110 Partners",
+      "email": "other110@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a111",
+      "kind": "corporate",
+      "label": "Client 111 Trading",
+      "email": "client111@example.test"
+    },
+    "right": {
+      "id": "b111",
+      "kind": "corporate",
+      "label": "Client 111 Trding",
+      "email": "client111@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a112",
+      "kind": "individual",
+      "label": "Client 112 Trading",
+      "email": "client112@example.test"
+    },
+    "right": {
+      "id": "b112",
+      "kind": "individual",
+      "label": "Different 112 Partners",
+      "email": "other112@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a113",
+      "kind": "corporate",
+      "label": "Client 113 Trading",
+      "email": "client113@example.test"
+    },
+    "right": {
+      "id": "b113",
+      "kind": "corporate",
+      "label": "Different 113 Partners",
+      "email": "other113@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a114",
+      "kind": "individual",
+      "label": "Client 114 Trading",
+      "email": "client114@example.test"
+    },
+    "right": {
+      "id": "b114",
+      "kind": "individual",
+      "label": "Client 114 Trding",
+      "email": "client114@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a115",
+      "kind": "corporate",
+      "label": "Client 115 Trading",
+      "email": "client115@example.test"
+    },
+    "right": {
+      "id": "b115",
+      "kind": "individual",
+      "label": "Different 115 Partners",
+      "email": "other115@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.0,
+      "decision": "different_type",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a116",
+      "kind": "individual",
+      "label": "Client 116 Trading",
+      "email": "client116@example.test"
+    },
+    "right": {
+      "id": "b116",
+      "kind": "individual",
+      "label": "Different 116 Partners",
+      "email": "other116@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a117",
+      "kind": "corporate",
+      "label": "Client 117 Trading",
+      "email": "client117@example.test"
+    },
+    "right": {
+      "id": "b117",
+      "kind": "corporate",
+      "label": "Client 117 Trding",
+      "email": "client117@example.test"
+    },
+    "duplicate": true,
+    "prediction": {
+      "score": 0.84,
+      "decision": "duplicate",
+      "evidence": [
+        "Same normalized email",
+        "Name similarity 0.97"
+      ]
+    }
+  },
+  {
+    "left": {
+      "id": "a118",
+      "kind": "individual",
+      "label": "Client 118 Trading",
+      "email": "client118@example.test"
+    },
+    "right": {
+      "id": "b118",
+      "kind": "individual",
+      "label": "Different 118 Partners",
+      "email": "other118@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  },
+  {
+    "left": {
+      "id": "a119",
+      "kind": "corporate",
+      "label": "Client 119 Trading",
+      "email": "client119@example.test"
+    },
+    "right": {
+      "id": "b119",
+      "kind": "corporate",
+      "label": "Different 119 Partners",
+      "email": "other119@example.test"
+    },
+    "duplicate": false,
+    "prediction": {
+      "score": 0.275,
+      "decision": "distinct",
+      "evidence": []
+    }
+  }
+]

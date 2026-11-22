@@ -1,0 +1,219 @@
+[
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-automobile",
+  "file": "particuliers__assurance-automobile.html",
+  "bytes": 76141,
+  "sha256": "6051a677127585a21b2cdc584d1118ab1f5c0049cc53a6a8475170538888124f",
+  "fetched_at": "2026-10-25T23:07:30+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-bourse-etude",
+  "file": "particuliers__assurance-bourse-etude.html",
+  "bytes": 53778,
+  "sha256": "52361877c472b2b83e41dae0e0d3813229a84fea34459abba3adff12582abbed",
+  "fetched_at": "2026-10-25T23:07:31+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-corps-plaisance",
+  "file": "particuliers__assurance-corps-plaisance.html",
+  "bytes": 49503,
+  "sha256": "4773ab178b8628ff038cc59b9c0a69463910cb2c467c519d440ceb4a1639c83e",
+  "fetched_at": "2026-10-25T23:07:33+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-epargne-retraite",
+  "file": "particuliers__assurance-epargne-retraite.html",
+  "bytes": 56187,
+  "sha256": "bac7e79aaabb5c7e3b13d07c26618a0c25e5c8c9045d441a5b93b5c33127bd78",
+  "fetched_at": "2026-10-25T23:07:34+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-incendie",
+  "file": "particuliers__assurance-incendie.html",
+  "bytes": 49164,
+  "sha256": "ad849dd467e2bc2f189e98dfbee0afb1b69feaf8a1ed14cd4762d72d3a24ffb9",
+  "fetched_at": "2026-10-25T23:07:36+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-individuelle-contre-accidents-corporels",
+  "file": "particuliers__assurance-individuelle-contre-accidents-corporels.html",
+  "bytes": 49525,
+  "sha256": "77af7f58c9c040e5d7aadc949250af81c1bdc64a31012e16a3cba720c8f75e80",
+  "fetched_at": "2026-10-25T23:07:38+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-multirisque-habitation",
+  "file": "particuliers__assurance-multirisque-habitation.html",
+  "bytes": 53585,
+  "sha256": "d365915686fdab32dcfdb4844b31491bba207a3908ede87419c3e1a2816f6223",
+  "fetched_at": "2026-10-25T23:07:39+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-prevoyance-deces",
+  "file": "particuliers__assurance-prevoyance-deces.html",
+  "bytes": 52919,
+  "sha256": "b4dd43d62b1aeb604a721d6eee9d8704ae5ea5ab574ded756fa7e2947c0c4b0c",
+  "fetched_at": "2026-10-25T23:07:41+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/particuliers/assurance-voyage",
+  "file": "particuliers__assurance-voyage.html",
+  "bytes": 73977,
+  "sha256": "1080c1a9b41f739da024610715bfb34925f59b84a80b63a7c085270f3c2983ba",
+  "fetched_at": "2026-10-25T23:07:42+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-automobile-entreprises",
+  "file": "professionnels-entreprises__assurance-automobile-entreprises.html",
+  "bytes": 78094,
+  "sha256": "ac893e60bbc055dca6739c98b7f8c59c99fbae0de01b95ebdacc04b4f884e0e7",
+  "fetched_at": "2026-10-25T23:07:43+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-automobile-professionnels",
+  "file": "professionnels-entreprises__assurance-automobile-professionnels.html",
+  "bytes": 78448,
+  "sha256": "e4a0f5c6695054cf53234176b6d9432e5ab9b8b912085dec71755873169b33d9",
+  "fetched_at": "2026-10-25T23:07:45+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-bris-machine",
+  "file": "professionnels-entreprises__assurance-bris-machine.html",
+  "bytes": 58520,
+  "sha256": "542f9d2f36d9017499828be9c55afff14adf4fce45e8f0774a8e4df0aadbdae9",
+  "fetched_at": "2026-10-25T23:07:46+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-corps-navire-peche",
+  "file": "professionnels-entreprises__assurance-corps-navire-peche.html",
+  "bytes": 51668,
+  "sha256": "d42715728c44ba193e542a0c6df6f549e58d3517b5c8202c27a060fa451bd3e9",
+  "fetched_at": "2026-10-25T23:07:47+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-corps-plaisance-professionnelle",
+  "file": "professionnels-entreprises__assurance-corps-plaisance-professionnelle.html",
+  "bytes": 51754,
+  "sha256": "64bce51908b57c317571984d92c9eadddbd1846ff1120bcb32c5471c09aa8876",
+  "fetched_at": "2026-10-25T23:07:49+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-engins-chantier",
+  "file": "professionnels-entreprises__assurance-engins-chantier.html",
+  "bytes": 51541,
+  "sha256": "abfea6653f25fb6b8486cd534a71010fa3006bbfb9b3e75e124fb0570a0e4b0e",
+  "fetched_at": "2026-10-25T23:07:50+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-epargne-retraite-collective",
+  "file": "professionnels-entreprises__assurance-epargne-retraite-collective.html",
+  "bytes": 58581,
+  "sha256": "630bdfd8db9f6042f876412028194618ce74fe8963907f1397ecc4c9049c7a22",
+  "fetched_at": "2026-10-25T23:07:51+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-epargne-retraite-professionnelle",
+  "file": "professionnels-entreprises__assurance-epargne-retraite-professionnelle.html",
+  "bytes": 58538,
+  "sha256": "bb7b29699d92c30423d7ac7e4da76811f371b20c55c0198a47f8edf55b340f43",
+  "fetched_at": "2026-10-25T23:07:53+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-frais-sante",
+  "file": "professionnels-entreprises__assurance-frais-sante.html",
+  "bytes": 54150,
+  "sha256": "3659e506971ea9ff17efacc8c684f6e71e3c68498326f5b4885e253f7ba05c2d",
+  "fetched_at": "2026-10-25T23:07:54+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-incendie-professionnels",
+  "file": "professionnels-entreprises__assurance-incendie-professionnels.html",
+  "bytes": 51705,
+  "sha256": "e0de86f726a3704a8a539c6f69dabe714e8a3ef9085d76e2fd4ceb60826e2458",
+  "fetched_at": "2026-10-25T23:07:55+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-incendie-risque-industriel-commercial",
+  "file": "professionnels-entreprises__assurance-incendie-risque-industriel-commercial.html",
+  "bytes": 53326,
+  "sha256": "03a1245022851dc7cb823bf7887ecb531c2aa05329c05be77fb8f0cc04af9a72",
+  "fetched_at": "2026-10-25T23:07:57+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-individuelle-contre-accidents-corporels-professionnels",
+  "file": "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels.html",
+  "bytes": 52148,
+  "sha256": "efbf8d34973087828acc252caa6c20e2f9dc8f23fb204fa0ae24999b96af7ed9",
+  "fetched_at": "2026-10-25T23:07:58+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-multirisque-informatique",
+  "file": "professionnels-entreprises__assurance-multirisque-informatique.html",
+  "bytes": 54395,
+  "sha256": "457b65edba83421babe4bd82547dcaba8af053e46a8e817c4365f6817fc2f4b9",
+  "fetched_at": "2026-10-25T23:07:59+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-multirisque-professionnelle",
+  "file": "professionnels-entreprises__assurance-multirisque-professionnelle.html",
+  "bytes": 53423,
+  "sha256": "354a89d2d25c2bd9ad08dc60a51dddfb87b2fd33f6749de7292d80e890e2bb6e",
+  "fetched_at": "2026-10-25T23:08:01+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-responsabilite-civile-professionnelle-exploitation-locaux",
+  "file": "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux.html",
+  "bytes": 52430,
+  "sha256": "e546ec4f376443c1882a04bd53efc654c24f17fb4ca8749ba2a4597136f90e4f",
+  "fetched_at": "2026-10-25T23:08:02+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises",
+  "file": "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises.html",
+  "bytes": 52454,
+  "sha256": "7776630fae0d28c8348332c09850d4ebce7ce975c9c2d4671b2f7a97ada08476",
+  "fetched_at": "2026-10-25T23:08:03+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-responsabilite-decennale-construction",
+  "file": "professionnels-entreprises__assurance-responsabilite-decennale-construction.html",
+  "bytes": 56774,
+  "sha256": "d14cfde9cbaedd7e525ce8cc703e5be6ff9657507d0c2b51013436a5cf27413b",
+  "fetched_at": "2026-10-25T23:08:05+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-tous-risques-chantier-montage",
+  "file": "professionnels-entreprises__assurance-tous-risques-chantier-montage.html",
+  "bytes": 53382,
+  "sha256": "4bd6615a80480876a084e48436c918f78650287f0c46eda2d25dbe6bee7e34bb",
+  "fetched_at": "2026-10-25T23:08:06+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-transport-marchandises",
+  "file": "professionnels-entreprises__assurance-transport-marchandises.html",
+  "bytes": 53968,
+  "sha256": "dffb1be68a24bc30f70416e1ac8ad99c67d7f3850258f371dbb65de187a3bc08",
+  "fetched_at": "2026-10-25T23:08:07+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/professionnels-entreprises/assurance-voyage-professionnels",
+  "file": "professionnels-entreprises__assurance-voyage-professionnels.html",
+  "bytes": 56337,
+  "sha256": "9478e7333c383ed6e769a1ea7ffb8894894be924ba25f4b76dc9b677da326eee",
+  "fetched_at": "2026-10-25T23:08:09+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/faq-assurances",
+  "file": "faq-assurances.html",
+  "bytes": 63229,
+  "sha256": "a4a13f7c5907206928cc4ce7d78275f453cedbe23397e8bbb31f9bab8704e1a9",
+  "fetched_at": "2026-10-25T23:08:10+00:00"
+ },
+ {
+  "url": "https://bh-assurance.com/assistance-sinistre",
+  "file": "assistance-sinistre.html",
+  "bytes": 42926,
+  "sha256": "b1eaf2cde5e02e2d3ab879d44e2c638f8b72346d797dc0f354e6f7a595136163",
+  "fetched_at": "2026-10-25T23:08:11+00:00"
+ }
+]

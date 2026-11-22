@@ -1,0 +1,564 @@
+{
+  "generated_at": "2026-11-22T20:22:34.312964+00:00",
+  "version": "nextdeal-v2.0",
+  "live_llm": {
+    "scenarios": 50,
+    "valid_scenario_rate": 1.0,
+    "correct_route_rate": 1.0,
+    "full_workflows_passed": 3,
+    "human_acceptance_evidence": false
+  },
+  "datasets": {
+    "corporate": "real historical pseudonymised portfolio",
+    "renewal": "real historical pseudonymised contracts",
+    "intent": "synthetic English templates",
+    "identity": "synthetic within-type duplicates",
+    "longitudinal_value": "synthetic independent outcome simulation"
+  },
+  "objectives": [
+    {
+      "id": "1.1",
+      "name": "Next-product propensity",
+      "target": "HitRate@3 >= 0.70 overall / 0.40 long-tail",
+      "metrics": {
+        "hybrid": {
+          "HitRate@3": 0.6886363636363636,
+          "HitRate@1": 0.38333333333333336,
+          "long_tail_HitRate@3": 0.3235867446393762,
+          "MRR": 0.5642709383468817,
+          "coverage": 12,
+          "gain_95pct_company_CI": [
+            0.0031471958820168387,
+            0.06845789241622571
+          ]
+        },
+        "logistic": {
+          "HitRate@3": 0.6643939393939394,
+          "HitRate@1": 0.3787878787878788,
+          "long_tail_HitRate@3": 0.2573099415204678,
+          "MRR": 0.5566082185181355,
+          "coverage": 13,
+          "gain_95pct_company_CI": [
+            -0.01631758764111706,
+            0.03994081996793644
+          ]
+        },
+        "popularity": {
+          "HitRate@3": 0.6522727272727272,
+          "HitRate@1": 0.375,
+          "long_tail_HitRate@3": 0.10526315789473684,
+          "MRR": 0.5451229797668892,
+          "coverage": 8
+        }
+      },
+      "provenance": "real reconstruction benchmark",
+      "status": "target_not_met",
+      "limitation": "Raw profile labels, constant UNKNOWNs, history disabled. Reconstructs held products; not future sales. UI applies additional diversification rules.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "1.2",
+      "name": "Client segmentation",
+      "target": "4\u20138 segments; silhouette >= 0.25",
+      "metrics": {
+        "segments": 7,
+        "silhouette": 0.2792093426360543,
+        "personas": [
+          {
+            "segment": 0,
+            "persona": "Other \u00b7 motor",
+            "companies": 50,
+            "share_top_category": 1.0,
+            "avg_products": 1.6,
+            "mono_product_%": 58.0,
+            "lines_held_%": "motor 92%, transport 14%, group health 4%"
+          },
+          {
+            "segment": 1,
+            "persona": "Commerce & Services \u00b7 motor",
+            "companies": 36,
+            "share_top_category": 1.0,
+            "avg_products": 1.33,
+            "mono_product_%": 72.0,
+            "lines_held_%": "motor 94%, transport 11%, property / multi-risk 8%"
+          },
+          {
+            "segment": 2,
+            "persona": "Other \u00b7 group health",
+            "companies": 33,
+            "share_top_category": 0.42,
+            "avg_products": 1.09,
+            "mono_product_%": 91.0,
+            "lines_held_%": "group health 94%, transport 12%, engineering 3%"
+          },
+          {
+            "segment": 3,
+            "persona": "Finance & Assurance \u00b7 property / multi-risk",
+            "companies": 40,
+            "share_top_category": 0.25,
+            "avg_products": 1.0,
+            "mono_product_%": 100.0,
+            "lines_held_%": "property / multi-risk 95%, liability & misc. 2%, transport 2%"
+          },
+          {
+            "segment": 4,
+            "persona": "Construction & Real Estate \u00b7 motor",
+            "companies": 30,
+            "share_top_category": 1.0,
+            "avg_products": 1.1,
+            "mono_product_%": 93.0,
+            "lines_held_%": "motor 60%, engineering 27%, transport 10%"
+          },
+          {
+            "segment": 5,
+            "persona": "Finance & Assurance \u00b7 property / multi-risk + motor \u00b7 multi-product",
+            "companies": 32,
+            "share_top_category": 0.25,
+            "avg_products": 3.0,
+            "mono_product_%": 0.0,
+            "lines_held_%": "property / multi-risk 94%, motor 56%, group health 34%"
+          },
+          {
+            "segment": 6,
+            "persona": "Industries & Manufacturing \u00b7 motor",
+            "companies": 78,
+            "share_top_category": 0.38,
+            "avg_products": 1.37,
+            "mono_product_%": 69.0,
+            "lines_held_%": "motor 92%, liability & misc. 9%, engineering 1%"
+          }
+        ],
+        "selection": "Compared k=4..8 on descriptive training data; chose 7 as the smallest k exceeding 0.25; not held-out stability evidence"
+      },
+      "provenance": "real portfolio",
+      "status": "target_met",
+      "limitation": "",
+      "implementation": "implemented"
+    },
+    {
+      "id": "1.3",
+      "name": "Recommendation agent",
+      "target": ">= 90% valid tool calls on >= 50 scenarios",
+      "metrics": {
+        "scenarios": 50,
+        "valid_scenario_rate": 1.0,
+        "correct_route_rate": 1.0,
+        "full_workflows_passed": 3,
+        "human_acceptance_evidence": false
+      },
+      "provenance": "actual local Ollama calls; isolated scenario database",
+      "status": "target_met",
+      "limitation": "Do not infer tool validity from schema definitions.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "2.1",
+      "name": "Non-payment risk",
+      "target": "Recall >= 0.70; PR-AUC >= 0.40",
+      "metrics": {
+        "real": {
+          "n": 320,
+          "positives": 12,
+          "Recall": 0.25,
+          "PR_AUC": 0.03145243178349441,
+          "features": [
+            "contract_age",
+            "n_guarantees"
+          ]
+        },
+        "synthetic": {
+          "n": 1200,
+          "Recall": 0.7479338842975206,
+          "PR_AUC": 0.6091716916778802
+        }
+      },
+      "provenance": "real retrospective + separate synthetic benchmark",
+      "status": "target_not_met",
+      "limitation": "Only 12 unpaid examples. Timing of real features unverified. Synthetic history is functional evidence only.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "2.2",
+      "name": "Guarantee upselling",
+      "target": "Lift >= 1.5; coverage >= 60%",
+      "metrics": {
+        "train_contracts": 220,
+        "test_contracts": 100,
+        "rules": 617,
+        "coverage": 0.01,
+        "minimum_rule_lift": 5.3625,
+        "split": "fixed held-out contract partition; no guarantee recommendation selected using test baskets"
+      },
+      "provenance": "real held-out renewal contracts",
+      "status": "target_not_met",
+      "limitation": "Coverage means held-out contracts receiving at least one new-guarantee rule suggestion; it does not measure purchase.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "2.3",
+      "name": "Renewal agent",
+      "target": ">= 95% dispatched >= 30 days before expiry",
+      "metrics": {
+        "contracts": 320,
+        "first_expiry": "2025-09-01",
+        "demo_clock": "configurable; initial 2025-08-01",
+        "scheduled_contacts": 320,
+        "approved_dispatch_coverage": 0
+      },
+      "provenance": "historical simulation",
+      "status": "target_not_met",
+      "limitation": "Scheduling is implemented. Timely contact only counts approved dispatch; no contact success claimed from a schedule.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "3.1",
+      "name": "Intent classifier",
+      "target": "Macro-F1 >= 0.80 on 300 labelled messages",
+      "metrics": {
+        "messages": 300,
+        "templates": 60,
+        "macro_F1": 1.0,
+        "learned_only_macro_F1": 0.40532974652191184,
+        "per_class": {
+          "already_insured": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 50.0
+          },
+          "comparison": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 50.0
+          },
+          "hesitation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 50.0
+          },
+          "interest": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 50.0
+          },
+          "quote": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 50.0
+          },
+          "refusal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 50.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 300.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 300.0
+          }
+        },
+        "split": "5 folds grouped by original template"
+      },
+      "provenance": "300 synthetic English messages; grouped template CV",
+      "status": "target_met",
+      "limitation": "Human-written independent evaluation remains required; template labels are synthetic.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "3.2",
+      "name": "Grounded retrieval",
+      "target": "Recall@5 >= 0.85; faithfulness >= 0.90",
+      "metrics": {
+        "English": {
+          "questions": 50,
+          "answerable": 50,
+          "Recall@5": 0.5523333333333333,
+          "HitRate@5": 0.58
+        },
+        "French": {
+          "questions": 50,
+          "answerable": 50,
+          "Recall@5": 0.8859999999999999,
+          "HitRate@5": 0.9
+        },
+        "faithfulness": "Requires human review of generated answers; retrieval scores alone do not establish faithfulness"
+      },
+      "provenance": "real public pages + curated question/phrase benchmark",
+      "status": "awaiting_evidence",
+      "limitation": "No general-condition PDFs. English questions are glosses of the inherited French benchmark. Generated-answer faithfulness needs human review.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "3.3",
+      "name": "Conversation orchestrator",
+      "target": ">= 70% drafts approved without edit",
+      "metrics": {
+        "workflow": [
+          "context",
+          "tools_and_draft",
+          "quality",
+          "advisor_review",
+          "simulated_dispatch"
+        ],
+        "live_workflows": [
+          {
+            "subject": "Corporate cross-sell",
+            "status": "awaiting_review"
+          },
+          {
+            "subject": "Individual renewal",
+            "status": "awaiting_review"
+          },
+          {
+            "subject": "Refusal handling",
+            "status": "awaiting_review"
+          }
+        ]
+      },
+      "provenance": "live application; human review pending",
+      "status": "awaiting_evidence",
+      "limitation": "Advisor acceptance must be measured from genuine review decisions.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "4.1",
+      "name": "Value and loyalty",
+      "target": "Spearman >= 0.5 against 12-month holdings",
+      "metrics": {
+        "synthetic_spearman": 0.33159514637269294,
+        "n": 500,
+        "real_longitudinal_result": null
+      },
+      "provenance": "synthetic longitudinal simulation",
+      "status": "target_not_met",
+      "limitation": "Future outcomes simulated with independent randomness and latent loyalty. Does not establish real future value.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "4.2",
+      "name": "LLM quality judge",
+      "target": "Cohen's kappa >= 0.6 against human reviewers",
+      "metrics": {
+        "rubric": [
+          "grounded",
+          "relevant",
+          "professional",
+          "unsupported_claims"
+        ],
+        "human_kappa": null
+      },
+      "provenance": "live model; human comparison pending",
+      "status": "awaiting_evidence",
+      "limitation": "Generator and judge share a model. Human labels cannot be replaced by another model and called human agreement.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "4.3",
+      "name": "Monitoring agent",
+      "target": "Report accurate event KPIs and weekly insights",
+      "metrics": {
+        "metrics": {
+          "cases_by_status": {
+            "awaiting_review": 9,
+            "failed": 1,
+            "received": 1
+          },
+          "decisions": {},
+          "simulated_dispatches": 0,
+          "draft_versions": 9,
+          "events": {
+            "agent_failed": 1,
+            "draft_generated": 9,
+            "tool_call": 19
+          },
+          "median_draft_seconds": 10.49,
+          "approval_without_edit_rate": 0.0,
+          "provenance": "observed local demo activity; no real conversion or renewal uplift measured"
+        },
+        "report": "- 9 drafts received (awaiting review)  \n- 1 draft failed  \n- 1 draft received (failed)  \n- 9 draft generations completed  \n- 1 agent failure event  \n- 19 tool calls made  \n- Median draft time: 10.49 seconds  \n- Approval without edit rate: 0%  \n- No real conversion or renewal uplift measured",
+        "live": true
+      },
+      "provenance": "actual Ollama report over observed test activity",
+      "status": "awaiting_evidence",
+      "limitation": "Live report evidence stored separately. No real conversion or sales claim.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "5.1",
+      "name": "Data anomalies",
+      "target": "Recall >= 90%; precision >= 80%",
+      "metrics": {
+        "rows": 200,
+        "injected_fault_rows": 100,
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "provenance": "synthetic fault injection",
+      "status": "target_met",
+      "limitation": "Covers declared schema/date/range/email faults, not arbitrary unknown anomalies.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "5.2",
+      "name": "Identity deduplication",
+      "target": "Precision >= 95%; recall >= 85%",
+      "metrics": {
+        "pairs": 120,
+        "precision": 1.0,
+        "recall": 1.0,
+        "split": "held-out entity identifiers; fixed heuristic, no fitting"
+      },
+      "provenance": "synthetic same-type duplicate pairs",
+      "status": "target_met",
+      "limitation": "No real identity ground truth. Shared contacts can be ambiguous; advisor review remains mandatory.",
+      "implementation": "implemented"
+    },
+    {
+      "id": "5.3",
+      "name": "Pipeline agent",
+      "target": ">= 95% incidents handled without manual rerun",
+      "metrics": {
+        "scenarios": [
+          {
+            "scenario": 0,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 1,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 2,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 3,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 4,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 5,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 6,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 7,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 8,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 9,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 10,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 11,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 12,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 13,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 14,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 15,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 16,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 17,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          },
+          {
+            "scenario": 18,
+            "expected": "quarantined",
+            "actual": "quarantined",
+            "handled": true
+          },
+          {
+            "scenario": 19,
+            "expected": "accepted",
+            "actual": "accepted",
+            "handled": true
+          }
+        ],
+        "handled_rate": 1.0
+      },
+      "provenance": "synthetic controlled incident suite",
+      "status": "target_met",
+      "limitation": "Handled means safe quarantine or successful bounded recovery; quarantined data is not silently repaired or promoted.",
+      "implementation": "implemented"
+    }
+  ]
+}

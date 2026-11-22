@@ -1,0 +1,395 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NextDeal · Validation 2 Review</title><style>body{margin:0;background:#eef3f4;color:#183841;font:17px/1.6 Arial,sans-serif}section{min-height:90vh;padding:60px;box-sizing:border-box;border-bottom:1px solid #cbdcdf;max-width:1500px;margin:auto}h1{font:56px/1.2 Georgia,serif;max-width:900px}h2{font:38px Georgia,serif}h3{font-size:21px}.eyebrow{color:#126b65;letter-spacing:2px;font-size:13px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}article{background:white;border:1px solid #d0dfe1;border-radius:8px;padding:24px}.badge{font-size:12px;background:#e6f2ed;color:#245c50;padding:6px}.muted{color:#607b82;font-size:14px}.note{font-size:15px;padding:18px;background:#e1eeea;margin-top:24px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;max-height:400px;overflow:auto}summary{cursor:pointer}@media(max-width:850px){section{padding:25px}.cards{grid-template-columns:1fr}h1{font-size:36px}}@media print{section{break-after:page;min-height:0;padding:25px}.cards{gap:10px}article{padding:12px}details{display:none}}</style><section><div class="eyebrow">NEXTDEAL · BH ASSURANCE</div><h1>A local assistant.<br>A complete advisor workflow.</h1><p>Five business objectives · Fifteen data-science objectives</p><p>English workspace · Ollama tool calls · Evidence retrieval · Advisor approval · Simulated outbox</p><div class="note">Implementation and measured performance are separate. This review preserves missed targets, synthetic provenance and pending human evidence.</div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 1</div><h2>Cross-selling</h2><div class="cards"><article><span class="badge">DSO 1.1 · target_not_met</span><h3>Next-product propensity</h3><p>HitRate@3 &gt;= 0.70 overall / 0.40 long-tail</p><p class="muted">real reconstruction benchmark</p><details><summary>Measured evidence</summary><pre>{
+  &quot;hybrid&quot;: {
+    &quot;HitRate@3&quot;: 0.6886363636363636,
+    &quot;HitRate@1&quot;: 0.38333333333333336,
+    &quot;long_tail_HitRate@3&quot;: 0.3235867446393762,
+    &quot;MRR&quot;: 0.5642709383468817,
+    &quot;coverage&quot;: 12,
+    &quot;gain_95pct_company_CI&quot;: [
+      0.0031471958820168387,
+      0.06845789241622571
+    ]
+  },
+  &quot;logistic&quot;: {
+    &quot;HitRate@3&quot;: 0.6643939393939394,
+    &quot;HitRate@1&quot;: 0.3787878787878788,
+    &quot;long_tail_HitRate@3&quot;: 0.2573099415204678,
+    &quot;MRR&quot;: 0.5566082185181355,
+    &quot;coverage&quot;: 13,
+    &quot;gain_95pct_company_CI&quot;: [
+      -0.01631758764111706,
+      0.03994081996793644
+    ]
+  },
+  &quot;popularity&quot;: {
+    &quot;HitRate@3&quot;: 0.6522727272727272,
+    &quot;HitRate@1&quot;: 0.375,
+    &quot;long_tail_HitRate@3&quot;: 0.10526315789473684,
+    &quot;MRR&quot;: 0.5451229797668892,
+    &quot;coverage&quot;: 8
+  }
+}</pre></details><p class="note">Raw profile labels, constant UNKNOWNs, history disabled. Reconstructs held products; not future sales. UI applies additional diversification rules.</p></article><article><span class="badge">DSO 1.2 · target_met</span><h3>Client segmentation</h3><p>4–8 segments; silhouette &gt;= 0.25</p><p class="muted">real portfolio</p><details><summary>Measured evidence</summary><pre>{
+  &quot;segments&quot;: 7,
+  &quot;silhouette&quot;: 0.2792093426360543,
+  &quot;personas&quot;: [
+    {
+      &quot;segment&quot;: 0,
+      &quot;persona&quot;: &quot;Other \u00b7 motor&quot;,
+      &quot;companies&quot;: 50,
+      &quot;share_top_category&quot;: 1.0,
+      &quot;avg_products&quot;: 1.6,
+      &quot;mono_product_%&quot;: 58.0,
+      &quot;lines_held_%&quot;: &quot;motor 92%, transport 14%, group health 4%&quot;
+    },
+    {
+      &quot;segment&quot;: 1,
+      &quot;persona&quot;: &quot;Commerce &amp; Services \u00b7 motor&quot;,
+      &quot;companies&quot;: 36,
+      &quot;share_top_category&quot;: 1.0,
+      &quot;avg_products&quot;: 1.33,
+      &quot;mono_product_%&quot;: 72.0,
+      &quot;lines_held_%&quot;: &quot;motor 94%, transport 11%, property / multi-risk 8%&quot;
+    },
+    {
+      &quot;segment&quot;: 2,
+      &quot;persona&quot;: &quot;Other \u00b7 group health&quot;,
+      &quot;companies&quot;: 33,
+      &quot;share_top_category&quot;: 0.42,
+      &quot;avg_products&quot;: 1.09,
+      &quot;mono_product_%&quot;: 91.0,
+      &quot;lines_held_%&quot;: &quot;group health 94%, transport 12%, engineering 3%&quot;
+    },
+    {
+      &quot;segment&quot;: 3,
+      &quot;persona&quot;: &quot;Finance &amp; Assurance \u00b7 property / multi-risk&quot;,
+      &quot;companies&quot;: 40,
+      &quot;share_top_category&quot;: 0.25,
+      &quot;avg_products&quot;: 1.0,
+      &quot;mono_product_%&quot;: 100.0,
+      &quot;lines_held_%&quot;: &quot;property / multi-risk 95%, liability &amp; misc. 2%, transport 2%&quot;
+    },
+    {
+      &quot;segment&quot;: 4,
+      &quot;persona&quot;: &quot;Construction &amp; Real Estate \u00b7 motor&quot;,
+      &quot;companies&quot;: 30,
+      &quot;share_top_category&quot;: 1.0,
+      &quot;avg_products&quot;: 1.1,
+      &quot;mono_product_%&quot;: 93.0,
+      &quot;lines_held_%&quot;: &quot;motor 60%, engineering 27%, transport 10%&quot;
+    },
+    {
+      &quot;segment&quot;: 5,
+      &quot;persona&quot;: &quot;Finance &amp; Assurance \u00b7 property / multi-risk + motor \u00b7 multi-product&quot;,
+      &quot;companies&quot;: 32,
+      &quot;share_top_category&quot;: 0.25,
+      &quot;avg_products&quot;: 3.0,
+      &quot;mono_product_%&quot;: 0.0,
+      &quot;lines_held_%&quot;: &quot;property / multi-risk 94%, motor 56%, group health 34%&quot;
+    },
+    {
+      &quot;segment&quot;: 6,
+      &quot;persona&quot;: &quot;Industries &amp; Manufacturing \u00b7 motor&quot;,
+      &quot;companies&quot;: 78,
+      &quot;share_top_category&quot;: 0.38,
+      &quot;avg_products&quot;: 1.37,
+      &quot;mono_product_%&quot;: 69.0,
+      &quot;lines_held_%&quot;: &quot;motor 92%, liability &amp; misc. 9%, engineering 1%&quot;
+    }
+  ],
+  &quot;selection&quot;: &quot;Compared k=4..8 on descriptive training data; chose 7 as the smallest k exceeding 0.25; not held-out stability evidence&quot;
+}</pre></details><p class="note"></p></article><article><span class="badge">DSO 1.3 · target_met</span><h3>Recommendation agent</h3><p>&gt;= 90% valid tool calls on &gt;= 50 scenarios</p><p class="muted">actual local Ollama calls; isolated scenario database</p><details><summary>Measured evidence</summary><pre>{
+  &quot;scenarios&quot;: 50,
+  &quot;valid_scenario_rate&quot;: 1.0,
+  &quot;correct_route_rate&quot;: 1.0,
+  &quot;full_workflows_passed&quot;: 3,
+  &quot;human_acceptance_evidence&quot;: false
+}</pre></details><p class="note">Do not infer tool validity from schema definitions.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 2</div><h2>Renewals and collection</h2><div class="cards"><article><span class="badge">DSO 2.1 · target_not_met</span><h3>Non-payment risk</h3><p>Recall &gt;= 0.70; PR-AUC &gt;= 0.40</p><p class="muted">real retrospective + separate synthetic benchmark</p><details><summary>Measured evidence</summary><pre>{
+  &quot;real&quot;: {
+    &quot;n&quot;: 320,
+    &quot;positives&quot;: 12,
+    &quot;Recall&quot;: 0.25,
+    &quot;PR_AUC&quot;: 0.03145243178349441,
+    &quot;features&quot;: [
+      &quot;contract_age&quot;,
+      &quot;n_guarantees&quot;
+    ]
+  },
+  &quot;synthetic&quot;: {
+    &quot;n&quot;: 1200,
+    &quot;Recall&quot;: 0.7479338842975206,
+    &quot;PR_AUC&quot;: 0.6091716916778802
+  }
+}</pre></details><p class="note">Only 12 unpaid examples. Timing of real features unverified. Synthetic history is functional evidence only.</p></article><article><span class="badge">DSO 2.2 · target_not_met</span><h3>Guarantee upselling</h3><p>Lift &gt;= 1.5; coverage &gt;= 60%</p><p class="muted">real held-out renewal contracts</p><details><summary>Measured evidence</summary><pre>{
+  &quot;train_contracts&quot;: 220,
+  &quot;test_contracts&quot;: 100,
+  &quot;rules&quot;: 617,
+  &quot;coverage&quot;: 0.01,
+  &quot;minimum_rule_lift&quot;: 5.3625,
+  &quot;split&quot;: &quot;fixed held-out contract partition; no guarantee recommendation selected using test baskets&quot;
+}</pre></details><p class="note">Coverage means held-out contracts receiving at least one new-guarantee rule suggestion; it does not measure purchase.</p></article><article><span class="badge">DSO 2.3 · target_not_met</span><h3>Renewal agent</h3><p>&gt;= 95% dispatched &gt;= 30 days before expiry</p><p class="muted">historical simulation</p><details><summary>Measured evidence</summary><pre>{
+  &quot;contracts&quot;: 320,
+  &quot;first_expiry&quot;: &quot;2025-09-01&quot;,
+  &quot;demo_clock&quot;: &quot;configurable; initial 2025-08-01&quot;,
+  &quot;scheduled_contacts&quot;: 320,
+  &quot;approved_dispatch_coverage&quot;: 0
+}</pre></details><p class="note">Scheduling is implemented. Timely contact only counts approved dispatch; no contact success claimed from a schedule.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 3</div><h2>Conversation handling</h2><div class="cards"><article><span class="badge">DSO 3.1 · target_met</span><h3>Intent classifier</h3><p>Macro-F1 &gt;= 0.80 on 300 labelled messages</p><p class="muted">300 synthetic English messages; grouped template CV</p><details><summary>Measured evidence</summary><pre>{
+  &quot;messages&quot;: 300,
+  &quot;templates&quot;: 60,
+  &quot;macro_F1&quot;: 1.0,
+  &quot;learned_only_macro_F1&quot;: 0.40532974652191184,
+  &quot;per_class&quot;: {
+    &quot;already_insured&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 50.0
+    },
+    &quot;comparison&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 50.0
+    },
+    &quot;hesitation&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 50.0
+    },
+    &quot;interest&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 50.0
+    },
+    &quot;quote&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 50.0
+    },
+    &quot;refusal&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 50.0
+    },
+    &quot;accuracy&quot;: 1.0,
+    &quot;macro avg&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 300.0
+    },
+    &quot;weighted avg&quot;: {
+      &quot;precision&quot;: 1.0,
+      &quot;recall&quot;: 1.0,
+      &quot;f1-score&quot;: 1.0,
+      &quot;support&quot;: 300.0
+    }
+  },
+  &quot;split&quot;: &quot;5 folds grouped by original template&quot;
+}</pre></details><p class="note">Human-written independent evaluation remains required; template labels are synthetic.</p></article><article><span class="badge">DSO 3.2 · awaiting_evidence</span><h3>Grounded retrieval</h3><p>Recall@5 &gt;= 0.85; faithfulness &gt;= 0.90</p><p class="muted">real public pages + curated question/phrase benchmark</p><details><summary>Measured evidence</summary><pre>{
+  &quot;English&quot;: {
+    &quot;questions&quot;: 50,
+    &quot;answerable&quot;: 50,
+    &quot;Recall@5&quot;: 0.5523333333333333,
+    &quot;HitRate@5&quot;: 0.58
+  },
+  &quot;French&quot;: {
+    &quot;questions&quot;: 50,
+    &quot;answerable&quot;: 50,
+    &quot;Recall@5&quot;: 0.8859999999999999,
+    &quot;HitRate@5&quot;: 0.9
+  },
+  &quot;faithfulness&quot;: &quot;Requires human review of generated answers; retrieval scores alone do not establish faithfulness&quot;
+}</pre></details><p class="note">No general-condition PDFs. English questions are glosses of the inherited French benchmark. Generated-answer faithfulness needs human review.</p></article><article><span class="badge">DSO 3.3 · awaiting_evidence</span><h3>Conversation orchestrator</h3><p>&gt;= 70% drafts approved without edit</p><p class="muted">live application; human review pending</p><details><summary>Measured evidence</summary><pre>{
+  &quot;workflow&quot;: [
+    &quot;context&quot;,
+    &quot;tools_and_draft&quot;,
+    &quot;quality&quot;,
+    &quot;advisor_review&quot;,
+    &quot;simulated_dispatch&quot;
+  ],
+  &quot;live_workflows&quot;: [
+    {
+      &quot;subject&quot;: &quot;Corporate cross-sell&quot;,
+      &quot;status&quot;: &quot;awaiting_review&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;Individual renewal&quot;,
+      &quot;status&quot;: &quot;awaiting_review&quot;
+    },
+    {
+      &quot;subject&quot;: &quot;Refusal handling&quot;,
+      &quot;status&quot;: &quot;awaiting_review&quot;
+    }
+  ]
+}</pre></details><p class="note">Advisor acceptance must be measured from genuine review decisions.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 4</div><h2>Value, quality and monitoring</h2><div class="cards"><article><span class="badge">DSO 4.1 · target_not_met</span><h3>Value and loyalty</h3><p>Spearman &gt;= 0.5 against 12-month holdings</p><p class="muted">synthetic longitudinal simulation</p><details><summary>Measured evidence</summary><pre>{
+  &quot;synthetic_spearman&quot;: 0.33159514637269294,
+  &quot;n&quot;: 500,
+  &quot;real_longitudinal_result&quot;: null
+}</pre></details><p class="note">Future outcomes simulated with independent randomness and latent loyalty. Does not establish real future value.</p></article><article><span class="badge">DSO 4.2 · awaiting_evidence</span><h3>LLM quality judge</h3><p>Cohen&#x27;s kappa &gt;= 0.6 against human reviewers</p><p class="muted">live model; human comparison pending</p><details><summary>Measured evidence</summary><pre>{
+  &quot;rubric&quot;: [
+    &quot;grounded&quot;,
+    &quot;relevant&quot;,
+    &quot;professional&quot;,
+    &quot;unsupported_claims&quot;
+  ],
+  &quot;human_kappa&quot;: null
+}</pre></details><p class="note">Generator and judge share a model. Human labels cannot be replaced by another model and called human agreement.</p></article><article><span class="badge">DSO 4.3 · awaiting_evidence</span><h3>Monitoring agent</h3><p>Report accurate event KPIs and weekly insights</p><p class="muted">actual Ollama report over observed test activity</p><details><summary>Measured evidence</summary><pre>{
+  &quot;metrics&quot;: {
+    &quot;cases_by_status&quot;: {
+      &quot;awaiting_review&quot;: 9,
+      &quot;failed&quot;: 1,
+      &quot;received&quot;: 1
+    },
+    &quot;decisions&quot;: {},
+    &quot;simulated_dispatches&quot;: 0,
+    &quot;draft_versions&quot;: 9,
+    &quot;events&quot;: {
+      &quot;agent_failed&quot;: 1,
+      &quot;draft_generated&quot;: 9,
+      &quot;tool_call&quot;: 19
+    },
+    &quot;median_draft_seconds&quot;: 10.49,
+    &quot;approval_without_edit_rate&quot;: 0.0,
+    &quot;provenance&quot;: &quot;observed local demo activity; no real conversion or renewal uplift measured&quot;
+  },
+  &quot;report&quot;: &quot;- 9 drafts received (awaiting review)  \n- 1 draft failed  \n- 1 draft received (failed)  \n- 9 draft generations completed  \n- 1 agent failure event  \n- 19 tool calls made  \n- Median draft time: 10.49 seconds  \n- Approval without edit rate: 0%  \n- No real conversion or renewal uplift measured&quot;,
+  &quot;live&quot;: true
+}</pre></details><p class="note">Live report evidence stored separately. No real conversion or sales claim.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 5</div><h2>Data governance</h2><div class="cards"><article><span class="badge">DSO 5.1 · target_met</span><h3>Data anomalies</h3><p>Recall &gt;= 90%; precision &gt;= 80%</p><p class="muted">synthetic fault injection</p><details><summary>Measured evidence</summary><pre>{
+  &quot;rows&quot;: 200,
+  &quot;injected_fault_rows&quot;: 100,
+  &quot;recall&quot;: 1.0,
+  &quot;precision&quot;: 1.0
+}</pre></details><p class="note">Covers declared schema/date/range/email faults, not arbitrary unknown anomalies.</p></article><article><span class="badge">DSO 5.2 · target_met</span><h3>Identity deduplication</h3><p>Precision &gt;= 95%; recall &gt;= 85%</p><p class="muted">synthetic same-type duplicate pairs</p><details><summary>Measured evidence</summary><pre>{
+  &quot;pairs&quot;: 120,
+  &quot;precision&quot;: 1.0,
+  &quot;recall&quot;: 1.0,
+  &quot;split&quot;: &quot;held-out entity identifiers; fixed heuristic, no fitting&quot;
+}</pre></details><p class="note">No real identity ground truth. Shared contacts can be ambiguous; advisor review remains mandatory.</p></article><article><span class="badge">DSO 5.3 · target_met</span><h3>Pipeline agent</h3><p>&gt;= 95% incidents handled without manual rerun</p><p class="muted">synthetic controlled incident suite</p><details><summary>Measured evidence</summary><pre>{
+  &quot;scenarios&quot;: [
+    {
+      &quot;scenario&quot;: 0,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 1,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 2,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 3,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 4,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 5,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 6,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 7,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 8,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 9,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 10,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 11,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 12,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 13,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 14,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 15,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 16,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 17,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 18,
+      &quot;expected&quot;: &quot;quarantined&quot;,
+      &quot;actual&quot;: &quot;quarantined&quot;,
+      &quot;handled&quot;: true
+    },
+    {
+      &quot;scenario&quot;: 19,
+      &quot;expected&quot;: &quot;accepted&quot;,
+      &quot;actual&quot;: &quot;accepted&quot;,
+      &quot;handled&quot;: true
+    }
+  ],
+  &quot;handled_rate&quot;: 1.0
+}</pre></details><p class="note">Handled means safe quarantine or successful bounded recovery; quarantined data is not silently repaired or promoted.</p></article></div></section><section><div class="eyebrow">LIVE DEMONSTRATION</div><h2>Follow a case from message to decision</h2><ol><li>Select Company 6958 and inspect its existing portfolio.</li><li>Run the assistant and inspect actual tool calls and citations.</li><li>Edit or approve the draft, then simulate dispatch.</li><li>Review a renewal using the historical clock.</li><li>Demonstrate refusal, a quarantined batch and duplicate review.</li><li>Compare observed activity with the monitoring report.</li></ol><div class="note">General-condition PDFs and real longitudinal outcomes remain unavailable. Public product information cannot establish contractual exclusions. Human acceptance, faithfulness and judge agreement require genuine reviewer labels.</div></section><footer style="padding:30px">Generated from measured evidence: 2026-11-22T20:22:34.312964+00:00</footer></html>

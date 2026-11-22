@@ -1,0 +1,301 @@
+text,label,template,learned_prediction
+I am interested in this policy,interest,interest-0,refusal
+"Hello, I am interested in this policy",interest,interest-0,refusal
+For our account: I am interested in this policy,interest,interest-0,refusal
+Good morning. I am interested in this policy,interest,interest-0,refusal
+Regarding your offer: I am interested in this policy,interest,interest-0,refusal
+Please tell me more about the coverage,interest,interest-1,comparison
+"Hello, Please tell me more about the coverage",interest,interest-1,comparison
+For our account: Please tell me more about the coverage,interest,interest-1,comparison
+Good morning. Please tell me more about the coverage,interest,interest-1,comparison
+Regarding your offer: Please tell me more about the coverage,interest,interest-1,comparison
+We would like to proceed with insurance,interest,interest-2,quote
+"Hello, We would like to proceed with insurance",interest,interest-2,quote
+For our account: We would like to proceed with insurance,interest,interest-2,quote
+Good morning. We would like to proceed with insurance,interest,interest-2,quote
+Regarding your offer: We would like to proceed with insurance,interest,interest-2,quote
+This product sounds useful for our company,interest,interest-3,already_insured
+"Hello, This product sounds useful for our company",interest,interest-3,already_insured
+For our account: This product sounds useful for our company,interest,interest-3,already_insured
+Good morning. This product sounds useful for our company,interest,interest-3,already_insured
+Regarding your offer: This product sounds useful for our company,interest,interest-3,refusal
+I want to learn about your protection,interest,interest-4,hesitation
+"Hello, I want to learn about your protection",interest,interest-4,hesitation
+For our account: I want to learn about your protection,interest,interest-4,hesitation
+Good morning. I want to learn about your protection,interest,interest-4,hesitation
+Regarding your offer: I want to learn about your protection,interest,interest-4,hesitation
+Can you explain the benefits,interest,interest-5,comparison
+"Hello, Can you explain the benefits",interest,interest-5,comparison
+For our account: Can you explain the benefits,interest,interest-5,comparison
+Good morning. Can you explain the benefits,interest,interest-5,comparison
+Regarding your offer: Can you explain the benefits,interest,interest-5,comparison
+I would like to subscribe,interest,interest-6,interest
+"Hello, I would like to subscribe",interest,interest-6,hesitation
+For our account: I would like to subscribe,interest,interest-6,interest
+Good morning. I would like to subscribe,interest,interest-6,interest
+Regarding your offer: I would like to subscribe,interest,interest-6,interest
+We need insurance for our business,interest,interest-7,quote
+"Hello, We need insurance for our business",interest,interest-7,quote
+For our account: We need insurance for our business,interest,interest-7,quote
+Good morning. We need insurance for our business,interest,interest-7,quote
+Regarding your offer: We need insurance for our business,interest,interest-7,quote
+Please share more information,interest,interest-8,interest
+"Hello, Please share more information",interest,interest-8,quote
+For our account: Please share more information,interest,interest-8,quote
+Good morning. Please share more information,interest,interest-8,quote
+Regarding your offer: Please share more information,interest,interest-8,quote
+Let us discuss this offer,interest,interest-9,hesitation
+"Hello, Let us discuss this offer",interest,interest-9,hesitation
+For our account: Let us discuss this offer,interest,interest-9,hesitation
+Good morning. Let us discuss this offer,interest,interest-9,hesitation
+Regarding your offer: Let us discuss this offer,interest,interest-9,hesitation
+I need time to think about it,hesitation,hesitation-0,hesitation
+"Hello, I need time to think about it",hesitation,hesitation-0,hesitation
+For our account: I need time to think about it,hesitation,hesitation-0,hesitation
+Good morning. I need time to think about it,hesitation,hesitation-0,hesitation
+Regarding your offer: I need time to think about it,hesitation,hesitation-0,hesitation
+I am not sure yet,hesitation,hesitation-1,refusal
+"Hello, I am not sure yet",hesitation,hesitation-1,refusal
+For our account: I am not sure yet,hesitation,hesitation-1,refusal
+Good morning. I am not sure yet,hesitation,hesitation-1,refusal
+Regarding your offer: I am not sure yet,hesitation,hesitation-1,refusal
+Let me discuss it with my family,hesitation,hesitation-2,interest
+"Hello, Let me discuss it with my family",hesitation,hesitation-2,interest
+For our account: Let me discuss it with my family,hesitation,hesitation-2,interest
+Good morning. Let me discuss it with my family,hesitation,hesitation-2,interest
+Regarding your offer: Let me discuss it with my family,hesitation,hesitation-2,interest
+I will decide later,hesitation,hesitation-3,hesitation
+"Hello, I will decide later",hesitation,hesitation-3,hesitation
+For our account: I will decide later,hesitation,hesitation-3,hesitation
+Good morning. I will decide later,hesitation,hesitation-3,hesitation
+Regarding your offer: I will decide later,hesitation,hesitation-3,refusal
+Maybe next month,hesitation,hesitation-4,hesitation
+"Hello, Maybe next month",hesitation,hesitation-4,refusal
+For our account: Maybe next month,hesitation,hesitation-4,interest
+Good morning. Maybe next month,hesitation,hesitation-4,refusal
+Regarding your offer: Maybe next month,hesitation,hesitation-4,refusal
+I am hesitant to commit now,hesitation,hesitation-5,interest
+"Hello, I am hesitant to commit now",hesitation,hesitation-5,hesitation
+For our account: I am hesitant to commit now,hesitation,hesitation-5,interest
+Good morning. I am hesitant to commit now,hesitation,hesitation-5,hesitation
+Regarding your offer: I am hesitant to commit now,hesitation,hesitation-5,hesitation
+Can we wait before deciding,hesitation,hesitation-6,interest
+"Hello, Can we wait before deciding",hesitation,hesitation-6,interest
+For our account: Can we wait before deciding,hesitation,hesitation-6,interest
+Good morning. Can we wait before deciding,hesitation,hesitation-6,interest
+Regarding your offer: Can we wait before deciding,hesitation,hesitation-6,interest
+I have doubts about subscribing,hesitation,hesitation-7,interest
+"Hello, I have doubts about subscribing",hesitation,hesitation-7,interest
+For our account: I have doubts about subscribing,hesitation,hesitation-7,interest
+Good morning. I have doubts about subscribing,hesitation,hesitation-7,interest
+Regarding your offer: I have doubts about subscribing,hesitation,hesitation-7,interest
+I would rather think first,hesitation,hesitation-8,quote
+"Hello, I would rather think first",hesitation,hesitation-8,quote
+For our account: I would rather think first,hesitation,hesitation-8,quote
+Good morning. I would rather think first,hesitation,hesitation-8,quote
+Regarding your offer: I would rather think first,hesitation,hesitation-8,quote
+Please give us some time,hesitation,hesitation-9,quote
+"Hello, Please give us some time",hesitation,hesitation-9,refusal
+For our account: Please give us some time,hesitation,hesitation-9,refusal
+Good morning. Please give us some time,hesitation,hesitation-9,refusal
+Regarding your offer: Please give us some time,hesitation,hesitation-9,refusal
+I already have insurance elsewhere,already_insured,already_insured-0,already_insured
+"Hello, I already have insurance elsewhere",already_insured,already_insured-0,already_insured
+For our account: I already have insurance elsewhere,already_insured,already_insured-0,already_insured
+Good morning. I already have insurance elsewhere,already_insured,already_insured-0,already_insured
+Regarding your offer: I already have insurance elsewhere,already_insured,already_insured-0,already_insured
+Our company is covered by another insurer,already_insured,already_insured-1,already_insured
+"Hello, Our company is covered by another insurer",already_insured,already_insured-1,already_insured
+For our account: Our company is covered by another insurer,already_insured,already_insured-1,already_insured
+Good morning. Our company is covered by another insurer,already_insured,already_insured-1,already_insured
+Regarding your offer: Our company is covered by another insurer,already_insured,already_insured-1,already_insured
+My employer already provides coverage,already_insured,already_insured-2,already_insured
+"Hello, My employer already provides coverage",already_insured,already_insured-2,already_insured
+For our account: My employer already provides coverage,already_insured,already_insured-2,already_insured
+Good morning. My employer already provides coverage,already_insured,already_insured-2,already_insured
+Regarding your offer: My employer already provides coverage,already_insured,already_insured-2,already_insured
+We have an existing policy with a competitor,already_insured,already_insured-3,hesitation
+"Hello, We have an existing policy with a competitor",already_insured,already_insured-3,hesitation
+For our account: We have an existing policy with a competitor,already_insured,already_insured-3,refusal
+Good morning. We have an existing policy with a competitor,already_insured,already_insured-3,refusal
+Regarding your offer: We have an existing policy with a competitor,already_insured,already_insured-3,refusal
+I am already insured,already_insured,already_insured-4,already_insured
+"Hello, I am already insured",already_insured,already_insured-4,already_insured
+For our account: I am already insured,already_insured,already_insured-4,already_insured
+Good morning. I am already insured,already_insured,already_insured-4,already_insured
+Regarding your offer: I am already insured,already_insured,already_insured-4,already_insured
+My bank covers this risk,already_insured,already_insured-5,refusal
+"Hello, My bank covers this risk",already_insured,already_insured-5,refusal
+For our account: My bank covers this risk,already_insured,already_insured-5,refusal
+Good morning. My bank covers this risk,already_insured,already_insured-5,refusal
+Regarding your offer: My bank covers this risk,already_insured,already_insured-5,refusal
+I do not need a second policy because I am covered,already_insured,already_insured-6,refusal
+"Hello, I do not need a second policy because I am covered",already_insured,already_insured-6,refusal
+For our account: I do not need a second policy because I am covered,already_insured,already_insured-6,refusal
+Good morning. I do not need a second policy because I am covered,already_insured,already_insured-6,refusal
+Regarding your offer: I do not need a second policy because I am covered,already_insured,already_insured-6,refusal
+Our current insurer handles this,already_insured,already_insured-7,already_insured
+"Hello, Our current insurer handles this",already_insured,already_insured-7,already_insured
+For our account: Our current insurer handles this,already_insured,already_insured-7,already_insured
+Good morning. Our current insurer handles this,already_insured,already_insured-7,already_insured
+Regarding your offer: Our current insurer handles this,already_insured,already_insured-7,already_insured
+We already bought protection,already_insured,already_insured-8,already_insured
+"Hello, We already bought protection",already_insured,already_insured-8,already_insured
+For our account: We already bought protection,already_insured,already_insured-8,already_insured
+Good morning. We already bought protection,already_insured,already_insured-8,already_insured
+Regarding your offer: We already bought protection,already_insured,already_insured-8,already_insured
+Another provider insures our vehicles,already_insured,already_insured-9,already_insured
+"Hello, Another provider insures our vehicles",already_insured,already_insured-9,already_insured
+For our account: Another provider insures our vehicles,already_insured,already_insured-9,already_insured
+Good morning. Another provider insures our vehicles,already_insured,already_insured-9,already_insured
+Regarding your offer: Another provider insures our vehicles,already_insured,already_insured-9,already_insured
+How does this compare with other policies,comparison,comparison-0,comparison
+"Hello, How does this compare with other policies",comparison,comparison-0,comparison
+For our account: How does this compare with other policies,comparison,comparison-0,comparison
+Good morning. How does this compare with other policies,comparison,comparison-0,comparison
+Regarding your offer: How does this compare with other policies,comparison,comparison-0,quote
+What is the difference between these products,comparison,comparison-1,comparison
+"Hello, What is the difference between these products",comparison,comparison-1,comparison
+For our account: What is the difference between these products,comparison,comparison-1,comparison
+Good morning. What is the difference between these products,comparison,comparison-1,comparison
+Regarding your offer: What is the difference between these products,comparison,comparison-1,comparison
+Please compare the coverage options,comparison,comparison-2,interest
+"Hello, Please compare the coverage options",comparison,comparison-2,interest
+For our account: Please compare the coverage options,comparison,comparison-2,interest
+Good morning. Please compare the coverage options,comparison,comparison-2,interest
+Regarding your offer: Please compare the coverage options,comparison,comparison-2,interest
+Which option has better benefits,comparison,comparison-3,interest
+"Hello, Which option has better benefits",comparison,comparison-3,interest
+For our account: Which option has better benefits,comparison,comparison-3,interest
+Good morning. Which option has better benefits,comparison,comparison-3,interest
+Regarding your offer: Which option has better benefits,comparison,comparison-3,interest
+Can you provide a comparison,comparison,comparison-4,interest
+"Hello, Can you provide a comparison",comparison,comparison-4,interest
+For our account: Can you provide a comparison,comparison,comparison-4,interest
+Good morning. Can you provide a comparison,comparison,comparison-4,interest
+Regarding your offer: Can you provide a comparison,comparison,comparison-4,interest
+How is your offer different,comparison,comparison-5,comparison
+"Hello, How is your offer different",comparison,comparison-5,comparison
+For our account: How is your offer different,comparison,comparison-5,comparison
+Good morning. How is your offer different,comparison,comparison-5,comparison
+Regarding your offer: How is your offer different,comparison,comparison-5,quote
+Compare motor and property protection,comparison,comparison-6,comparison
+"Hello, Compare motor and property protection",comparison,comparison-6,comparison
+For our account: Compare motor and property protection,comparison,comparison-6,comparison
+Good morning. Compare motor and property protection,comparison,comparison-6,comparison
+Regarding your offer: Compare motor and property protection,comparison,comparison-6,comparison
+What distinguishes these two plans,comparison,comparison-7,quote
+"Hello, What distinguishes these two plans",comparison,comparison-7,quote
+For our account: What distinguishes these two plans,comparison,comparison-7,quote
+Good morning. What distinguishes these two plans,comparison,comparison-7,quote
+Regarding your offer: What distinguishes these two plans,comparison,comparison-7,quote
+Which policy suits us better,comparison,comparison-8,interest
+"Hello, Which policy suits us better",comparison,comparison-8,interest
+For our account: Which policy suits us better,comparison,comparison-8,interest
+Good morning. Which policy suits us better,comparison,comparison-8,interest
+Regarding your offer: Which policy suits us better,comparison,comparison-8,interest
+Show me the differences,comparison,comparison-9,comparison
+"Hello, Show me the differences",comparison,comparison-9,comparison
+For our account: Show me the differences,comparison,comparison-9,comparison
+Good morning. Show me the differences,comparison,comparison-9,comparison
+Regarding your offer: Show me the differences,comparison,comparison-9,comparison
+Please send me a quote,quote,quote-0,refusal
+"Hello, Please send me a quote",quote,quote-0,refusal
+For our account: Please send me a quote,quote,quote-0,refusal
+Good morning. Please send me a quote,quote,quote-0,refusal
+Regarding your offer: Please send me a quote,quote,quote-0,refusal
+How much does this insurance cost,quote,quote-1,comparison
+"Hello, How much does this insurance cost",quote,quote-1,comparison
+For our account: How much does this insurance cost,quote,quote-1,comparison
+Good morning. How much does this insurance cost,quote,quote-1,comparison
+Regarding your offer: How much does this insurance cost,quote,quote-1,comparison
+What is the price,quote,quote-2,quote
+"Hello, What is the price",quote,quote-2,quote
+For our account: What is the price,quote,quote-2,quote
+Good morning. What is the price,quote,quote-2,quote
+Regarding your offer: What is the price,quote,quote-2,quote
+Can I get an estimate,quote,quote-3,hesitation
+"Hello, Can I get an estimate",quote,quote-3,hesitation
+For our account: Can I get an estimate,quote,quote-3,hesitation
+Good morning. Can I get an estimate,quote,quote-3,hesitation
+Regarding your offer: Can I get an estimate,quote,quote-3,hesitation
+I would like a quotation for my car,quote,quote-4,interest
+"Hello, I would like a quotation for my car",quote,quote-4,interest
+For our account: I would like a quotation for my car,quote,quote-4,interest
+Good morning. I would like a quotation for my car,quote,quote-4,interest
+Regarding your offer: I would like a quotation for my car,quote,quote-4,interest
+What premium would I pay,quote,quote-5,quote
+"Hello, What premium would I pay",quote,quote-5,quote
+For our account: What premium would I pay,quote,quote-5,quote
+Good morning. What premium would I pay,quote,quote-5,quote
+Regarding your offer: What premium would I pay,quote,quote-5,quote
+Please calculate the annual rate,quote,quote-6,quote
+"Hello, Please calculate the annual rate",quote,quote-6,quote
+For our account: Please calculate the annual rate,quote,quote-6,quote
+Good morning. Please calculate the annual rate,quote,quote-6,quote
+Regarding your offer: Please calculate the annual rate,quote,quote-6,quote
+Send your pricing details,quote,quote-7,quote
+"Hello, Send your pricing details",quote,quote-7,quote
+For our account: Send your pricing details,quote,quote-7,quote
+Good morning. Send your pricing details,quote,quote-7,quote
+Regarding your offer: Send your pricing details,quote,quote-7,quote
+What is the total cost,quote,quote-8,quote
+"Hello, What is the total cost",quote,quote-8,quote
+For our account: What is the total cost,quote,quote-8,quote
+Good morning. What is the total cost,quote,quote-8,quote
+Regarding your offer: What is the total cost,quote,quote-8,quote
+We need a price proposal,quote,quote-9,interest
+"Hello, We need a price proposal",quote,quote-9,refusal
+For our account: We need a price proposal,quote,quote-9,interest
+Good morning. We need a price proposal,quote,quote-9,refusal
+Regarding your offer: We need a price proposal,quote,quote-9,refusal
+"No thank you, I am not interested",refusal,refusal-0,refusal
+"Hello, No thank you, I am not interested",refusal,refusal-0,refusal
+"For our account: No thank you, I am not interested",refusal,refusal-0,refusal
+"Good morning. No thank you, I am not interested",refusal,refusal-0,refusal
+"Regarding your offer: No thank you, I am not interested",refusal,refusal-0,refusal
+Please stop contacting me,refusal,refusal-1,refusal
+"Hello, Please stop contacting me",refusal,refusal-1,hesitation
+For our account: Please stop contacting me,refusal,refusal-1,quote
+Good morning. Please stop contacting me,refusal,refusal-1,hesitation
+Regarding your offer: Please stop contacting me,refusal,refusal-1,quote
+I refuse this offer,refusal,refusal-2,interest
+"Hello, I refuse this offer",refusal,refusal-2,interest
+For our account: I refuse this offer,refusal,refusal-2,interest
+Good morning. I refuse this offer,refusal,refusal-2,interest
+Regarding your offer: I refuse this offer,refusal,refusal-2,interest
+Do not send me more proposals,refusal,refusal-3,quote
+"Hello, Do not send me more proposals",refusal,refusal-3,quote
+For our account: Do not send me more proposals,refusal,refusal-3,quote
+Good morning. Do not send me more proposals,refusal,refusal-3,quote
+Regarding your offer: Do not send me more proposals,refusal,refusal-3,quote
+I do not want this policy,refusal,refusal-4,already_insured
+"Hello, I do not want this policy",refusal,refusal-4,already_insured
+For our account: I do not want this policy,refusal,refusal-4,already_insured
+Good morning. I do not want this policy,refusal,refusal-4,already_insured
+Regarding your offer: I do not want this policy,refusal,refusal-4,refusal
+Remove me from this campaign,refusal,refusal-5,refusal
+"Hello, Remove me from this campaign",refusal,refusal-5,refusal
+For our account: Remove me from this campaign,refusal,refusal-5,refusal
+Good morning. Remove me from this campaign,refusal,refusal-5,refusal
+Regarding your offer: Remove me from this campaign,refusal,refusal-5,refusal
+We decline your offer,refusal,refusal-6,interest
+"Hello, We decline your offer",refusal,refusal-6,interest
+For our account: We decline your offer,refusal,refusal-6,interest
+Good morning. We decline your offer,refusal,refusal-6,interest
+Regarding your offer: We decline your offer,refusal,refusal-6,interest
+I have no interest in subscribing,refusal,refusal-7,interest
+"Hello, I have no interest in subscribing",refusal,refusal-7,interest
+For our account: I have no interest in subscribing,refusal,refusal-7,interest
+Good morning. I have no interest in subscribing,refusal,refusal-7,interest
+Regarding your offer: I have no interest in subscribing,refusal,refusal-7,interest
+Please cancel this sales conversation,refusal,refusal-8,quote
+"Hello, Please cancel this sales conversation",refusal,refusal-8,quote
+For our account: Please cancel this sales conversation,refusal,refusal-8,quote
+Good morning. Please cancel this sales conversation,refusal,refusal-8,quote
+Regarding your offer: Please cancel this sales conversation,refusal,refusal-8,quote
+Do not call me again,refusal,refusal-9,refusal
+"Hello, Do not call me again",refusal,refusal-9,refusal
+For our account: Do not call me again,refusal,refusal-9,refusal
+Good morning. Do not call me again,refusal,refusal-9,refusal
+Regarding your offer: Do not call me again,refusal,refusal-9,refusal

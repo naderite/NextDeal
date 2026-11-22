@@ -1,0 +1,6 @@
+dataset,rows,columns,missing cells,missing %
+A · raw,1842,12,178,0.81
+A · companies (clean),299,9,0,0.0
+A · episodes (model-ready),440,10,0,0.0
+B · raw,320,21,66,0.98
+B · contracts (model-ready),320,45,0,0.0
