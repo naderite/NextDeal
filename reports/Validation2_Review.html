@@ -3,7 +3,7 @@
     &quot;HitRate@3&quot;: 0.6886363636363636,
     &quot;HitRate@1&quot;: 0.38333333333333336,
     &quot;long_tail_HitRate@3&quot;: 0.3235867446393762,
-    &quot;MRR&quot;: 0.5642709383468817,
+    &quot;MRR&quot;: 0.5639861137108274,
     &quot;coverage&quot;: 12,
     &quot;gain_95pct_company_CI&quot;: [
       0.0031471958820168387,
@@ -14,7 +14,7 @@
     &quot;HitRate@3&quot;: 0.6643939393939394,
     &quot;HitRate@1&quot;: 0.3787878787878788,
     &quot;long_tail_HitRate@3&quot;: 0.2573099415204678,
-    &quot;MRR&quot;: 0.5566082185181355,
+    &quot;MRR&quot;: 0.5565793472733763,
     &quot;coverage&quot;: 13,
     &quot;gain_95pct_company_CI&quot;: [
       -0.01631758764111706,
@@ -28,7 +28,7 @@
     &quot;MRR&quot;: 0.5451229797668892,
     &quot;coverage&quot;: 8
   }
-}</pre></details><p class="note">Raw profile labels, constant UNKNOWNs, history disabled. Reconstructs held products; not future sales. UI applies additional diversification rules.</p></article><article><span class="badge">DSO 1.2 · target_met</span><h3>Client segmentation</h3><p>4–8 segments; silhouette &gt;= 0.25</p><p class="muted">real portfolio</p><details><summary>Measured evidence</summary><pre>{
+}</pre></details><p class="note">Raw profile labels, constant UNKNOWNs, history disabled. Reconstructs held products; not future sales. Logistic scores include the UI new-line tiebreaker; hybrid results are experimental.</p></article><article><span class="badge">DSO 1.2 · target_met</span><h3>Client segmentation</h3><p>4–8 segments; silhouette &gt;= 0.25</p><p class="muted">real portfolio</p><details><summary>Measured evidence</summary><pre>{
   &quot;segments&quot;: 7,
   &quot;silhouette&quot;: 0.2792093426360543,
   &quot;personas&quot;: [
@@ -97,22 +97,52 @@
     }
   ],
   &quot;selection&quot;: &quot;Compared k=4..8 on descriptive training data; chose 7 as the smallest k exceeding 0.25; not held-out stability evidence&quot;
-}</pre></details><p class="note"></p></article><article><span class="badge">DSO 1.3 · target_met</span><h3>Recommendation agent</h3><p>&gt;= 90% valid tool calls on &gt;= 50 scenarios</p><p class="muted">actual local Ollama calls; isolated scenario database</p><details><summary>Measured evidence</summary><pre>{
-  &quot;scenarios&quot;: 50,
-  &quot;valid_scenario_rate&quot;: 1.0,
-  &quot;correct_route_rate&quot;: 1.0,
-  &quot;full_workflows_passed&quot;: 3,
-  &quot;human_acceptance_evidence&quot;: false
+}</pre></details><p class="note"></p></article><article><span class="badge">DSO 1.3 · target_met</span><h3>Recommendation agent</h3><p>&gt;= 90% valid tool calls on &gt;= 50 scenarios</p><p class="muted">live Ollama tool scenarios against current code in an isolated runtime</p><details><summary>Measured evidence</summary><pre>{
+  &quot;protocol&quot;: &quot;Live local tool trace plus 50-scenario tool suite&quot;,
+  &quot;saved_live_run&quot;: {
+    &quot;finished_at&quot;: &quot;2026-11-22T20:23:58.526217+00:00&quot;,
+    &quot;summary&quot;: {
+      &quot;scenarios&quot;: 50,
+      &quot;valid_scenario_rate&quot;: 1.0,
+      &quot;correct_route_rate&quot;: 1.0,
+      &quot;full_workflows_passed&quot;: 3,
+      &quot;human_acceptance_evidence&quot;: false
+    },
+    &quot;provenance&quot;: &quot;saved live validation; rerun to verify current code&quot;
+  },
+  &quot;current_tool_run&quot;: {
+    &quot;finished_at&quot;: &quot;2026-11-27T11:46:23.683261+00:00&quot;,
+    &quot;model&quot;: &quot;qwen3:4b-instruct&quot;,
+    &quot;scenarios&quot;: 50,
+    &quot;valid_scenario_rate&quot;: 1.0,
+    &quot;correct_route_rate&quot;: 1.0,
+    &quot;source_sha256&quot;: {
+      &quot;backend/agent.py&quot;: &quot;2cff3b152af68ce09c14733851e91728cd331a0b258a2c6ccef0ddbd8508419a&quot;,
+      &quot;backend/services.py&quot;: &quot;e129143a18de7070e592cb5fe7eb619845da54f5a562d132bf8b8fd2f51d6de5&quot;,
+      &quot;scripts/live_validation.py&quot;: &quot;30dd8508aea414947b73d2de135c076cc8253821fdc04544f9b73e9b9c5f0e1e&quot;
+    }
+  }
 }</pre></details><p class="note">Do not infer tool validity from schema definitions.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 2</div><h2>Renewals and collection</h2><div class="cards"><article><span class="badge">DSO 2.1 · target_not_met</span><h3>Non-payment risk</h3><p>Recall &gt;= 0.70; PR-AUC &gt;= 0.40</p><p class="muted">real retrospective + separate synthetic benchmark</p><details><summary>Measured evidence</summary><pre>{
   &quot;real&quot;: {
     &quot;n&quot;: 320,
     &quot;positives&quot;: 12,
-    &quot;Recall&quot;: 0.25,
-    &quot;PR_AUC&quot;: 0.03145243178349441,
+    &quot;detected_positives&quot;: 4,
+    &quot;policyholders&quot;: 316,
+    &quot;threshold&quot;: 0.5,
+    &quot;flagged&quot;: 111,
+    &quot;Recall&quot;: 0.3333333333333333,
+    &quot;recall_95pct_wilson&quot;: [
+      0.13811783989736134,
+      0.609382412602386
+    ],
+    &quot;precision&quot;: 0.036036036036036036,
+    &quot;PR_AUC&quot;: 0.030902515124483786,
+    &quot;prevalence&quot;: 0.0375,
     &quot;features&quot;: [
       &quot;contract_age&quot;,
       &quot;n_guarantees&quot;
-    ]
+    ],
+    &quot;split&quot;: &quot;three stratified folds grouped by policyholder&quot;
   },
   &quot;synthetic&quot;: {
     &quot;n&quot;: 1200,
@@ -120,19 +150,595 @@
     &quot;PR_AUC&quot;: 0.6091716916778802
   }
 }</pre></details><p class="note">Only 12 unpaid examples. Timing of real features unverified. Synthetic history is functional evidence only.</p></article><article><span class="badge">DSO 2.2 · target_not_met</span><h3>Guarantee upselling</h3><p>Lift &gt;= 1.5; coverage &gt;= 60%</p><p class="muted">real held-out renewal contracts</p><details><summary>Measured evidence</summary><pre>{
-  &quot;train_contracts&quot;: 220,
-  &quot;test_contracts&quot;: 100,
-  &quot;rules&quot;: 617,
-  &quot;coverage&quot;: 0.01,
-  &quot;minimum_rule_lift&quot;: 5.3625,
-  &quot;split&quot;: &quot;fixed held-out contract partition; no guarantee recommendation selected using test baskets&quot;
-}</pre></details><p class="note">Coverage means held-out contracts receiving at least one new-guarantee rule suggestion; it does not measure purchase.</p></article><article><span class="badge">DSO 2.3 · target_not_met</span><h3>Renewal agent</h3><p>&gt;= 95% dispatched &gt;= 30 days before expiry</p><p class="muted">historical simulation</p><details><summary>Measured evidence</summary><pre>{
+  &quot;test_contracts&quot;: 320,
+  &quot;coverage&quot;: 0.065625,
+  &quot;observed_alternative_coverage&quot;: 0.071875,
+  &quot;minimum_rule_lift&quot;: 5.907692307692307,
+  &quot;heldout_rule_lift&quot;: {
+    &quot;supported_checks&quot;: 1203,
+    &quot;checks_at_or_above_target&quot;: 1199,
+    &quot;minimum&quot;: 0.0
+  },
+  &quot;folds&quot;: [
+    {
+      &quot;test_contracts&quot;: 64,
+      &quot;covered&quot;: 2,
+      &quot;rules&quot;: 601,
+      &quot;minimum_rule_lift&quot;: 6.39136302294197
+    },
+    {
+      &quot;test_contracts&quot;: 64,
+      &quot;covered&quot;: 1,
+      &quot;rules&quot;: 596,
+      &quot;minimum_rule_lift&quot;: 5.907692307692307
+    },
+    {
+      &quot;test_contracts&quot;: 64,
+      &quot;covered&quot;: 4,
+      &quot;rules&quot;: 647,
+      &quot;minimum_rule_lift&quot;: 6.4
+    },
+    {
+      &quot;test_contracts&quot;: 64,
+      &quot;covered&quot;: 8,
+      &quot;rules&quot;: 599,
+      &quot;minimum_rule_lift&quot;: 6.235897435897436
+    },
+    {
+      &quot;test_contracts&quot;: 64,
+      &quot;covered&quot;: 6,
+      &quot;rules&quot;: 583,
+      &quot;minimum_rule_lift&quot;: 6.4
+    }
+  ],
+  &quot;by_family&quot;: {
+    &quot;VIE&quot;: {
+      &quot;contracts&quot;: 1,
+      &quot;covered&quot;: 0,
+      &quot;observed_alternative&quot;: 0
+    },
+    &quot;DECES&quot;: {
+      &quot;contracts&quot;: 283,
+      &quot;covered&quot;: 1,
+      &quot;observed_alternative&quot;: 1
+    },
+    &quot;AUTOMOBILE&quot;: {
+      &quot;contracts&quot;: 27,
+      &quot;covered&quot;: 20,
+      &quot;observed_alternative&quot;: 22
+    },
+    &quot;ASSISTANCE EN VOYAGES&quot;: {
+      &quot;contracts&quot;: 8,
+      &quot;covered&quot;: 0,
+      &quot;observed_alternative&quot;: 0
+    },
+    &quot;RESPONSABILITE CIVILE&quot;: {
+      &quot;contracts&quot;: 1,
+      &quot;covered&quot;: 0,
+      &quot;observed_alternative&quot;: 0
+    }
+  },
+  &quot;split&quot;: &quot;five folds grouped by policyholder; same-product observational coverage&quot;,
+  &quot;source_candidates_for_review&quot;: {
+    &quot;contracts&quot;: 320,
+    &quot;with_unheld_candidates&quot;: 320,
+    &quot;by_family&quot;: {
+      &quot;AUTOMOBILE&quot;: {
+        &quot;contracts&quot;: 27,
+        &quot;with_unheld_candidates&quot;: 27
+      },
+      &quot;DECES&quot;: {
+        &quot;contracts&quot;: 283,
+        &quot;with_unheld_candidates&quot;: 283
+      },
+      &quot;VIE&quot;: {
+        &quot;contracts&quot;: 1,
+        &quot;with_unheld_candidates&quot;: 1
+      },
+      &quot;ASSISTANCE EN VOYAGES&quot;: {
+        &quot;contracts&quot;: 8,
+        &quot;with_unheld_candidates&quot;: 8
+      },
+      &quot;RESPONSABILITE CIVILE&quot;: {
+        &quot;contracts&quot;: 1,
+        &quot;with_unheld_candidates&quot;: 1
+      }
+    },
+    &quot;review_shortlist&quot;: [
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 107
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 107
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 107
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES TAYSIR MICROFINANCE&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 92
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES TAYSIR MICROFINANCE&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 92
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES TAYSIR MICROFINANCE&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 92
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 46
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 46
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 46
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 26
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 26
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 26
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE GOLD&quot;,
+        &quot;contracts&quot;: 6
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 6
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 6
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 6
+      },
+      {
+        &quot;product&quot;: &quot;ASSISTANCES EN VOYAGES - PLAN BASIQUE&quot;,
+        &quot;guarantee&quot;: &quot;COVID19&quot;,
+        &quot;contracts&quot;: 5
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;BRIS DE GLACES&quot;,
+        &quot;contracts&quot;: 4
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;CATASTROPHE NATURELLE&quot;,
+        &quot;contracts&quot;: 4
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE + et CAR GLASS&quot;,
+        &quot;contracts&quot;: 4
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;INDIVIDUELLE ACCIDENT&quot;,
+        &quot;contracts&quot;: 4
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 4
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 4
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 4
+      },
+      {
+        &quot;product&quot;: &quot;ASSISTANCES EN VOYAGES BH&quot;,
+        &quot;guarantee&quot;: &quot;COVID19&quot;,
+        &quot;contracts&quot;: 3
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;CHOC DE VEHICULES TERRESTRES IDENTIFIES&quot;,
+        &quot;contracts&quot;: 3
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;DOMMAGES AU VEHICULE&quot;,
+        &quot;contracts&quot;: 3
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE +&quot;,
+        &quot;contracts&quot;: 3
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;VOL RADIO CASSETTE&quot;,
+        &quot;contracts&quot;: 3
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;DOMMAGES ET COLLISION&quot;,
+        &quot;contracts&quot;: 3
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;ACCIDENT CARE&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;DOMMAGES ET COLLISION&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;VOL&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE ACCIDENT AUTOMOBILE (3A)&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;BRIS DE GLACES&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;CAR GLASS&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;ACCIDENT CARE&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE ACCIDENT AUTOMOBILE (3A)&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 2
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE +&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE + et CAR GLASS&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE ACCIDENT AUTOMOBILE (3A)&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;CAR GLASS&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;CATASTROPHES NATURELS (TREMBLEMENT DE TERRE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;EMEUTE ET MOUVEMENT POPULAIRE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;INCENDIE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;INONDATION))&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;SALIM ASSISTANCE AUTOMOBILE (S2A)&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;VOL RADIO CASSETTE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ACCIDENT CARE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;CHOC DE VEHICULES TERRESTRES IDENTIFIES&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;DOMMAGES AU VEHICULE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;EMEUTE ET MOUVEMENT POPULAIRE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;INCENDIE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;MIXTE REVALORISABLE (AS)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;MIXTE REVALORISABLE (AS)&quot;,
+        &quot;guarantee&quot;: &quot;DECES TRIPLEMENT&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;MIXTE REVALORISABLE (AS)&quot;,
+        &quot;guarantee&quot;: &quot;EXONERATION&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;CAR GLASS&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;CATASTROPHES NATURELS (TREMBLEMENT DE TERRE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;CHOC DE VEHICULES TERRESTRES IDENTIFIES&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;DOMMAGES AU VEHICULE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;INDIVIDUELLE ACCIDENT&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;INONDATION))&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;VOL&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;VOL RADIO CASSETTE&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES&quot;,
+        &quot;guarantee&quot;: &quot;DECES - I.D.T&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES&quot;,
+        &quot;guarantee&quot;: &quot;RC- DOMMAGES MATERIELS&quot;,
+        &quot;contracts&quot;: 1
+      },
+      {
+        &quot;product&quot;: &quot;R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES&quot;,
+        &quot;guarantee&quot;: &quot;RC- PROFESSIONNELLE&quot;,
+        &quot;contracts&quot;: 1
+      }
+    ],
+    &quot;review_priority_if_approved&quot;: [
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 107,
+        &quot;cumulative_contracts_if_approved&quot;: 107
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES TAYSIR MICROFINANCE&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 92,
+        &quot;cumulative_contracts_if_approved&quot;: 199
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 46,
+        &quot;cumulative_contracts_if_approved&quot;: 245
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 26,
+        &quot;cumulative_contracts_if_approved&quot;: 271
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE GOLD&quot;,
+        &quot;additional_contracts&quot;: 6,
+        &quot;cumulative_contracts_if_approved&quot;: 277
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 6,
+        &quot;cumulative_contracts_if_approved&quot;: 283
+      },
+      {
+        &quot;product&quot;: &quot;ASSISTANCES EN VOYAGES - PLAN BASIQUE&quot;,
+        &quot;guarantee&quot;: &quot;COVID19&quot;,
+        &quot;additional_contracts&quot;: 5,
+        &quot;cumulative_contracts_if_approved&quot;: 288
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;BRIS DE GLACES&quot;,
+        &quot;additional_contracts&quot;: 4,
+        &quot;cumulative_contracts_if_approved&quot;: 292
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 4,
+        &quot;cumulative_contracts_if_approved&quot;: 296
+      },
+      {
+        &quot;product&quot;: &quot;ASSISTANCES EN VOYAGES BH&quot;,
+        &quot;guarantee&quot;: &quot;COVID19&quot;,
+        &quot;additional_contracts&quot;: 3,
+        &quot;cumulative_contracts_if_approved&quot;: 299
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;CATASTROPHE NATURELLE&quot;,
+        &quot;additional_contracts&quot;: 3,
+        &quot;cumulative_contracts_if_approved&quot;: 302
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;INDIVIDUELLE ACCIDENT&quot;,
+        &quot;additional_contracts&quot;: 3,
+        &quot;cumulative_contracts_if_approved&quot;: 305
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;DOMMAGES ET COLLISION&quot;,
+        &quot;additional_contracts&quot;: 3,
+        &quot;cumulative_contracts_if_approved&quot;: 308
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;ACCIDENT CARE&quot;,
+        &quot;additional_contracts&quot;: 2,
+        &quot;cumulative_contracts_if_approved&quot;: 310
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE +&quot;,
+        &quot;additional_contracts&quot;: 2,
+        &quot;cumulative_contracts_if_approved&quot;: 312
+      },
+      {
+        &quot;product&quot;: &quot;TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 2,
+        &quot;cumulative_contracts_if_approved&quot;: 314
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE&quot;,
+        &quot;guarantee&quot;: &quot;DOMMAGES ET COLLISION&quot;,
+        &quot;additional_contracts&quot;: 1,
+        &quot;cumulative_contracts_if_approved&quot;: 315
+      },
+      {
+        &quot;product&quot;: &quot;AUTOMOBILE II&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE ACCIDENT AUTOMOBILE (3A)&quot;,
+        &quot;additional_contracts&quot;: 1,
+        &quot;cumulative_contracts_if_approved&quot;: 316
+      },
+      {
+        &quot;product&quot;: &quot;MIXTE REVALORISABLE (AS)&quot;,
+        &quot;guarantee&quot;: &quot;DECES DOUBLEMENT&quot;,
+        &quot;additional_contracts&quot;: 1,
+        &quot;cumulative_contracts_if_approved&quot;: 317
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;ACCIDENT CARE&quot;,
+        &quot;additional_contracts&quot;: 1,
+        &quot;cumulative_contracts_if_approved&quot;: 318
+      },
+      {
+        &quot;product&quot;: &quot;OMNICANAL AUTOMOBILE PACK PERSONALISE&quot;,
+        &quot;guarantee&quot;: &quot;ASSISTANCE ACCIDENT AUTOMOBILE (3A)&quot;,
+        &quot;additional_contracts&quot;: 1,
+        &quot;cumulative_contracts_if_approved&quot;: 319
+      },
+      {
+        &quot;product&quot;: &quot;R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES&quot;,
+        &quot;guarantee&quot;: &quot;DECES - I.D.T&quot;,
+        &quot;additional_contracts&quot;: 1,
+        &quot;cumulative_contracts_if_approved&quot;: 320
+      }
+    ],
+    &quot;provenance&quot;: &quot;source Candidate_Garanties field; eligibility and method undocumented&quot;
+  }
+}</pre></details><p class="note">Coverage is measured out of fold. Training lift is the rule-mining threshold. Held-out lift is reported for fold-rule checks with at least three antecedent matches and a nonzero consequent prevalence. Same-product observation is historical evidence and eligibility requires advisor verification.</p></article><article><span class="badge">DSO 2.3 · target_not_met</span><h3>Renewal agent</h3><p>&gt;= 95% dispatched &gt;= 30 days before expiry</p><p class="muted">historical simulation; local outbox events</p><details><summary>Measured evidence</summary><pre>{
   &quot;contracts&quot;: 320,
-  &quot;first_expiry&quot;: &quot;2025-09-01&quot;,
-  &quot;demo_clock&quot;: &quot;configurable; initial 2025-08-01&quot;,
+  &quot;contracts_with_expiry&quot;: 320,
   &quot;scheduled_contacts&quot;: 320,
-  &quot;approved_dispatch_coverage&quot;: 0
-}</pre></details><p class="note">Scheduling is implemented. Timely contact only counts approved dispatch; no contact success claimed from a schedule.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 3</div><h2>Conversation handling</h2><div class="cards"><article><span class="badge">DSO 3.1 · target_met</span><h3>Intent classifier</h3><p>Macro-F1 &gt;= 0.80 on 300 labelled messages</p><p class="muted">300 synthetic English messages; grouped template CV</p><details><summary>Measured evidence</summary><pre>{
+  &quot;timely_approved_dispatches&quot;: 0,
+  &quot;approved_dispatch_coverage&quot;: 0.0
+}</pre></details><p class="note"></p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 3</div><h2>Conversation handling</h2><div class="cards"><article><span class="badge">DSO 3.1 · awaiting_evidence</span><h3>Intent classifier</h3><p>Macro-F1 &gt;= 0.80 on 300 labelled messages</p><p class="muted">synthetic template benchmark and optional operator-supplied labels</p><details><summary>Measured evidence</summary><pre>{
   &quot;messages&quot;: 300,
   &quot;templates&quot;: 60,
   &quot;macro_F1&quot;: 1.0,
@@ -189,75 +795,79 @@
     }
   },
   &quot;split&quot;: &quot;5 folds grouped by original template&quot;
-}</pre></details><p class="note">Human-written independent evaluation remains required; template labels are synthetic.</p></article><article><span class="badge">DSO 3.2 · awaiting_evidence</span><h3>Grounded retrieval</h3><p>Recall@5 &gt;= 0.85; faithfulness &gt;= 0.90</p><p class="muted">real public pages + curated question/phrase benchmark</p><details><summary>Measured evidence</summary><pre>{
+}</pre></details><p class="note">Final validation requires independently authored English messages with human labels.</p></article><article><span class="badge">DSO 3.2 · awaiting_evidence</span><h3>Grounded retrieval</h3><p>Recall@5 &gt;= 0.85; faithfulness &gt;= 0.90</p><p class="muted">real public pages + curated question/phrase benchmark</p><details><summary>Measured evidence</summary><pre>{
   &quot;English&quot;: {
     &quot;questions&quot;: 50,
     &quot;answerable&quot;: 50,
-    &quot;Recall@5&quot;: 0.5523333333333333,
-    &quot;HitRate@5&quot;: 0.58
+    &quot;Recall@5&quot;: 0.8656666666666666,
+    &quot;HitRate@5&quot;: 0.92
   },
   &quot;French&quot;: {
     &quot;questions&quot;: 50,
     &quot;answerable&quot;: 50,
-    &quot;Recall@5&quot;: 0.8859999999999999,
-    &quot;HitRate@5&quot;: 0.9
+    &quot;Recall@5&quot;: 0.91,
+    &quot;HitRate@5&quot;: 0.92
   },
-  &quot;faithfulness&quot;: &quot;Requires human review of generated answers; retrieval scores alone do not establish faithfulness&quot;
-}</pre></details><p class="note">No general-condition PDFs. English questions are glosses of the inherited French benchmark. Generated-answer faithfulness needs human review.</p></article><article><span class="badge">DSO 3.3 · awaiting_evidence</span><h3>Conversation orchestrator</h3><p>&gt;= 70% drafts approved without edit</p><p class="muted">live application; human review pending</p><details><summary>Measured evidence</summary><pre>{
-  &quot;workflow&quot;: [
-    &quot;context&quot;,
-    &quot;tools_and_draft&quot;,
-    &quot;quality&quot;,
-    &quot;advisor_review&quot;,
-    &quot;simulated_dispatch&quot;
-  ],
-  &quot;live_workflows&quot;: [
-    {
-      &quot;subject&quot;: &quot;Corporate cross-sell&quot;,
-      &quot;status&quot;: &quot;awaiting_review&quot;
-    },
-    {
-      &quot;subject&quot;: &quot;Individual renewal&quot;,
-      &quot;status&quot;: &quot;awaiting_review&quot;
-    },
-    {
-      &quot;subject&quot;: &quot;Refusal handling&quot;,
-      &quot;status&quot;: &quot;awaiting_review&quot;
-    }
-  ]
-}</pre></details><p class="note">Advisor acceptance must be measured from genuine review decisions.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 4</div><h2>Value, quality and monitoring</h2><div class="cards"><article><span class="badge">DSO 4.1 · target_not_met</span><h3>Value and loyalty</h3><p>Spearman &gt;= 0.5 against 12-month holdings</p><p class="muted">synthetic longitudinal simulation</p><details><summary>Measured evidence</summary><pre>{
+  &quot;faithfulness&quot;: &quot;Requires human review of generated answers; retrieval scores alone do not establish faithfulness&quot;,
+  &quot;local_human_reviews&quot;: {
+    &quot;count&quot;: 0,
+    &quot;reviewed_judged_drafts&quot;: 0,
+    &quot;consensus_drafts&quot;: 0,
+    &quot;disputed_drafts&quot;: 0,
+    &quot;faithfulness&quot;: null,
+    &quot;quality_kappa&quot;: null
+  }
+}</pre></details><p class="note">No general-condition PDFs. English questions are glosses of the inherited French benchmark. Generated-answer faithfulness needs human review.</p></article><article><span class="badge">DSO 3.3 · awaiting_evidence</span><h3>Conversation orchestrator</h3><p>&gt;= 70% drafts approved without edit</p><p class="muted">local advisor workflow records</p><details><summary>Measured evidence</summary><pre>{
+  &quot;approved_without_edit&quot;: 0,
+  &quot;edited&quot;: 0,
+  &quot;rejected&quot;: 0,
+  &quot;escalated&quot;: 0,
+  &quot;unreviewed&quot;: 0,
+  &quot;reviewed&quot;: 0,
+  &quot;approval_without_edit_rate&quot;: null
+}</pre></details><p class="note">Use a dedicated runtime with genuine advisor decisions to establish acceptance.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 4</div><h2>Value, quality and monitoring</h2><div class="cards"><article><span class="badge">DSO 4.1 · awaiting_evidence</span><h3>Value and loyalty</h3><p>Spearman &gt;= 0.5 against 12-month holdings</p><p class="muted">synthetic simulation and optional dated holdings baseline</p><details><summary>Measured evidence</summary><pre>{
   &quot;synthetic_spearman&quot;: 0.33159514637269294,
   &quot;n&quot;: 500,
-  &quot;real_longitudinal_result&quot;: null
-}</pre></details><p class="note">Future outcomes simulated with independent randomness and latent loyalty. Does not establish real future value.</p></article><article><span class="badge">DSO 4.2 · awaiting_evidence</span><h3>LLM quality judge</h3><p>Cohen&#x27;s kappa &gt;= 0.6 against human reviewers</p><p class="muted">live model; human comparison pending</p><details><summary>Measured evidence</summary><pre>{
+  &quot;real_persistence_baseline&quot;: null
+}</pre></details><p class="note">The synthetic result is exploratory. The dated baseline needs real snapshots and does not establish a validated prediction model.</p></article><article><span class="badge">DSO 4.2 · awaiting_evidence</span><h3>LLM quality judge</h3><p>Cohen&#x27;s kappa &gt;= 0.6 against human reviewers</p><p class="muted">live model; human comparison pending</p><details><summary>Measured evidence</summary><pre>{
   &quot;rubric&quot;: [
     &quot;grounded&quot;,
     &quot;relevant&quot;,
     &quot;professional&quot;,
     &quot;unsupported_claims&quot;
   ],
-  &quot;human_kappa&quot;: null
-}</pre></details><p class="note">Generator and judge share a model. Human labels cannot be replaced by another model and called human agreement.</p></article><article><span class="badge">DSO 4.3 · awaiting_evidence</span><h3>Monitoring agent</h3><p>Report accurate event KPIs and weekly insights</p><p class="muted">actual Ollama report over observed test activity</p><details><summary>Measured evidence</summary><pre>{
+  &quot;human_kappa&quot;: null,
+  &quot;local_human_reviews&quot;: {
+    &quot;count&quot;: 0,
+    &quot;reviewed_judged_drafts&quot;: 0,
+    &quot;consensus_drafts&quot;: 0,
+    &quot;disputed_drafts&quot;: 0,
+    &quot;faithfulness&quot;: null,
+    &quot;quality_kappa&quot;: null
+  }
+}</pre></details><p class="note">Generator and judge share a model. Human labels cannot be replaced by another model and called human agreement.</p></article><article><span class="badge">DSO 4.3 · awaiting_evidence</span><h3>Monitoring agent</h3><p>Report accurate event KPIs and weekly insights</p><p class="muted">observed local application activity</p><details><summary>Measured evidence</summary><pre>{
   &quot;metrics&quot;: {
     &quot;cases_by_status&quot;: {
-      &quot;awaiting_review&quot;: 9,
-      &quot;failed&quot;: 1,
       &quot;received&quot;: 1
     },
     &quot;decisions&quot;: {},
     &quot;simulated_dispatches&quot;: 0,
-    &quot;draft_versions&quot;: 9,
-    &quot;events&quot;: {
-      &quot;agent_failed&quot;: 1,
-      &quot;draft_generated&quot;: 9,
-      &quot;tool_call&quot;: 19
+    &quot;draft_versions&quot;: 0,
+    &quot;renewal_dispatch&quot;: {
+      &quot;contracts&quot;: 320,
+      &quot;contracts_with_expiry&quot;: 320,
+      &quot;scheduled_contacts&quot;: 320,
+      &quot;timely_approved_dispatches&quot;: 0,
+      &quot;approved_dispatch_coverage&quot;: 0.0
     },
-    &quot;median_draft_seconds&quot;: 10.49,
+    &quot;events&quot;: {
+      &quot;pipeline_run&quot;: 20
+    },
+    &quot;median_draft_seconds&quot;: null,
     &quot;approval_without_edit_rate&quot;: 0.0,
     &quot;provenance&quot;: &quot;observed local demo activity; no real conversion or renewal uplift measured&quot;
   },
-  &quot;report&quot;: &quot;- 9 drafts received (awaiting review)  \n- 1 draft failed  \n- 1 draft received (failed)  \n- 9 draft generations completed  \n- 1 agent failure event  \n- 19 tool calls made  \n- Median draft time: 10.49 seconds  \n- Approval without edit rate: 0%  \n- No real conversion or renewal uplift measured&quot;,
-  &quot;live&quot;: true
+  &quot;report_endpoint&quot;: &quot;/api/monitoring/report&quot;
 }</pre></details><p class="note">Live report evidence stored separately. No real conversion or sales claim.</p></article></div></section><section><div class="eyebrow">BUSINESS OBJECTIVE 5</div><h2>Data governance</h2><div class="cards"><article><span class="badge">DSO 5.1 · target_met</span><h3>Data anomalies</h3><p>Recall &gt;= 90%; precision &gt;= 80%</p><p class="muted">synthetic fault injection</p><details><summary>Measured evidence</summary><pre>{
   &quot;rows&quot;: 200,
   &quot;injected_fault_rows&quot;: 100,
@@ -392,4 +1002,4 @@
     }
   ],
   &quot;handled_rate&quot;: 1.0
-}</pre></details><p class="note">Handled means safe quarantine or successful bounded recovery; quarantined data is not silently repaired or promoted.</p></article></div></section><section><div class="eyebrow">LIVE DEMONSTRATION</div><h2>Follow a case from message to decision</h2><ol><li>Select Company 6958 and inspect its existing portfolio.</li><li>Run the assistant and inspect actual tool calls and citations.</li><li>Edit or approve the draft, then simulate dispatch.</li><li>Review a renewal using the historical clock.</li><li>Demonstrate refusal, a quarantined batch and duplicate review.</li><li>Compare observed activity with the monitoring report.</li></ol><div class="note">General-condition PDFs and real longitudinal outcomes remain unavailable. Public product information cannot establish contractual exclusions. Human acceptance, faithfulness and judge agreement require genuine reviewer labels.</div></section><footer style="padding:30px">Generated from measured evidence: 2026-11-22T20:22:34.312964+00:00</footer></html>
+}</pre></details><p class="note">Handled means safe quarantine or successful bounded recovery; quarantined data is not silently repaired or promoted.</p></article></div></section><section><div class="eyebrow">LIVE DEMONSTRATION</div><h2>Follow a case from message to decision</h2><ol><li>Select Company 6958 and inspect its existing portfolio.</li><li>Run the assistant and inspect actual tool calls and citations.</li><li>Edit or approve the draft, then simulate dispatch.</li><li>Review a renewal using the historical clock.</li><li>Demonstrate refusal, a quarantined batch and duplicate review.</li><li>Compare observed activity with the monitoring report.</li></ol><div class="note">General-condition PDFs and real longitudinal outcomes remain unavailable. Public product information cannot establish contractual exclusions. Human acceptance, faithfulness and judge agreement require genuine reviewer labels.</div></section><footer style="padding:30px">Generated from measured evidence: 2026-11-27T11:50:42.222963+00:00</footer></html>

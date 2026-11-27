@@ -4,8 +4,8 @@
     "language": "English",
     "key_phrase": "5 jours ouvrables en cas d'accident",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 0.5,
     "relevant_ids": [
       "particuliers__assurance-automobile#8",
       "professionnels-entreprises__assurance-automobile-entreprises#8",
@@ -13,11 +13,11 @@
       "faq-assurances#12"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-automobile-professionnels#7",
-      "professionnels-entreprises__assurance-automobile-entreprises#7",
-      "professionnels-entreprises__assurance-automobile-professionnels#3",
-      "professionnels-entreprises__assurance-automobile-entreprises#3",
-      "faq-assurances#10"
+      "professionnels-entreprises__assurance-automobile-professionnels#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#4",
+      "particuliers__assurance-automobile#4",
+      "faq-assurances#12",
+      "professionnels-entreprises__assurance-automobile-entreprises#8"
     ]
   },
   {
@@ -34,9 +34,9 @@
       "faq-assurances#12"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-automobile-entreprises#8",
       "faq-assurances#12",
       "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
       "particuliers__assurance-automobile#8",
       "professionnels-entreprises__assurance-automobile-entreprises#4"
     ]
@@ -46,8 +46,8 @@
     "language": "English",
     "key_phrase": "deux jours ouvrables en cas de vol",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "particuliers__assurance-automobile#8",
       "professionnels-entreprises__assurance-automobile-entreprises#8",
@@ -55,11 +55,11 @@
       "faq-assurances#12"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-automobile-entreprises#4",
-      "professionnels-entreprises__assurance-automobile-professionnels#4",
-      "faq-assurances#6",
-      "professionnels-entreprises__assurance-automobile-professionnels#9",
-      "professionnels-entreprises__assurance-automobile-entreprises#9"
+      "particuliers__assurance-automobile#8",
+      "faq-assurances#12",
+      "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#4"
     ]
   },
   {
@@ -89,18 +89,18 @@
     "key_phrase": "5 jours pour un utilitaire",
     "answerable": true,
     "hit_at_5": true,
-    "recall_at_5": 0.6666666666666666,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "particuliers__assurance-automobile#4",
       "professionnels-entreprises__assurance-automobile-entreprises#4",
       "professionnels-entreprises__assurance-automobile-professionnels#4"
     ],
     "retrieved_ids": [
-      "faq-assurances#6",
-      "professionnels-entreprises__assurance-automobile-professionnels#9",
-      "professionnels-entreprises__assurance-automobile-entreprises#9",
+      "professionnels-entreprises__assurance-automobile-professionnels#4",
       "professionnels-entreprises__assurance-automobile-entreprises#4",
-      "professionnels-entreprises__assurance-automobile-professionnels#4"
+      "faq-assurances#6",
+      "particuliers__assurance-automobile#4",
+      "professionnels-entreprises__assurance-automobile-entreprises#8"
     ]
   },
   {
@@ -116,10 +116,10 @@
       "professionnels-entreprises__assurance-automobile-professionnels#4"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-automobile-entreprises#8",
       "professionnels-entreprises__assurance-automobile-professionnels#4",
-      "professionnels-entreprises__assurance-automobile-entreprises#4",
       "professionnels-entreprises__assurance-automobile-professionnels#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#8",
+      "professionnels-entreprises__assurance-automobile-entreprises#4",
       "particuliers__assurance-automobile#4"
     ]
   },
@@ -137,11 +137,11 @@
       "faq-assurances#5"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-automobile-entreprises#6",
       "faq-assurances#5",
+      "professionnels-entreprises__assurance-automobile-entreprises#6",
       "professionnels-entreprises__assurance-automobile-professionnels#6",
       "particuliers__assurance-automobile#7",
-      "professionnels-entreprises__assurance-automobile-entreprises#2"
+      "professionnels-entreprises__assurance-automobile-entreprises#0"
     ]
   },
   {
@@ -162,7 +162,7 @@
       "faq-assurances#5",
       "professionnels-entreprises__assurance-automobile-professionnels#6",
       "particuliers__assurance-automobile#7",
-      "faq-assurances#4"
+      "particuliers__assurance-bourse-etude#4"
     ]
   },
   {
@@ -170,14 +170,20 @@
     "language": "English",
     "key_phrase": "sans limite kilom\u00e9trique",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 0.6666666666666666,
     "relevant_ids": [
       "particuliers__assurance-automobile#4",
       "professionnels-entreprises__assurance-automobile-entreprises#3",
       "professionnels-entreprises__assurance-automobile-professionnels#3"
     ],
-    "retrieved_ids": []
+    "retrieved_ids": [
+      "particuliers__assurance-automobile#4",
+      "particuliers__assurance-voyage#9",
+      "particuliers__assurance-automobile#2",
+      "professionnels-entreprises__assurance-automobile-entreprises#3",
+      "assistance-sinistre#0"
+    ]
   },
   {
     "question": "Le d\u00e9pannage remorquage est-il limit\u00e9 en kilom\u00e8tres ?",
@@ -196,7 +202,7 @@
       "professionnels-entreprises__assurance-automobile-entreprises#3",
       "professionnels-entreprises__assurance-automobile-professionnels#3",
       "faq-assurances#6",
-      "professionnels-entreprises__assurance-bris-machine#1"
+      "professionnels-entreprises__assurance-automobile-entreprises#9"
     ]
   },
   {
@@ -214,10 +220,10 @@
     ],
     "retrieved_ids": [
       "faq-assurances#6",
-      "professionnels-entreprises__assurance-automobile-entreprises#9",
       "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "professionnels-entreprises__assurance-automobile-entreprises#9",
       "particuliers__assurance-automobile#9",
-      "particuliers__assurance-automobile#7"
+      "particuliers__assurance-voyage#7"
     ]
   },
   {
@@ -235,10 +241,10 @@
     ],
     "retrieved_ids": [
       "faq-assurances#6",
-      "professionnels-entreprises__assurance-automobile-entreprises#9",
       "professionnels-entreprises__assurance-automobile-professionnels#9",
+      "professionnels-entreprises__assurance-automobile-entreprises#9",
       "particuliers__assurance-automobile#9",
-      "professionnels-entreprises__assurance-frais-sante#3"
+      "particuliers__assurance-individuelle-contre-accidents-corporels#0"
     ]
   },
   {
@@ -257,10 +263,10 @@
     ],
     "retrieved_ids": [
       "faq-assurances#1",
-      "professionnels-entreprises__assurance-automobile-professionnels#6",
-      "professionnels-entreprises__assurance-automobile-entreprises#6",
-      "professionnels-entreprises__assurance-automobile-professionnels#0",
-      "professionnels-entreprises__assurance-automobile-entreprises#0"
+      "professionnels-entreprises__assurance-automobile-professionnels#1",
+      "particuliers__assurance-automobile#1",
+      "professionnels-entreprises__assurance-automobile-entreprises#1",
+      "faq-assurances#8"
     ]
   },
   {
@@ -269,7 +275,7 @@
     "key_phrase": "les 3 grandes cat\u00e9gories d'assurance automobile",
     "answerable": true,
     "hit_at_5": true,
-    "recall_at_5": 0.8,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "particuliers__assurance-automobile#5",
       "particuliers__assurance-automobile#6",
@@ -280,9 +286,9 @@
     "retrieved_ids": [
       "faq-assurances#1",
       "particuliers__assurance-automobile#6",
-      "particuliers__assurance-automobile#0",
+      "professionnels-entreprises__assurance-automobile-professionnels#5",
       "professionnels-entreprises__assurance-automobile-entreprises#5",
-      "professionnels-entreprises__assurance-automobile-professionnels#5"
+      "particuliers__assurance-automobile#5"
     ]
   },
   {
@@ -335,10 +341,10 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-multirisque-habitation#1",
-      "professionnels-entreprises__assurance-incendie-professionnels#0",
       "assistance-sinistre#0",
-      "particuliers__assurance-incendie#0",
-      "faq-assurances#11"
+      "professionnels-entreprises__assurance-bris-machine#2",
+      "particuliers__assurance-multirisque-habitation#0",
+      "faq-assurances#6"
     ]
   },
   {
@@ -354,8 +360,8 @@
     "retrieved_ids": [
       "faq-assurances#11",
       "particuliers__assurance-multirisque-habitation#1",
-      "particuliers__assurance-multirisque-habitation#2",
       "particuliers__assurance-incendie#0",
+      "particuliers__assurance-multirisque-habitation#2",
       "professionnels-entreprises__assurance-incendie-professionnels#0"
     ]
   },
@@ -373,8 +379,8 @@
     "retrieved_ids": [
       "faq-assurances#4",
       "particuliers__assurance-bourse-etude#3",
-      "particuliers__assurance-bourse-etude#0",
       "particuliers__assurance-bourse-etude#2",
+      "particuliers__assurance-bourse-etude#0",
       "particuliers__assurance-bourse-etude#1"
     ]
   },
@@ -391,8 +397,8 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-bourse-etude#3",
-      "faq-assurances#4",
       "particuliers__assurance-bourse-etude#2",
+      "faq-assurances#4",
       "particuliers__assurance-bourse-etude#1",
       "particuliers__assurance-bourse-etude#0"
     ]
@@ -409,11 +415,11 @@
       "faq-assurances#4"
     ],
     "retrieved_ids": [
+      "faq-assurances#4",
       "particuliers__assurance-bourse-etude#3",
       "particuliers__assurance-bourse-etude#0",
-      "faq-assurances#4",
-      "particuliers__assurance-bourse-etude#1",
-      "particuliers__assurance-bourse-etude#4"
+      "particuliers__assurance-bourse-etude#4",
+      "particuliers__assurance-bourse-etude#1"
     ]
   },
   {
@@ -432,7 +438,7 @@
       "faq-assurances#4",
       "particuliers__assurance-bourse-etude#0",
       "particuliers__assurance-bourse-etude#1",
-      "particuliers__assurance-bourse-etude#2"
+      "particuliers__assurance-bourse-etude#4"
     ]
   },
   {
@@ -447,8 +453,8 @@
       "faq-assurances#4"
     ],
     "retrieved_ids": [
-      "faq-assurances#4",
       "particuliers__assurance-bourse-etude#3",
+      "faq-assurances#4",
       "particuliers__assurance-bourse-etude#4",
       "particuliers__assurance-bourse-etude#0",
       "faq-assurances#5"
@@ -468,8 +474,8 @@
     "retrieved_ids": [
       "particuliers__assurance-bourse-etude#3",
       "faq-assurances#4",
-      "particuliers__assurance-bourse-etude#0",
       "particuliers__assurance-bourse-etude#4",
+      "particuliers__assurance-bourse-etude#0",
       "particuliers__assurance-bourse-etude#1"
     ]
   },
@@ -484,11 +490,11 @@
       "particuliers__assurance-bourse-etude#1"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-bourse-etude#0",
-      "particuliers__assurance-bourse-etude#2",
-      "particuliers__assurance-bourse-etude#3",
       "particuliers__assurance-bourse-etude#1",
-      "faq-assurances#4"
+      "particuliers__assurance-bourse-etude#2",
+      "particuliers__assurance-bourse-etude#0",
+      "particuliers__assurance-bourse-etude#4",
+      "particuliers__assurance-bourse-etude#3"
     ]
   },
   {
@@ -503,10 +509,10 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-bourse-etude#1",
-      "particuliers__assurance-bourse-etude#3",
       "particuliers__assurance-prevoyance-deces#2",
+      "particuliers__assurance-bourse-etude#3",
       "faq-assurances#4",
-      "particuliers__assurance-bourse-etude#0"
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
     ]
   },
   {
@@ -522,9 +528,9 @@
     "retrieved_ids": [
       "particuliers__assurance-bourse-etude#1",
       "particuliers__assurance-voyage#2",
-      "particuliers__assurance-prevoyance-deces#1",
       "particuliers__assurance-voyage#8",
-      "particuliers__assurance-automobile#2"
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-voyage-professionnels#1"
     ]
   },
   {
@@ -558,10 +564,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-epargne-retraite-collective#3",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
-      "faq-assurances#3",
+      "particuliers__assurance-epargne-retraite#5",
       "professionnels-entreprises__assurance-epargne-retraite-collective#4",
-      "particuliers__assurance-epargne-retraite#5"
+      "particuliers__assurance-epargne-retraite#2",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0"
     ]
   },
   {
@@ -576,11 +582,11 @@
       "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
       "particuliers__assurance-epargne-retraite#1",
       "professionnels-entreprises__assurance-epargne-retraite-collective#3",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
-      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1"
     ]
   },
   {
@@ -595,11 +601,11 @@
       "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
     ],
     "retrieved_ids": [
-      "faq-assurances#3",
       "professionnels-entreprises__assurance-epargne-retraite-collective#3",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
-      "particuliers__assurance-epargne-retraite#5"
+      "particuliers__assurance-epargne-retraite#0",
+      "particuliers__assurance-epargne-retraite#5",
+      "faq-assurances#3",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#0"
     ]
   },
   {
@@ -614,11 +620,11 @@
       "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3"
     ],
     "retrieved_ids": [
-      "faq-assurances#3",
       "particuliers__assurance-epargne-retraite#5",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-frais-sante#2",
+      "faq-assurances#3",
       "professionnels-entreprises__assurance-epargne-retraite-collective#4",
-      "professionnels-entreprises__assurance-frais-sante#2"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3"
     ]
   },
   {
@@ -627,18 +633,18 @@
     "key_phrase": "verse l'\u00e9pargne constitu\u00e9e \u00e0 la date du d\u00e9c\u00e8s",
     "answerable": true,
     "hit_at_5": true,
-    "recall_at_5": 1.0,
+    "recall_at_5": 0.6666666666666666,
     "relevant_ids": [
       "particuliers__assurance-epargne-retraite#1",
       "professionnels-entreprises__assurance-epargne-retraite-collective#2",
       "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
-      "particuliers__assurance-epargne-retraite#1",
-      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1",
+      "particuliers__assurance-prevoyance-deces#2",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2",
       "professionnels-entreprises__assurance-epargne-retraite-collective#4",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#2"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "particuliers__assurance-epargne-retraite#1"
     ]
   },
   {
@@ -657,8 +663,8 @@
       "professionnels-entreprises__assurance-epargne-retraite-collective#2",
       "particuliers__assurance-epargne-retraite#1",
       "professionnels-entreprises__assurance-epargne-retraite-professionnelle#1",
-      "particuliers__assurance-prevoyance-deces#2",
-      "faq-assurances#3"
+      "faq-assurances#3",
+      "particuliers__assurance-bourse-etude#2"
     ]
   },
   {
@@ -676,8 +682,8 @@
       "faq-assurances#3",
       "professionnels-entreprises__assurance-epargne-retraite-collective#0",
       "professionnels-entreprises__assurance-epargne-retraite-collective#3",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1"
     ]
   },
   {
@@ -696,7 +702,7 @@
       "faq-assurances#3",
       "professionnels-entreprises__assurance-epargne-retraite-collective#1",
       "professionnels-entreprises__assurance-epargne-retraite-collective#0",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#2"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
     ]
   },
   {
@@ -704,12 +710,18 @@
     "language": "English",
     "key_phrase": "n'est pas \u00e0 consid\u00e9rer comme un avantage en nature",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-epargne-retraite-collective#2"
     ],
-    "retrieved_ids": []
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#2",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#2",
+      "faq-assurances#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#2"
+    ]
   },
   {
     "question": "La cotisation retraite pay\u00e9e par l'entreprise compte-t-elle comme avantage en nature ?",
@@ -724,9 +736,9 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-epargne-retraite-collective#0",
       "professionnels-entreprises__assurance-epargne-retraite-collective#2",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
-      "professionnels-entreprises__assurance-frais-sante#0",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#3",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "professionnels-entreprises__assurance-frais-sante#0"
     ]
   },
   {
@@ -742,9 +754,9 @@
     "retrieved_ids": [
       "particuliers__assurance-prevoyance-deces#2",
       "particuliers__assurance-prevoyance-deces#1",
-      "particuliers__assurance-bourse-etude#1",
-      "particuliers__assurance-individuelle-contre-accidents-corporels#1",
-      "particuliers__assurance-bourse-etude#2"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#1",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "particuliers__assurance-individuelle-contre-accidents-corporels#1"
     ]
   },
   {
@@ -761,8 +773,8 @@
       "particuliers__assurance-prevoyance-deces#2",
       "particuliers__assurance-prevoyance-deces#1",
       "particuliers__assurance-prevoyance-deces#3",
-      "particuliers__assurance-individuelle-contre-accidents-corporels#0",
-      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#5"
+      "faq-assurances#12",
+      "particuliers__assurance-individuelle-contre-accidents-corporels#0"
     ]
   },
   {
@@ -770,13 +782,19 @@
     "language": "English",
     "key_phrase": "Homme Cl\u00e9",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 0.5,
     "relevant_ids": [
       "particuliers__assurance-prevoyance-deces#0",
       "particuliers__assurance-prevoyance-deces#1"
     ],
-    "retrieved_ids": []
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "particuliers__assurance-prevoyance-deces#1",
+      "particuliers__assurance-voyage#2",
+      "professionnels-entreprises__assurance-bris-machine#2"
+    ]
   },
   {
     "question": "Puis-je prot\u00e9ger mon entreprise contre le d\u00e9c\u00e8s d'un dirigeant essentiel ?",
@@ -791,9 +809,9 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-prevoyance-deces#1",
+      "particuliers__assurance-individuelle-contre-accidents-corporels#0",
       "particuliers__assurance-prevoyance-deces#0",
       "professionnels-entreprises__assurance-epargne-retraite-collective#0",
-      "particuliers__assurance-individuelle-contre-accidents-corporels#0",
       "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#0"
     ]
   },
@@ -810,10 +828,10 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-individuelle-contre-accidents-corporels#1",
-      "professionnels-entreprises__assurance-automobile-professionnels#0",
       "professionnels-entreprises__assurance-individuelle-contre-accidents-corporels-professionnels#1",
-      "professionnels-entreprises__assurance-automobile-entreprises#0",
-      "professionnels-entreprises__assurance-automobile-professionnels#3"
+      "professionnels-entreprises__assurance-automobile-professionnels#3",
+      "professionnels-entreprises__assurance-automobile-professionnels#0",
+      "particuliers__assurance-automobile#6"
     ]
   },
   {
@@ -840,15 +858,21 @@
     "language": "English",
     "key_phrase": "chute des appareils de navigation a\u00e9rienne",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "particuliers__assurance-incendie#0",
       "professionnels-entreprises__assurance-incendie-professionnels#0",
       "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
       "professionnels-entreprises__assurance-multirisque-professionnelle#0"
     ],
-    "retrieved_ids": []
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-voyage-professionnels#3",
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0"
+    ]
   },
   {
     "question": "L'assurance incendie couvre-t-elle la chute d'un avion sur le b\u00e2timent ?",
@@ -867,8 +891,8 @@
       "particuliers__assurance-incendie#0",
       "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
       "professionnels-entreprises__assurance-incendie-professionnels#0",
-      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1",
-      "faq-assurances#11"
+      "faq-assurances#11",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1"
     ]
   },
   {
@@ -885,9 +909,9 @@
     "retrieved_ids": [
       "particuliers__assurance-voyage#0",
       "professionnels-entreprises__assurance-voyage-professionnels#0",
-      "particuliers__assurance-automobile#4",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-voyage#12"
+      "particuliers__assurance-voyage#12",
+      "particuliers__assurance-voyage#7",
+      "particuliers__assurance-voyage#3"
     ]
   },
   {
@@ -904,9 +928,9 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-voyage-professionnels#0",
       "particuliers__assurance-voyage#0",
-      "particuliers__assurance-voyage#9",
-      "particuliers__assurance-voyage#1",
-      "particuliers__assurance-voyage#6"
+      "faq-assurances#12",
+      "particuliers__assurance-voyage#11",
+      "particuliers__assurance-voyage#1"
     ]
   },
   {
@@ -922,8 +946,8 @@
     "retrieved_ids": [
       "particuliers__assurance-voyage#1",
       "particuliers__assurance-voyage#0",
-      "particuliers__assurance-voyage#6",
       "particuliers__assurance-voyage#7",
+      "particuliers__assurance-voyage#6",
       "particuliers__assurance-voyage#4"
     ]
   },
@@ -958,9 +982,9 @@
     "retrieved_ids": [
       "particuliers__assurance-voyage#2",
       "professionnels-entreprises__assurance-frais-sante#0",
-      "professionnels-entreprises__assurance-multirisque-professionnelle#0",
-      "particuliers__assurance-voyage#4",
-      "particuliers__assurance-voyage#0"
+      "particuliers__assurance-voyage#6",
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-epargne-retraite#3"
     ]
   },
   {
@@ -977,8 +1001,8 @@
       "particuliers__assurance-voyage#2",
       "professionnels-entreprises__assurance-frais-sante#0",
       "particuliers__assurance-voyage#4",
-      "particuliers__assurance-voyage#6",
-      "particuliers__assurance-voyage#7"
+      "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#6"
     ]
   },
   {
@@ -993,11 +1017,11 @@
       "particuliers__assurance-voyage#7"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-voyage#7",
       "particuliers__assurance-voyage#6",
-      "professionnels-entreprises__assurance-voyage-professionnels#1",
-      "particuliers__assurance-voyage#10",
-      "particuliers__assurance-voyage#2"
+      "particuliers__assurance-voyage#7",
+      "particuliers__assurance-bourse-etude#1",
+      "particuliers__assurance-voyage#2",
+      "professionnels-entreprises__assurance-voyage-professionnels#1"
     ]
   },
   {
@@ -1031,10 +1055,10 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-voyage#0",
-      "particuliers__assurance-automobile#2",
+      "particuliers__assurance-voyage#7",
       "particuliers__assurance-voyage#2",
-      "particuliers__assurance-automobile#8",
-      "particuliers__assurance-voyage#7"
+      "professionnels-entreprises__assurance-corps-navire-peche#1",
+      "particuliers__assurance-automobile#2"
     ]
   },
   {
@@ -1049,10 +1073,10 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-voyage#0",
-      "particuliers__assurance-voyage#9",
       "particuliers__assurance-voyage#1",
-      "faq-assurances#9",
-      "professionnels-entreprises__assurance-voyage-professionnels#0"
+      "particuliers__assurance-voyage#12",
+      "professionnels-entreprises__assurance-voyage-professionnels#3",
+      "particuliers__assurance-voyage#9"
     ]
   },
   {
@@ -1067,10 +1091,10 @@
     ],
     "retrieved_ids": [
       "particuliers__assurance-voyage#2",
-      "particuliers__assurance-voyage#4",
       "particuliers__assurance-voyage#0",
-      "particuliers__assurance-voyage#6",
-      "particuliers__assurance-voyage#7"
+      "particuliers__assurance-voyage#4",
+      "professionnels-entreprises__assurance-voyage-professionnels#1",
+      "particuliers__assurance-voyage#10"
     ]
   },
   {
@@ -1084,10 +1108,10 @@
       "particuliers__assurance-voyage#2"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-voyage#4",
       "particuliers__assurance-voyage#2",
-      "particuliers__assurance-voyage#9",
+      "particuliers__assurance-voyage#4",
       "particuliers__assurance-voyage#0",
+      "particuliers__assurance-voyage#9",
       "particuliers__assurance-voyage#6"
     ]
   },
@@ -1103,10 +1127,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-engins-chantier#0",
-      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
-      "professionnels-entreprises__assurance-engins-chantier#1",
+      "professionnels-entreprises__assurance-bris-machine#0",
       "professionnels-entreprises__assurance-tous-risques-chantier-montage#0",
-      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1"
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0"
     ]
   },
   {
@@ -1129,12 +1153,18 @@
     "language": "English",
     "key_phrase": "lors de leur transport d'un site \u00e0 un autre",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-engins-chantier#0"
     ],
-    "retrieved_ids": []
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-bris-machine#0",
+      "professionnels-entreprises__assurance-engins-chantier#0",
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "professionnels-entreprises__assurance-bris-machine#2",
+      "professionnels-entreprises__assurance-engins-chantier#1"
+    ]
   },
   {
     "question": "Nos engins sont-ils couverts quand on les d\u00e9place d'un chantier \u00e0 l'autre ?",
@@ -1151,7 +1181,7 @@
       "professionnels-entreprises__assurance-engins-chantier#1",
       "professionnels-entreprises__assurance-tous-risques-chantier-montage#2",
       "professionnels-entreprises__assurance-tous-risques-chantier-montage#0",
-      "faq-assurances#10"
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1"
     ]
   },
   {
@@ -1167,9 +1197,9 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-bris-machine#0",
       "professionnels-entreprises__assurance-automobile-entreprises#5",
-      "professionnels-entreprises__assurance-automobile-professionnels#5",
-      "faq-assurances#1",
-      "particuliers__assurance-automobile#5"
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "professionnels-entreprises__assurance-bris-machine#2",
+      "faq-assurances#1"
     ]
   },
   {
@@ -1193,17 +1223,17 @@
     "language": "English",
     "key_phrase": "Responsabilit\u00e9 civile crois\u00e9e",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-tous-risques-chantier-montage#0"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-automobile#2",
-      "particuliers__assurance-automobile#3",
-      "particuliers__assurance-incendie#0",
-      "professionnels-entreprises__assurance-automobile-entreprises#3"
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#0",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
+      "particuliers__assurance-automobile#0",
+      "professionnels-entreprises__assurance-automobile-professionnels#3"
     ]
   },
   {
@@ -1238,7 +1268,7 @@
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
-      "particuliers__assurance-bourse-etude#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#3",
       "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1"
     ]
   },
@@ -1256,8 +1286,8 @@
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#3",
-      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1",
-      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2"
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1"
     ]
   },
   {
@@ -1265,17 +1295,17 @@
     "language": "English",
     "key_phrase": "Dur\u00e9e : 10 ans",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#1"
     ],
     "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
       "particuliers__assurance-bourse-etude#1",
+      "professionnels-entreprises__assurance-epargne-retraite-professionnelle#3",
       "particuliers__assurance-automobile#8",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-epargne-retraite#3",
-      "particuliers__assurance-automobile#9"
+      "particuliers__assurance-voyage#7"
     ]
   },
   {
@@ -1291,8 +1321,8 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
-      "particuliers__assurance-prevoyance-deces#1",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "faq-assurances#12",
       "particuliers__assurance-automobile#8"
     ]
   },
@@ -1308,10 +1338,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
-      "particuliers__assurance-automobile#2",
-      "particuliers__assurance-incendie#0",
-      "particuliers__assurance-automobile#4",
-      "particuliers__assurance-bourse-etude#1"
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "particuliers__assurance-voyage#4"
     ]
   },
   {
@@ -1329,7 +1359,7 @@
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#3",
-      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1"
+      "professionnels-entreprises__assurance-frais-sante#4"
     ]
   },
   {
@@ -1337,17 +1367,17 @@
     "language": "English",
     "key_phrase": "souscrit par le ma\u00eetre d'ouvrage pour le compte de tous les intervenants",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-responsabilite-decennale-construction#0"
     ],
     "retrieved_ids": [
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#2",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#1",
+      "professionnels-entreprises__assurance-responsabilite-decennale-construction#0",
       "particuliers__assurance-bourse-etude#1",
-      "particuliers__assurance-automobile#7",
-      "particuliers__assurance-bourse-etude#2",
-      "particuliers__assurance-bourse-etude#3",
-      "particuliers__assurance-automobile#8"
+      "professionnels-entreprises__assurance-tous-risques-chantier-montage#1"
     ]
   },
   {
@@ -1380,8 +1410,8 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-transport-marchandises#0",
-      "professionnels-entreprises__assurance-transport-marchandises#2",
       "professionnels-entreprises__assurance-transport-marchandises#1",
+      "professionnels-entreprises__assurance-transport-marchandises#2",
       "particuliers__assurance-voyage#3",
       "particuliers__assurance-voyage#7"
     ]
@@ -1400,8 +1430,8 @@
       "professionnels-entreprises__assurance-transport-marchandises#0",
       "professionnels-entreprises__assurance-transport-marchandises#1",
       "professionnels-entreprises__assurance-transport-marchandises#2",
-      "faq-assurances#9",
-      "particuliers__assurance-voyage#10"
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#2",
+      "faq-assurances#9"
     ]
   },
   {
@@ -1416,10 +1446,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-transport-marchandises#1",
-      "particuliers__assurance-automobile#5",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-voyage#2",
-      "particuliers__assurance-voyage#0"
+      "professionnels-entreprises__assurance-frais-sante#4",
+      "professionnels-entreprises__assurance-corps-navire-peche#1",
+      "particuliers__assurance-voyage#0",
+      "professionnels-entreprises__assurance-voyage-professionnels#3"
     ]
   },
   {
@@ -1434,10 +1464,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-transport-marchandises#1",
-      "particuliers__assurance-automobile#5",
       "particuliers__assurance-voyage#0",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-automobile#9"
+      "particuliers__assurance-voyage#3",
+      "faq-assurances#6",
+      "professionnels-entreprises__assurance-corps-navire-peche#1"
     ]
   },
   {
@@ -1445,17 +1475,17 @@
     "language": "English",
     "key_phrase": "reconstitution des donn\u00e9es",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-multirisque-informatique#0"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-automobile#4",
+      "professionnels-entreprises__assurance-multirisque-informatique#0",
+      "professionnels-entreprises__assurance-bris-machine#1",
       "particuliers__assurance-voyage#2",
-      "particuliers__assurance-automobile#2",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-automobile#8"
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1",
+      "particuliers__assurance-automobile#3"
     ]
   },
   {
@@ -1470,10 +1500,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-multirisque-informatique#0",
-      "faq-assurances#11",
-      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#0",
-      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#0",
-      "professionnels-entreprises__assurance-automobile-entreprises#9"
+      "professionnels-entreprises__assurance-multirisque-informatique#1",
+      "professionnels-entreprises__assurance-bris-machine#1",
+      "particuliers__assurance-voyage#2",
+      "faq-assurances#11"
     ]
   },
   {
@@ -1481,12 +1511,18 @@
     "language": "English",
     "key_phrase": "court-circuit, de surtension",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-multirisque-informatique#1"
     ],
-    "retrieved_ids": []
+    "retrieved_ids": [
+      "professionnels-entreprises__assurance-multirisque-informatique#0",
+      "professionnels-entreprises__assurance-multirisque-informatique#1",
+      "professionnels-entreprises__assurance-multirisque-informatique#2",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "professionnels-entreprises__assurance-voyage-professionnels#3"
+    ]
   },
   {
     "question": "Une surtension \u00e9lectrique sur nos ordinateurs est-elle couverte ?",
@@ -1501,9 +1537,9 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-multirisque-informatique#1",
       "professionnels-entreprises__assurance-bris-machine#0",
-      "particuliers__assurance-automobile#9",
-      "particuliers__assurance-automobile#5",
-      "particuliers__assurance-automobile#8"
+      "professionnels-entreprises__assurance-multirisque-informatique#0",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0",
+      "particuliers__assurance-automobile#9"
     ]
   },
   {
@@ -1518,10 +1554,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-bris-machine#1",
-      "professionnels-entreprises__assurance-automobile-entreprises#3",
+      "professionnels-entreprises__assurance-voyage-professionnels#3",
       "professionnels-entreprises__assurance-automobile-professionnels#3",
-      "professionnels-entreprises__assurance-bris-machine#2",
-      "professionnels-entreprises__assurance-automobile-entreprises#1"
+      "particuliers__assurance-voyage#12",
+      "professionnels-entreprises__assurance-frais-sante#4"
     ]
   },
   {
@@ -1535,11 +1571,11 @@
       "professionnels-entreprises__assurance-multirisque-professionnelle#1"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-bris-machine#1",
       "professionnels-entreprises__assurance-multirisque-professionnelle#1",
+      "professionnels-entreprises__assurance-bris-machine#1",
       "faq-assurances#11",
-      "professionnels-entreprises__assurance-automobile-entreprises#2",
-      "professionnels-entreprises__assurance-automobile-professionnels#2"
+      "particuliers__assurance-voyage#2",
+      "particuliers__assurance-voyage#6"
     ]
   },
   {
@@ -1553,11 +1589,11 @@
       "professionnels-entreprises__assurance-multirisque-professionnelle#1"
     ],
     "retrieved_ids": [
-      "professionnels-entreprises__assurance-multirisque-professionnelle#0",
-      "professionnels-entreprises__assurance-automobile-entreprises#2",
-      "professionnels-entreprises__assurance-automobile-entreprises#1",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
       "professionnels-entreprises__assurance-multirisque-professionnelle#1",
-      "professionnels-entreprises__assurance-automobile-entreprises#3"
+      "professionnels-entreprises__assurance-multirisque-professionnelle#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1",
+      "professionnels-entreprises__assurance-incendie-professionnels#0"
     ]
   },
   {
@@ -1574,8 +1610,8 @@
       "professionnels-entreprises__assurance-multirisque-professionnelle#1",
       "professionnels-entreprises__assurance-multirisque-professionnelle#0",
       "faq-assurances#11",
-      "professionnels-entreprises__assurance-incendie-professionnels#0",
-      "particuliers__assurance-incendie#0"
+      "particuliers__assurance-multirisque-habitation#2",
+      "professionnels-entreprises__assurance-incendie-professionnels#0"
     ]
   },
   {
@@ -1583,8 +1619,8 @@
     "language": "English",
     "key_phrase": "la perte de la client\u00e8le, de la notori\u00e9t\u00e9",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1",
       "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#1"
@@ -1592,9 +1628,9 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#0",
       "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#0",
-      "particuliers__assurance-automobile#2",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-voyage#2"
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#2"
     ]
   },
   {
@@ -1610,10 +1646,10 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#1",
-      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#0",
       "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#1",
-      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#0",
-      "professionnels-entreprises__assurance-multirisque-professionnelle#1"
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux#0",
+      "professionnels-entreprises__assurance-multirisque-professionnelle#1",
+      "professionnels-entreprises__assurance-responsabilite-civile-professionnelle-exploitation-locaux-entreprises#0"
     ]
   },
   {
@@ -1621,17 +1657,17 @@
     "language": "English",
     "key_phrase": "Recours des voisins et des tiers",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-incendie#0",
-      "professionnels-entreprises__assurance-incendie-professionnels#0",
-      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "professionnels-entreprises__assurance-incendie-professionnels#1",
       "professionnels-entreprises__assurance-bris-machine#2",
-      "professionnels-entreprises__assurance-bris-machine#1"
+      "professionnels-entreprises__assurance-incendie-professionnels#0",
+      "particuliers__assurance-incendie#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1"
     ]
   },
   {
@@ -1647,9 +1683,9 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#1",
       "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#0",
+      "professionnels-entreprises__assurance-incendie-risque-industriel-commercial#2",
       "particuliers__assurance-incendie#0",
-      "professionnels-entreprises__assurance-bris-machine#2",
-      "professionnels-entreprises__assurance-incendie-professionnels#0"
+      "professionnels-entreprises__assurance-bris-machine#2"
     ]
   },
   {
@@ -1664,9 +1700,9 @@
     ],
     "retrieved_ids": [
       "professionnels-entreprises__assurance-frais-sante#4",
+      "professionnels-entreprises__assurance-frais-sante#0",
       "professionnels-entreprises__assurance-frais-sante#2",
-      "faq-assurances#9",
-      "professionnels-entreprises__assurance-voyage-professionnels#0",
+      "particuliers__assurance-voyage#0",
       "professionnels-entreprises__assurance-frais-sante#3"
     ]
   },
@@ -1683,9 +1719,9 @@
     "retrieved_ids": [
       "professionnels-entreprises__assurance-frais-sante#0",
       "professionnels-entreprises__assurance-frais-sante#1",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#0",
+      "professionnels-entreprises__assurance-frais-sante#4",
       "faq-assurances#7",
-      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
+      "professionnels-entreprises__assurance-epargne-retraite-collective#0"
     ]
   },
   {
@@ -1693,17 +1729,17 @@
     "language": "English",
     "key_phrase": "relais RH",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "faq-assurances#2"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-bourse-etude#4",
-      "particuliers__assurance-corps-plaisance#1",
+      "faq-assurances#2",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4",
+      "particuliers__assurance-automobile#0",
       "particuliers__assurance-prevoyance-deces#3",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-incendie#1"
+      "particuliers__assurance-bourse-etude#4"
     ]
   },
   {
@@ -1718,10 +1754,10 @@
     ],
     "retrieved_ids": [
       "faq-assurances#2",
-      "particuliers__assurance-bourse-etude#4",
       "faq-assurances#0",
       "professionnels-entreprises__assurance-frais-sante#2",
-      "particuliers__assurance-voyage#8"
+      "particuliers__assurance-bourse-etude#4",
+      "professionnels-entreprises__assurance-frais-sante#3"
     ]
   },
   {
@@ -1729,17 +1765,17 @@
     "language": "English",
     "key_phrase": "frais de sauvetage et le refoulement",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "professionnels-entreprises__assurance-corps-navire-peche#1"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-corps-plaisance#0",
-      "particuliers__assurance-automobile#4",
-      "particuliers__assurance-automobile#2",
-      "particuliers__assurance-voyage#2",
-      "particuliers__assurance-voyage#8"
+      "professionnels-entreprises__assurance-corps-navire-peche#1",
+      "particuliers__assurance-voyage#9",
+      "professionnels-entreprises__assurance-corps-navire-peche#0",
+      "professionnels-entreprises__assurance-frais-sante#4",
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0"
     ]
   },
   {
@@ -1757,7 +1793,7 @@
       "professionnels-entreprises__assurance-corps-navire-peche#0",
       "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0",
       "particuliers__assurance-corps-plaisance#0",
-      "professionnels-entreprises__assurance-multirisque-informatique#0"
+      "professionnels-entreprises__assurance-frais-sante#4"
     ]
   },
   {
@@ -1772,11 +1808,11 @@
       "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0"
     ],
     "retrieved_ids": [
+      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0",
       "particuliers__assurance-corps-plaisance#0",
-      "particuliers__assurance-corps-plaisance#1",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-incendie#0",
-      "professionnels-entreprises__assurance-corps-plaisance-professionnelle#0"
+      "professionnels-entreprises__assurance-corps-navire-peche#1",
+      "professionnels-entreprises__assurance-corps-navire-peche#0",
+      "particuliers__assurance-corps-plaisance#1"
     ]
   },
   {
@@ -1803,17 +1839,17 @@
     "language": "English",
     "key_phrase": "G\u00e9n\u00e9rale Assistance +216 70 015 000",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "assistance-sinistre#0"
     ],
     "retrieved_ids": [
-      "particuliers__assurance-automobile#2",
-      "particuliers__assurance-automobile#1",
-      "particuliers__assurance-automobile#5",
       "particuliers__assurance-automobile#7",
-      "particuliers__assurance-automobile#4"
+      "particuliers__assurance-automobile#4",
+      "assistance-sinistre#0",
+      "professionnels-entreprises__assurance-automobile-professionnels#7",
+      "professionnels-entreprises__assurance-epargne-retraite-collective#4"
     ]
   },
   {
@@ -1821,17 +1857,17 @@
     "language": "French",
     "key_phrase": "G\u00e9n\u00e9rale Assistance +216 70 015 000",
     "answerable": true,
-    "hit_at_5": false,
-    "recall_at_5": 0.0,
+    "hit_at_5": true,
+    "recall_at_5": 1.0,
     "relevant_ids": [
       "assistance-sinistre#0"
     ],
     "retrieved_ids": [
       "faq-assurances#10",
-      "professionnels-entreprises__assurance-automobile-entreprises#7",
       "professionnels-entreprises__assurance-automobile-professionnels#7",
-      "particuliers__assurance-automobile#4",
-      "particuliers__assurance-automobile#7"
+      "professionnels-entreprises__assurance-automobile-entreprises#7",
+      "assistance-sinistre#0",
+      "particuliers__assurance-automobile#4"
     ]
   }
 ]

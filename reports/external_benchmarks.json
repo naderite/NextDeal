@@ -1,0 +1,62 @@
+{
+  "ranking": {
+    "training_customers": 5822,
+    "test_customers": 4000,
+    "test_episodes": 5653,
+    "long_tail_episodes": 1105,
+    "logistic": {
+      "hit_rate_at_3": 0.9004068636122413,
+      "long_tail_hit_rate_at_3": 0.5122171945701357
+    },
+    "popularity": {
+      "hit_rate_at_3": 0.8813019635591721,
+      "long_tail_hit_rate_at_3": 0.3927601809954751
+    },
+    "source": "https://kdd.ics.uci.edu/databases/tic/tic.html",
+    "scope": "Consumer portfolio reconstruction on the publisher split. Premium contribution columns excluded.",
+    "targets": {
+      "hit_rate_at_3": 0.7,
+      "long_tail_hit_rate_at_3": 0.4
+    }
+  },
+  "holdings": {
+    "source": "https://doi.org/10.17632/5cxyb5fp4f.2",
+    "license": "CC BY 4.0",
+    "authors": [
+      "Josep Lledó",
+      "Jose M. Pavía"
+    ],
+    "rows": 105555,
+    "scope": "Spanish motor portfolio. Same policyholder-product observed one calendar year later. Unmatched records are excluded from correlation. Lapse combines different causes.",
+    "target_spearman": 0.5,
+    "cohorts": [
+      {
+        "start_year": 2015,
+        "starting_records": 4559,
+        "anniversary_in_observation_window": 4559,
+        "matched_pairs": 3333,
+        "persistence_spearman": 0.6960315573393725
+      },
+      {
+        "start_year": 2016,
+        "starting_records": 31428,
+        "anniversary_in_observation_window": 31428,
+        "matched_pairs": 24248,
+        "persistence_spearman": 0.7449645734868938
+      },
+      {
+        "start_year": 2017,
+        "starting_records": 33753,
+        "anniversary_in_observation_window": 30871,
+        "matched_pairs": 24472,
+        "persistence_spearman": 0.7618194946204184
+      }
+    ]
+  },
+  "source_sha256": {
+    "coil-training.tsv": "5d5bdca1be0b9a6c012b93a8c8104761201bd70f7e08764fa67f2cfb26243723",
+    "coil-test.tsv": "fddb767ff809088e8046a4136abde77807de08e1e33871d013f72d7185431ed0",
+    "coil-test-target.tsv": "0d15ce4120d397c0315d6c00ba29c5e59463afd9fff720d175a376a363ecb9cd",
+    "motor-portfolio.csv": "00061a64e355a7f9bbd06f1bcd3f0846b1f849955119a812acf2bc7781ee293a"
+  }
+}

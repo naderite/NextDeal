@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GroupKFold
 from sklearn.pipeline import make_pipeline
 
-from .config import ARTIFACT_VERSION, ROOT, RUNTIME
+from .config import ARTIFACT_VERSION, MODEL_DIR, RUNTIME
 from .db import event, now
 from .services import engine, safe_profiles
 from src.features import build_preprocessor
@@ -30,6 +30,8 @@ def refresh_artifacts():
     MANIFEST.write_text(json.dumps(manifest, indent=2))
     try:
         e = engine()
+        if e.episodes.empty:
+            raise ValueError("No portfolio training data in this dataset")
         data = safe_profiles(e.episodes)
         tr, te = next(GroupKFold(5).split(data, groups=data.REF_pm))
         model = make_pipeline(build_preprocessor(e.products), LogisticRegression(C=.3, max_iter=3000))
@@ -51,12 +53,12 @@ def refresh_artifacts():
             manifest['status'] = 'rejected; previous artifacts retained'
         else:
             model.fit(data, data.hidden_product)
-            candidate = RUNTIME / 'candidate.joblib'
+            candidate = MODEL_DIR / 'candidate.joblib'
             joblib.dump({"version": ARTIFACT_VERSION, "recommender": model, "intent": e.intent}, candidate)
             # Verify artifact reload before replacing the known-working file.
             loaded = joblib.load(candidate)
             loaded['recommender'].predict_proba(data.iloc[:1])
-            os.replace(candidate, ROOT / 'models/app_baseline.joblib')
+            os.replace(candidate, MODEL_DIR / 'app_baseline.joblib')
             manifest['status'] = 'promoted'
             engine.cache_clear()
         manifest['finished_at'] = now()

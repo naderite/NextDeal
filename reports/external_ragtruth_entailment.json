@@ -1,0 +1,627 @@
+{
+  "model": "cross-encoder/nli-deberta-v3-xsmall",
+  "threshold": 0.5,
+  "target_kappa": 0.6,
+  "kappa": 0.09999999999999998,
+  "confusion_matrix": [
+    [
+      60,
+      0
+    ],
+    [
+      54,
+      6
+    ]
+  ],
+  "cases": [
+    {
+      "id": "12693",
+      "human_grounded": false,
+      "support": 0.0018949088407680392
+    },
+    {
+      "id": "13564",
+      "human_grounded": false,
+      "support": 0.0013599852100014687
+    },
+    {
+      "id": "14761",
+      "human_grounded": true,
+      "support": 0.0013817098224535584
+    },
+    {
+      "id": "13262",
+      "human_grounded": false,
+      "support": 0.0022599713411182165
+    },
+    {
+      "id": "14691",
+      "human_grounded": true,
+      "support": 0.0036636190488934517
+    },
+    {
+      "id": "14702",
+      "human_grounded": false,
+      "support": 0.003938984591513872
+    },
+    {
+      "id": "12134",
+      "human_grounded": true,
+      "support": 0.003968663047999144
+    },
+    {
+      "id": "14352",
+      "human_grounded": true,
+      "support": 0.037193283438682556
+    },
+    {
+      "id": "14131",
+      "human_grounded": false,
+      "support": 0.0007794701959937811
+    },
+    {
+      "id": "13311",
+      "human_grounded": true,
+      "support": 0.01813480444252491
+    },
+    {
+      "id": "15653",
+      "human_grounded": true,
+      "support": 0.0335334949195385
+    },
+    {
+      "id": "14290",
+      "human_grounded": false,
+      "support": 0.0016982228262349963
+    },
+    {
+      "id": "15786",
+      "human_grounded": true,
+      "support": 0.01946473866701126
+    },
+    {
+      "id": "13535",
+      "human_grounded": true,
+      "support": 0.003944127820432186
+    },
+    {
+      "id": "15131",
+      "human_grounded": true,
+      "support": 0.09172354638576508
+    },
+    {
+      "id": "15203",
+      "human_grounded": true,
+      "support": 0.03148762881755829
+    },
+    {
+      "id": "15009",
+      "human_grounded": true,
+      "support": 0.014540432021021843
+    },
+    {
+      "id": "13941",
+      "human_grounded": true,
+      "support": 0.004108889028429985
+    },
+    {
+      "id": "14745",
+      "human_grounded": true,
+      "support": 0.002859315602108836
+    },
+    {
+      "id": "13129",
+      "human_grounded": true,
+      "support": 0.010222191922366619
+    },
+    {
+      "id": "12703",
+      "human_grounded": true,
+      "support": 0.017195533961057663
+    },
+    {
+      "id": "12068",
+      "human_grounded": true,
+      "support": 0.007197965867817402
+    },
+    {
+      "id": "15735",
+      "human_grounded": false,
+      "support": 0.0032077336218208075
+    },
+    {
+      "id": "13908",
+      "human_grounded": true,
+      "support": 0.006003139540553093
+    },
+    {
+      "id": "16691",
+      "human_grounded": true,
+      "support": 0.013137107715010643
+    },
+    {
+      "id": "13493",
+      "human_grounded": true,
+      "support": 0.024198157712817192
+    },
+    {
+      "id": "17053",
+      "human_grounded": true,
+      "support": 0.03516584262251854
+    },
+    {
+      "id": "16775",
+      "human_grounded": false,
+      "support": 0.0025838902220129967
+    },
+    {
+      "id": "13342",
+      "human_grounded": false,
+      "support": 0.0013823331100866199
+    },
+    {
+      "id": "12439",
+      "human_grounded": true,
+      "support": 0.6318556666374207
+    },
+    {
+      "id": "13718",
+      "human_grounded": true,
+      "support": 0.033159274607896805
+    },
+    {
+      "id": "12469",
+      "human_grounded": true,
+      "support": 0.07039593160152435
+    },
+    {
+      "id": "14096",
+      "human_grounded": true,
+      "support": 0.014399010688066483
+    },
+    {
+      "id": "14283",
+      "human_grounded": false,
+      "support": 0.005556344985961914
+    },
+    {
+      "id": "15753",
+      "human_grounded": false,
+      "support": 0.0009216414764523506
+    },
+    {
+      "id": "12458",
+      "human_grounded": false,
+      "support": 0.11302772164344788
+    },
+    {
+      "id": "12102",
+      "human_grounded": true,
+      "support": 0.6831318736076355
+    },
+    {
+      "id": "12220",
+      "human_grounded": true,
+      "support": 0.00281316670589149
+    },
+    {
+      "id": "17515",
+      "human_grounded": true,
+      "support": 0.2528330683708191
+    },
+    {
+      "id": "14846",
+      "human_grounded": false,
+      "support": 0.0037194453179836273
+    },
+    {
+      "id": "17058",
+      "human_grounded": true,
+      "support": 0.0009534856071695685
+    },
+    {
+      "id": "15179",
+      "human_grounded": true,
+      "support": 0.002449227962642908
+    },
+    {
+      "id": "14294",
+      "human_grounded": true,
+      "support": 0.015070589259266853
+    },
+    {
+      "id": "13105",
+      "human_grounded": false,
+      "support": 0.0023471699096262455
+    },
+    {
+      "id": "16664",
+      "human_grounded": true,
+      "support": 0.0024591777473688126
+    },
+    {
+      "id": "14201",
+      "human_grounded": true,
+      "support": 0.05593961104750633
+    },
+    {
+      "id": "16853",
+      "human_grounded": false,
+      "support": 0.016319982707500458
+    },
+    {
+      "id": "12435",
+      "human_grounded": false,
+      "support": 0.00609385222196579
+    },
+    {
+      "id": "16466",
+      "human_grounded": true,
+      "support": 0.0008532843203283846
+    },
+    {
+      "id": "15342",
+      "human_grounded": true,
+      "support": 0.015881260856986046
+    },
+    {
+      "id": "12185",
+      "human_grounded": true,
+      "support": 0.01009310968220234
+    },
+    {
+      "id": "14212",
+      "human_grounded": true,
+      "support": 0.007606205530464649
+    },
+    {
+      "id": "14504",
+      "human_grounded": true,
+      "support": 0.0729091465473175
+    },
+    {
+      "id": "16509",
+      "human_grounded": false,
+      "support": 0.0024910038337111473
+    },
+    {
+      "id": "14508",
+      "human_grounded": true,
+      "support": 0.025539837777614594
+    },
+    {
+      "id": "16357",
+      "human_grounded": true,
+      "support": 0.06452137231826782
+    },
+    {
+      "id": "13366",
+      "human_grounded": false,
+      "support": 0.0029457672499120235
+    },
+    {
+      "id": "16561",
+      "human_grounded": true,
+      "support": 0.04197516664862633
+    },
+    {
+      "id": "16452",
+      "human_grounded": true,
+      "support": 0.0018788272282108665
+    },
+    {
+      "id": "16903",
+      "human_grounded": true,
+      "support": 0.03757299855351448
+    },
+    {
+      "id": "14714",
+      "human_grounded": true,
+      "support": 0.8836363554000854
+    },
+    {
+      "id": "14376",
+      "human_grounded": true,
+      "support": 0.0493379645049572
+    },
+    {
+      "id": "15195",
+      "human_grounded": false,
+      "support": 0.0006961916224099696
+    },
+    {
+      "id": "16899",
+      "human_grounded": true,
+      "support": 0.0012770660687237978
+    },
+    {
+      "id": "16116",
+      "human_grounded": true,
+      "support": 0.3323310613632202
+    },
+    {
+      "id": "15728",
+      "human_grounded": false,
+      "support": 0.010258419439196587
+    },
+    {
+      "id": "12335",
+      "human_grounded": true,
+      "support": 0.012543287128210068
+    },
+    {
+      "id": "14995",
+      "human_grounded": true,
+      "support": 0.9810259938240051
+    },
+    {
+      "id": "12904",
+      "human_grounded": true,
+      "support": 0.005777386948466301
+    },
+    {
+      "id": "14806",
+      "human_grounded": false,
+      "support": 0.006317509803920984
+    },
+    {
+      "id": "12554",
+      "human_grounded": true,
+      "support": 0.01918674446642399
+    },
+    {
+      "id": "12912",
+      "human_grounded": true,
+      "support": 0.5681082606315613
+    },
+    {
+      "id": "16635",
+      "human_grounded": true,
+      "support": 0.007299025077372789
+    },
+    {
+      "id": "15969",
+      "human_grounded": true,
+      "support": 0.0011166906915605068
+    },
+    {
+      "id": "12015",
+      "human_grounded": true,
+      "support": 0.00678092148154974
+    },
+    {
+      "id": "13430",
+      "human_grounded": true,
+      "support": 0.004550773650407791
+    },
+    {
+      "id": "17112",
+      "human_grounded": true,
+      "support": 0.0033972945529967546
+    },
+    {
+      "id": "13042",
+      "human_grounded": false,
+      "support": 0.024447010830044746
+    },
+    {
+      "id": "17395",
+      "human_grounded": true,
+      "support": 0.6745370626449585
+    },
+    {
+      "id": "13231",
+      "human_grounded": true,
+      "support": 0.35454127192497253
+    },
+    {
+      "id": "13211",
+      "human_grounded": true,
+      "support": 0.017498411238193512
+    },
+    {
+      "id": "16154",
+      "human_grounded": true,
+      "support": 0.0007191919721662998
+    },
+    {
+      "id": "16419",
+      "human_grounded": false,
+      "support": 0.001278146868571639
+    },
+    {
+      "id": "15485",
+      "human_grounded": false,
+      "support": 0.00289771961979568
+    },
+    {
+      "id": "13163",
+      "human_grounded": false,
+      "support": 0.010986974462866783
+    },
+    {
+      "id": "16056",
+      "human_grounded": false,
+      "support": 0.016073601320385933
+    },
+    {
+      "id": "12260",
+      "human_grounded": false,
+      "support": 0.006556863896548748
+    },
+    {
+      "id": "13917",
+      "human_grounded": false,
+      "support": 0.0008310457924380898
+    },
+    {
+      "id": "14397",
+      "human_grounded": false,
+      "support": 0.0017872158205136657
+    },
+    {
+      "id": "14324",
+      "human_grounded": false,
+      "support": 0.0012043978786095977
+    },
+    {
+      "id": "15555",
+      "human_grounded": false,
+      "support": 0.00175323779694736
+    },
+    {
+      "id": "14469",
+      "human_grounded": false,
+      "support": 0.0041817957535386086
+    },
+    {
+      "id": "12233",
+      "human_grounded": false,
+      "support": 0.001998392166569829
+    },
+    {
+      "id": "13070",
+      "human_grounded": false,
+      "support": 0.0065077971667051315
+    },
+    {
+      "id": "13442",
+      "human_grounded": false,
+      "support": 0.0017913149204105139
+    },
+    {
+      "id": "13155",
+      "human_grounded": false,
+      "support": 0.0012896362459287047
+    },
+    {
+      "id": "15465",
+      "human_grounded": false,
+      "support": 0.0016108035342767835
+    },
+    {
+      "id": "15677",
+      "human_grounded": false,
+      "support": 0.04175885021686554
+    },
+    {
+      "id": "12521",
+      "human_grounded": false,
+      "support": 0.0036754016764461994
+    },
+    {
+      "id": "12842",
+      "human_grounded": false,
+      "support": 0.023630930110812187
+    },
+    {
+      "id": "16883",
+      "human_grounded": false,
+      "support": 0.09881655871868134
+    },
+    {
+      "id": "13137",
+      "human_grounded": false,
+      "support": 0.0015352516202256083
+    },
+    {
+      "id": "14860",
+      "human_grounded": false,
+      "support": 0.0027361551765352488
+    },
+    {
+      "id": "17104",
+      "human_grounded": false,
+      "support": 0.004443902522325516
+    },
+    {
+      "id": "13376",
+      "human_grounded": false,
+      "support": 0.0023507026489824057
+    },
+    {
+      "id": "15712",
+      "human_grounded": false,
+      "support": 0.007295595016330481
+    },
+    {
+      "id": "12765",
+      "human_grounded": false,
+      "support": 0.011940939351916313
+    },
+    {
+      "id": "15687",
+      "human_grounded": false,
+      "support": 0.008116699755191803
+    },
+    {
+      "id": "12046",
+      "human_grounded": false,
+      "support": 0.004942941479384899
+    },
+    {
+      "id": "13469",
+      "human_grounded": false,
+      "support": 0.0034439447335898876
+    },
+    {
+      "id": "17255",
+      "human_grounded": false,
+      "support": 0.006477096118032932
+    },
+    {
+      "id": "14007",
+      "human_grounded": false,
+      "support": 0.012446323409676552
+    },
+    {
+      "id": "15104",
+      "human_grounded": false,
+      "support": 0.002956628566607833
+    },
+    {
+      "id": "12449",
+      "human_grounded": false,
+      "support": 0.022233953699469566
+    },
+    {
+      "id": "12345",
+      "human_grounded": false,
+      "support": 0.013024977408349514
+    },
+    {
+      "id": "12602",
+      "human_grounded": false,
+      "support": 0.0025040351320058107
+    },
+    {
+      "id": "13293",
+      "human_grounded": false,
+      "support": 0.001197561388835311
+    },
+    {
+      "id": "16797",
+      "human_grounded": false,
+      "support": 0.003921424504369497
+    },
+    {
+      "id": "17283",
+      "human_grounded": false,
+      "support": 0.19572953879833221
+    },
+    {
+      "id": "15777",
+      "human_grounded": false,
+      "support": 0.0017420245567336679
+    }
+  ],
+  "sample_size": 120,
+  "source": "https://aclanthology.org/2024.acl-long.585/",
+  "model_source": "https://huggingface.co/cross-encoder/nli-deberta-v3-xsmall",
+  "scope": "Balanced QA sample from RAGTruth test, seed 42 and one response per source. Sentences are scored against passages individually and the lowest best entailment probability determines the draft score.",
+  "confusion_matrix_labels": [
+    false,
+    true
+  ],
+  "roc_auc": 0.7352777777777778
+}

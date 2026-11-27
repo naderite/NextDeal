@@ -11,10 +11,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from .agent import chat, run_case
-from .config import ARTIFACT_VERSION, OLLAMA_MODEL, OLLAMA_URL, ROOT
+from .config import ARTIFACT_VERSION, CUSTOM_DATASET, OLLAMA_MODEL, OLLAMA_URL, ROOT
 from .db import connect, decode, demo_date, event, init, now
 from .governance import match_pair, pipeline
 from .services import engine
+from .review_metrics import draft_acceptance_metrics, human_review_metrics
 from .artifacts import MANIFEST, refresh_artifacts
 
 
@@ -304,7 +305,7 @@ def metrics():
 
 @app.post("/api/monitoring/report")
 def monitoring_report():
-    m = engine().metrics()
+    m = engine().weekly_activity()
     result = chat([{"role": "system", "content": "Write a short English weekly advisor activity report using ONLY these observed demo counts. Do not invent conversion, revenue or real business improvements. State that this is simulated communication. Include two useful follow-up actions."}, {"role": "user", "content": json.dumps(m)}])
     event("monitoring_report", {"metrics": m})
     return {"report": result["content"], "metrics": m, "model": OLLAMA_MODEL, "live": True}
@@ -313,17 +314,9 @@ def monitoring_report():
 @app.get("/api/evaluations")
 def evaluations():
     path = ROOT / "reports/validation2_evaluation.json"
-    result = json.loads(path.read_text()) if path.exists() else {"status": "not_run", "objectives": []}
-    with connect() as db:
-        reviews = [decode(r) for r in db.execute("SELECT human_reviews.*,drafts.quality FROM human_reviews JOIN drafts ON drafts.id=human_reviews.draft_id")]
-    result['human_reviews'] = {"count": len(reviews), "quality_kappa": None}
-    if len(reviews) >= 2:
-        from sklearn.metrics import cohen_kappa_score
-        import math
-        truth = [r['data']['grounded'] for r in reviews]
-        pred = [json.loads(r['quality']).get('grounded', False) for r in reviews]
-        kappa = float(cohen_kappa_score(truth, pred))
-        result['human_reviews']['quality_kappa'] = kappa if math.isfinite(kappa) else None
+    result = json.loads(path.read_text()) if not CUSTOM_DATASET and path.exists() else {"status": "not_run", "objectives": []}
+    result["human_reviews"] = human_review_metrics()
+    result["draft_acceptance"] = draft_acceptance_metrics()
     return result
 
 

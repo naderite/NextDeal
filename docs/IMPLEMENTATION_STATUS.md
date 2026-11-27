@@ -1,5 +1,17 @@
 # Implementation status — NextDeal
 
+## Generalized evaluation
+
+See the [external benchmark guide](EXTERNAL_BENCHMARKS.md) for the source files, commands, and dataset adapters. Current results are recorded under `reports/external_*.json`.
+
+- The advisor ranker exceeds both HitRate@3 targets on UCI CoIL's consumer reconstruction holdout.
+- The public Spanish motor data exceeds the 12-month persistence threshold among matched observations. Attrition remains a limit of that result.
+- The Spanish motor replay clears the renewal timing target under scripted approvals.
+- The configurable intent classifier exceeds the macro-F1 target on CLINC150's in-scope holdout.
+- The coverage-addition model meets the 60% suggestion target. Its 1.08× lift is below target, and contract eligibility needs separate evidence.
+- The public renewal-payment proxy clears the recall target. Its 0.341 PR-AUC is below target, and the label does not identify unpaid invoices.
+- The independent InsuranceQA semantic benchmark reaches 45.5% Recall@5 and 79.3% Recall@100. Faithfulness, judge agreement, and advisor acceptance still require separate evidence.
+
 ## Delivery phases
 
 | Phase | Delivered | Verification |
@@ -8,7 +20,7 @@
 | B | All 15 objective implementations and evaluation protocols | Objective register with real/synthetic provenance and missed targets |
 | C | Production build, tests, notebook reruns, offline artifacts, demo documentation | 17 API tests; 3 browser tests; 4 notebooks; 50 live tool scenarios; 3 live full workflows |
 
-## Measured objective status
+## Historical BH Assurance objective status
 
 | Objective | Status | Evidence type |
 |---|---|---|
@@ -18,10 +30,10 @@
 | 2.1 — Non-payment risk | target not met | real retrospective + separate synthetic benchmark |
 | 2.2 — Guarantee upselling | target not met | real held-out renewal contracts |
 | 2.3 — Renewal agent | target not met | historical simulation |
-| 3.1 — Intent classifier | target met | 300 synthetic English messages; grouped template CV |
-| 3.2 — Grounded retrieval | awaiting evidence | real public pages + curated question/phrase benchmark |
+| 3.1 — Intent classifier | awaiting evidence | synthetic template benchmark completed; independent English labels pending |
+| 3.2 — Grounded retrieval | awaiting evidence | 86.6% English Recall@5 on development questions; independent labels and human faithfulness ratings pending |
 | 3.3 — Conversation orchestrator | awaiting evidence | live application; human review pending |
-| 4.1 — Value and loyalty | target not met | synthetic longitudinal simulation |
+| 4.1 — Value and loyalty | awaiting evidence | synthetic simulation completed; real dated holdings pending |
 | 4.2 — LLM quality judge | awaiting evidence | live model; human comparison pending |
 | 4.3 — Monitoring agent | awaiting evidence | actual Ollama report over observed test activity |
 | 5.1 — Data anomalies | target met | synthetic fault injection |
@@ -30,11 +42,11 @@
 
 ## Evidence still requiring people or unavailable data
 
-- Genuine human draft acceptance, answer faithfulness review, and judge agreement are not manufactured from scripted tests or model labels.
-- Independent human-written English intent evaluation remains needed; the synthetic rule/ML benchmark is not evidence of general performance.
-- Recommendation, English retrieval, real payment-risk, guarantee coverage, and synthetic value targets remain below target where shown in the register.
-- Authentic contractual PDFs and real 12-month outcome history remain unavailable.
-- Timely renewal contact is measured only after advisor-approved simulated dispatch, not from the existence of scheduled actions.
+- **Advisor workflow.** Use a dedicated runtime to record genuine approvals, edits, escalations, rejections, and simulated renewal dispatches. Rate grounding on reviewed model drafts so the evaluator can measure faithfulness and agreement.
+- **Independent English evaluation.** Use `--intent-labels` with at least 300 independently labeled messages and `--retrieval-labels` with independent questions and relevant passage IDs. The development retrieval benchmark reached 86.6% English Recall@5.
+- **Guarantee eligibility.** Ask the insurer for exact product and guarantee mappings with policy references. The first two candidate pairs would cover 199 of 320 contracts if confirmed. Use `--guarantee-catalogue` to measure confirmed candidate coverage. The rules still require held-out lift and coverage.
+- **Real outcomes.** Payment-risk validation needs dated invoices and payment outcomes available after a defined prediction date. Twelve-month holdings validation needs dated snapshots for the same clients one calendar year apart. Use `--holdings-snapshots` for the persistence baseline.
+- **Recommendations.** The current ranker reached 66.4% overall and 25.7% on long-tail products in the repeated company-grouped benchmark. Targets are 70% and 40%.
 
 ## Demo entry points
 

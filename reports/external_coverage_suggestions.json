@@ -1,0 +1,58 @@
+{
+  "source": "https://doi.org/10.17632/sw4jmdb2sm.1",
+  "authors": [
+    "Priscila Espinosa",
+    "Josep Lled\u00f3",
+    "David Atance"
+  ],
+  "license": "CC BY 4.0",
+  "training_years": [
+    2022,
+    2023
+  ],
+  "test_years": [
+    2023,
+    2024
+  ],
+  "training_transitions": 31734,
+  "test_transitions": 52411,
+  "method": "boosted",
+  "supported_coverages": [
+    "property_damage",
+    "theft",
+    "fire"
+  ],
+  "oracle_lift_upper_bound_at_target_coverage": 1.2246478480851788,
+  "suggestions": 31447,
+  "coverage": 0.6000076319856519,
+  "subsequent_additions": 551,
+  "learned_rule_groups": 0,
+  "holdout_with_any_unheld_coverage": 35462,
+  "holdout_observed_additions": {
+    "liability": 0,
+    "property_damage": 569,
+    "theft": 110,
+    "fire": 110,
+    "glass": 21,
+    "legal_protection": 0,
+    "occupants": 2
+  },
+  "lift": 1.0787270872196602,
+  "by_coverage": {
+    "property_damage": {
+      "suggestions": 29016,
+      "subsequent_additions": 510,
+      "holdout_addition_rate_among_unheld": 0.01604715437982966
+    },
+    "theft": {
+      "suggestions": 2431,
+      "subsequent_additions": 41,
+      "holdout_addition_rate_among_unheld": 0.018577942915048135
+    }
+  },
+  "targets": {
+    "coverage": 0.6,
+    "lift": 1.5
+  },
+  "scope": "Continued or re-observed insureds with one usable record per year. Positive premium marks observed paid-for coverage. Lift compares observed additions to the held-out unheld-coverage base rates for the suggested mix. This benchmark measures association with additions, not contractual eligibility or causal impact."
+}

@@ -62,6 +62,30 @@ def match_pair(a, b):
     if name >= .72:
         evidence.append(f"Name similarity {name:.2f}")
     score = min(.99, sum(weights) + .3 * name) if weights else .55 * name
+    if score < .8 and a.get("kind") == "corporate":
+        left_tokens, right_tokens = (
+            set(re.findall(r"[a-z0-9]+", str(row.get("label") or "").lower()))
+            for row in (a, b)
+        )
+        contained = bool(left_tokens and right_tokens) and (
+            left_tokens <= right_tokens or right_tokens <= left_tokens
+        )
+        if "Same normalized phone" in evidence and (name >= .82 or contained):
+            score = .8
+            evidence.append("Corroborating business name")
+        elif name >= .85:
+            left_city, right_city = normal(a.get("city")), normal(b.get("city"))
+            left_address, right_address = normal(a.get("address")), normal(b.get("address"))
+            if left_address and right_address:
+                address = SequenceMatcher(None, left_address, right_address).ratio()
+                street_number = re.match(r"^\d+(?=\s)", str(a.get("address") or "").strip())
+                other_number = re.match(r"^\d+(?=\s)", str(b.get("address") or "").strip())
+                same_number = street_number and other_number and street_number[0] == other_number[0]
+                same_city = left_city and left_city == right_city
+                exact_business = name == 1 and same_number and (same_city or not (left_city and right_city))
+                if (same_city and address >= .88) or (exact_business and address >= .85):
+                    score = .8
+                    evidence.append(f"Corroborating business address similarity {address:.2f}")
     return {"score": round(score, 3), "decision": "duplicate" if score >= .8 else "review" if score >= .5 else "distinct", "evidence": evidence}
 
 

@@ -18,6 +18,17 @@ def baskets_from_contracts(pp: pd.DataFrame) -> list[frozenset]:
     return out
 
 
+def observed_guarantees_by_product(baskets):
+    """Index guarantees seen on each product in the supplied historical sample."""
+    observed = {}
+    for basket in baskets:
+        product = next(item for item in basket if item.startswith("prod::"))
+        observed.setdefault(product, set()).update(
+            item[5:] for item in basket if item.startswith("gar::")
+        )
+    return observed
+
+
 def mine_rules(baskets, min_support: int = 3, min_confidence: float = 0.3, min_lift: float = 1.5,
                max_antecedent: int = 2) -> pd.DataFrame:
     """All rules A -> g (g a guarantee) with support count >= min_support, confidence and lift thresholds."""
@@ -46,11 +57,13 @@ def mine_rules(baskets, min_support: int = 3, min_confidence: float = 0.3, min_l
     return pd.DataFrame(rows, columns=cols).sort_values(["confidence", "lift"], ascending=False).reset_index(drop=True)
 
 
-def recommend(basket: frozenset, rules: pd.DataFrame, k: int = 3) -> list[dict]:
+def recommend(basket: frozenset, rules: pd.DataFrame, k: int = 3, *, allowed: set[str] | None = None) -> list[dict]:
     """Guarantees not held yet, from the most confident firing rule per consequent."""
     held = {i[5:] for i in basket if i.startswith("gar::")}
     best = {}
     for r in rules.itertuples():
+        if allowed is not None and r.consequent not in allowed:
+            continue
         if r.consequent in held or not set(r.antecedent) <= basket:
             continue
         if r.consequent not in best or r.confidence > best[r.consequent]["confidence"]:

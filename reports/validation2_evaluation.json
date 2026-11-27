@@ -1,12 +1,16 @@
 {
-  "generated_at": "2026-11-22T20:22:34.312964+00:00",
+  "generated_at": "2026-11-27T11:50:42.222963+00:00",
   "version": "nextdeal-v2.0",
   "live_llm": {
-    "scenarios": 50,
-    "valid_scenario_rate": 1.0,
-    "correct_route_rate": 1.0,
-    "full_workflows_passed": 3,
-    "human_acceptance_evidence": false
+    "finished_at": "2026-11-22T20:23:58.526217+00:00",
+    "summary": {
+      "scenarios": 50,
+      "valid_scenario_rate": 1.0,
+      "correct_route_rate": 1.0,
+      "full_workflows_passed": 3,
+      "human_acceptance_evidence": false
+    },
+    "provenance": "saved live validation; rerun to verify current code"
   },
   "datasets": {
     "corporate": "real historical pseudonymised portfolio",
@@ -25,7 +29,7 @@
           "HitRate@3": 0.6886363636363636,
           "HitRate@1": 0.38333333333333336,
           "long_tail_HitRate@3": 0.3235867446393762,
-          "MRR": 0.5642709383468817,
+          "MRR": 0.5639861137108274,
           "coverage": 12,
           "gain_95pct_company_CI": [
             0.0031471958820168387,
@@ -36,7 +40,7 @@
           "HitRate@3": 0.6643939393939394,
           "HitRate@1": 0.3787878787878788,
           "long_tail_HitRate@3": 0.2573099415204678,
-          "MRR": 0.5566082185181355,
+          "MRR": 0.5565793472733763,
           "coverage": 13,
           "gain_95pct_company_CI": [
             -0.01631758764111706,
@@ -53,7 +57,7 @@
       },
       "provenance": "real reconstruction benchmark",
       "status": "target_not_met",
-      "limitation": "Raw profile labels, constant UNKNOWNs, history disabled. Reconstructs held products; not future sales. UI applies additional diversification rules.",
+      "limitation": "Raw profile labels, constant UNKNOWNs, history disabled. Reconstructs held products; not future sales. Logistic scores include the UI new-line tiebreaker; hybrid results are experimental.",
       "implementation": "implemented"
     },
     {
@@ -140,13 +144,32 @@
       "name": "Recommendation agent",
       "target": ">= 90% valid tool calls on >= 50 scenarios",
       "metrics": {
-        "scenarios": 50,
-        "valid_scenario_rate": 1.0,
-        "correct_route_rate": 1.0,
-        "full_workflows_passed": 3,
-        "human_acceptance_evidence": false
+        "protocol": "Live local tool trace plus 50-scenario tool suite",
+        "saved_live_run": {
+          "finished_at": "2026-11-22T20:23:58.526217+00:00",
+          "summary": {
+            "scenarios": 50,
+            "valid_scenario_rate": 1.0,
+            "correct_route_rate": 1.0,
+            "full_workflows_passed": 3,
+            "human_acceptance_evidence": false
+          },
+          "provenance": "saved live validation; rerun to verify current code"
+        },
+        "current_tool_run": {
+          "finished_at": "2026-11-27T11:46:23.683261+00:00",
+          "model": "qwen3:4b-instruct",
+          "scenarios": 50,
+          "valid_scenario_rate": 1.0,
+          "correct_route_rate": 1.0,
+          "source_sha256": {
+            "backend/agent.py": "2cff3b152af68ce09c14733851e91728cd331a0b258a2c6ccef0ddbd8508419a",
+            "backend/services.py": "e129143a18de7070e592cb5fe7eb619845da54f5a562d132bf8b8fd2f51d6de5",
+            "scripts/live_validation.py": "30dd8508aea414947b73d2de135c076cc8253821fdc04544f9b73e9b9c5f0e1e"
+          }
+        }
       },
-      "provenance": "actual local Ollama calls; isolated scenario database",
+      "provenance": "live Ollama tool scenarios against current code in an isolated runtime",
       "status": "target_met",
       "limitation": "Do not infer tool validity from schema definitions.",
       "implementation": "implemented"
@@ -159,12 +182,23 @@
         "real": {
           "n": 320,
           "positives": 12,
-          "Recall": 0.25,
-          "PR_AUC": 0.03145243178349441,
+          "detected_positives": 4,
+          "policyholders": 316,
+          "threshold": 0.5,
+          "flagged": 111,
+          "Recall": 0.3333333333333333,
+          "recall_95pct_wilson": [
+            0.13811783989736134,
+            0.609382412602386
+          ],
+          "precision": 0.036036036036036036,
+          "PR_AUC": 0.030902515124483786,
+          "prevalence": 0.0375,
           "features": [
             "contract_age",
             "n_guarantees"
-          ]
+          ],
+          "split": "three stratified folds grouped by policyholder"
         },
         "synthetic": {
           "n": 1200,
@@ -182,16 +216,592 @@
       "name": "Guarantee upselling",
       "target": "Lift >= 1.5; coverage >= 60%",
       "metrics": {
-        "train_contracts": 220,
-        "test_contracts": 100,
-        "rules": 617,
-        "coverage": 0.01,
-        "minimum_rule_lift": 5.3625,
-        "split": "fixed held-out contract partition; no guarantee recommendation selected using test baskets"
+        "test_contracts": 320,
+        "coverage": 0.065625,
+        "observed_alternative_coverage": 0.071875,
+        "minimum_rule_lift": 5.907692307692307,
+        "heldout_rule_lift": {
+          "supported_checks": 1203,
+          "checks_at_or_above_target": 1199,
+          "minimum": 0.0
+        },
+        "folds": [
+          {
+            "test_contracts": 64,
+            "covered": 2,
+            "rules": 601,
+            "minimum_rule_lift": 6.39136302294197
+          },
+          {
+            "test_contracts": 64,
+            "covered": 1,
+            "rules": 596,
+            "minimum_rule_lift": 5.907692307692307
+          },
+          {
+            "test_contracts": 64,
+            "covered": 4,
+            "rules": 647,
+            "minimum_rule_lift": 6.4
+          },
+          {
+            "test_contracts": 64,
+            "covered": 8,
+            "rules": 599,
+            "minimum_rule_lift": 6.235897435897436
+          },
+          {
+            "test_contracts": 64,
+            "covered": 6,
+            "rules": 583,
+            "minimum_rule_lift": 6.4
+          }
+        ],
+        "by_family": {
+          "VIE": {
+            "contracts": 1,
+            "covered": 0,
+            "observed_alternative": 0
+          },
+          "DECES": {
+            "contracts": 283,
+            "covered": 1,
+            "observed_alternative": 1
+          },
+          "AUTOMOBILE": {
+            "contracts": 27,
+            "covered": 20,
+            "observed_alternative": 22
+          },
+          "ASSISTANCE EN VOYAGES": {
+            "contracts": 8,
+            "covered": 0,
+            "observed_alternative": 0
+          },
+          "RESPONSABILITE CIVILE": {
+            "contracts": 1,
+            "covered": 0,
+            "observed_alternative": 0
+          }
+        },
+        "split": "five folds grouped by policyholder; same-product observational coverage",
+        "source_candidates_for_review": {
+          "contracts": 320,
+          "with_unheld_candidates": 320,
+          "by_family": {
+            "AUTOMOBILE": {
+              "contracts": 27,
+              "with_unheld_candidates": 27
+            },
+            "DECES": {
+              "contracts": 283,
+              "with_unheld_candidates": 283
+            },
+            "VIE": {
+              "contracts": 1,
+              "with_unheld_candidates": 1
+            },
+            "ASSISTANCE EN VOYAGES": {
+              "contracts": 8,
+              "with_unheld_candidates": 8
+            },
+            "RESPONSABILITE CIVILE": {
+              "contracts": 1,
+              "with_unheld_candidates": 1
+            }
+          },
+          "review_shortlist": [
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 107
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 107
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)",
+              "guarantee": "EXONERATION",
+              "contracts": 107
+            },
+            {
+              "product": "TEMPORAIRE DECES TAYSIR MICROFINANCE",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 92
+            },
+            {
+              "product": "TEMPORAIRE DECES TAYSIR MICROFINANCE",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 92
+            },
+            {
+              "product": "TEMPORAIRE DECES TAYSIR MICROFINANCE",
+              "guarantee": "EXONERATION",
+              "contracts": 92
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 46
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 46
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)",
+              "guarantee": "EXONERATION",
+              "contracts": 46
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 26
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 26
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT",
+              "guarantee": "EXONERATION",
+              "contracts": 26
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ASSISTANCE GOLD",
+              "contracts": 6
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 6
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 6
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)",
+              "guarantee": "EXONERATION",
+              "contracts": 6
+            },
+            {
+              "product": "ASSISTANCES EN VOYAGES - PLAN BASIQUE",
+              "guarantee": "COVID19",
+              "contracts": 5
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "BRIS DE GLACES",
+              "contracts": 4
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "CATASTROPHE NATURELLE",
+              "contracts": 4
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ASSISTANCE + et CAR GLASS",
+              "contracts": 4
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "INDIVIDUELLE ACCIDENT",
+              "contracts": 4
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 4
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 4
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)",
+              "guarantee": "EXONERATION",
+              "contracts": 4
+            },
+            {
+              "product": "ASSISTANCES EN VOYAGES BH",
+              "guarantee": "COVID19",
+              "contracts": 3
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "CHOC DE VEHICULES TERRESTRES IDENTIFIES",
+              "contracts": 3
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "DOMMAGES AU VEHICULE",
+              "contracts": 3
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ASSISTANCE +",
+              "contracts": 3
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "VOL RADIO CASSETTE",
+              "contracts": 3
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "DOMMAGES ET COLLISION",
+              "contracts": 3
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "ACCIDENT CARE",
+              "contracts": 2
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "DOMMAGES ET COLLISION",
+              "contracts": 2
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "VOL",
+              "contracts": 2
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ASSISTANCE ACCIDENT AUTOMOBILE (3A)",
+              "contracts": 2
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "BRIS DE GLACES",
+              "contracts": 2
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "CAR GLASS",
+              "contracts": 2
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "ACCIDENT CARE",
+              "contracts": 2
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "ASSISTANCE ACCIDENT AUTOMOBILE (3A)",
+              "contracts": 2
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 2
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 2
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)",
+              "guarantee": "EXONERATION",
+              "contracts": 2
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "ASSISTANCE +",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "ASSISTANCE + et CAR GLASS",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "ASSISTANCE ACCIDENT AUTOMOBILE (3A)",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "CAR GLASS",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "CATASTROPHES NATURELS (TREMBLEMENT DE TERRE",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "EMEUTE ET MOUVEMENT POPULAIRE",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "INCENDIE",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "INONDATION))",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "SALIM ASSISTANCE AUTOMOBILE (S2A)",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "VOL RADIO CASSETTE",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ACCIDENT CARE",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "CHOC DE VEHICULES TERRESTRES IDENTIFIES",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "DOMMAGES AU VEHICULE",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "EMEUTE ET MOUVEMENT POPULAIRE",
+              "contracts": 1
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "INCENDIE",
+              "contracts": 1
+            },
+            {
+              "product": "MIXTE REVALORISABLE (AS)",
+              "guarantee": "DECES DOUBLEMENT",
+              "contracts": 1
+            },
+            {
+              "product": "MIXTE REVALORISABLE (AS)",
+              "guarantee": "DECES TRIPLEMENT",
+              "contracts": 1
+            },
+            {
+              "product": "MIXTE REVALORISABLE (AS)",
+              "guarantee": "EXONERATION",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "CAR GLASS",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "CATASTROPHES NATURELS (TREMBLEMENT DE TERRE",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "CHOC DE VEHICULES TERRESTRES IDENTIFIES",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "DOMMAGES AU VEHICULE",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "INDIVIDUELLE ACCIDENT",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "INONDATION))",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "VOL",
+              "contracts": 1
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "VOL RADIO CASSETTE",
+              "contracts": 1
+            },
+            {
+              "product": "R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES",
+              "guarantee": "DECES - I.D.T",
+              "contracts": 1
+            },
+            {
+              "product": "R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES",
+              "guarantee": "RC- DOMMAGES MATERIELS",
+              "contracts": 1
+            },
+            {
+              "product": "R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES",
+              "guarantee": "RC- PROFESSIONNELLE",
+              "contracts": 1
+            }
+          ],
+          "review_priority_if_approved": [
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (TSB)",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 107,
+              "cumulative_contracts_if_approved": 107
+            },
+            {
+              "product": "TEMPORAIRE DECES TAYSIR MICROFINANCE",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 92,
+              "cumulative_contracts_if_approved": 199
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (BTE)",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 46,
+              "cumulative_contracts_if_approved": 245
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 26,
+              "cumulative_contracts_if_approved": 271
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ASSISTANCE GOLD",
+              "additional_contracts": 6,
+              "cumulative_contracts_if_approved": 277
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (AS)",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 6,
+              "cumulative_contracts_if_approved": 283
+            },
+            {
+              "product": "ASSISTANCES EN VOYAGES - PLAN BASIQUE",
+              "guarantee": "COVID19",
+              "additional_contracts": 5,
+              "cumulative_contracts_if_approved": 288
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "BRIS DE GLACES",
+              "additional_contracts": 4,
+              "cumulative_contracts_if_approved": 292
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS TSB)",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 4,
+              "cumulative_contracts_if_approved": 296
+            },
+            {
+              "product": "ASSISTANCES EN VOYAGES BH",
+              "guarantee": "COVID19",
+              "additional_contracts": 3,
+              "cumulative_contracts_if_approved": 299
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "CATASTROPHE NATURELLE",
+              "additional_contracts": 3,
+              "cumulative_contracts_if_approved": 302
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "INDIVIDUELLE ACCIDENT",
+              "additional_contracts": 3,
+              "cumulative_contracts_if_approved": 305
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "DOMMAGES ET COLLISION",
+              "additional_contracts": 3,
+              "cumulative_contracts_if_approved": 308
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "ACCIDENT CARE",
+              "additional_contracts": 2,
+              "cumulative_contracts_if_approved": 310
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ASSISTANCE +",
+              "additional_contracts": 2,
+              "cumulative_contracts_if_approved": 312
+            },
+            {
+              "product": "TEMPORAIRE DECES A CAPITAL DECROISSANT LINEAIREMENT (PERSONNELS BTE)",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 2,
+              "cumulative_contracts_if_approved": 314
+            },
+            {
+              "product": "AUTOMOBILE",
+              "guarantee": "DOMMAGES ET COLLISION",
+              "additional_contracts": 1,
+              "cumulative_contracts_if_approved": 315
+            },
+            {
+              "product": "AUTOMOBILE II",
+              "guarantee": "ASSISTANCE ACCIDENT AUTOMOBILE (3A)",
+              "additional_contracts": 1,
+              "cumulative_contracts_if_approved": 316
+            },
+            {
+              "product": "MIXTE REVALORISABLE (AS)",
+              "guarantee": "DECES DOUBLEMENT",
+              "additional_contracts": 1,
+              "cumulative_contracts_if_approved": 317
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "ACCIDENT CARE",
+              "additional_contracts": 1,
+              "cumulative_contracts_if_approved": 318
+            },
+            {
+              "product": "OMNICANAL AUTOMOBILE PACK PERSONALISE",
+              "guarantee": "ASSISTANCE ACCIDENT AUTOMOBILE (3A)",
+              "additional_contracts": 1,
+              "cumulative_contracts_if_approved": 319
+            },
+            {
+              "product": "R.C  ETABLISSEMENT  EDUCATION PHYSIQUE ET SPORTIVES",
+              "guarantee": "DECES - I.D.T",
+              "additional_contracts": 1,
+              "cumulative_contracts_if_approved": 320
+            }
+          ],
+          "provenance": "source Candidate_Garanties field; eligibility and method undocumented"
+        }
       },
       "provenance": "real held-out renewal contracts",
       "status": "target_not_met",
-      "limitation": "Coverage means held-out contracts receiving at least one new-guarantee rule suggestion; it does not measure purchase.",
+      "limitation": "Coverage is measured out of fold. Training lift is the rule-mining threshold. Held-out lift is reported for fold-rule checks with at least three antecedent matches and a nonzero consequent prevalence. Same-product observation is historical evidence and eligibility requires advisor verification.",
       "implementation": "implemented"
     },
     {
@@ -200,14 +810,14 @@
       "target": ">= 95% dispatched >= 30 days before expiry",
       "metrics": {
         "contracts": 320,
-        "first_expiry": "2025-09-01",
-        "demo_clock": "configurable; initial 2025-08-01",
+        "contracts_with_expiry": 320,
         "scheduled_contacts": 320,
-        "approved_dispatch_coverage": 0
+        "timely_approved_dispatches": 0,
+        "approved_dispatch_coverage": 0.0
       },
-      "provenance": "historical simulation",
+      "provenance": "historical simulation; local outbox events",
       "status": "target_not_met",
-      "limitation": "Scheduling is implemented. Timely contact only counts approved dispatch; no contact success claimed from a schedule.",
+      "limitation": "",
       "implementation": "implemented"
     },
     {
@@ -272,9 +882,9 @@
         },
         "split": "5 folds grouped by original template"
       },
-      "provenance": "300 synthetic English messages; grouped template CV",
-      "status": "target_met",
-      "limitation": "Human-written independent evaluation remains required; template labels are synthetic.",
+      "provenance": "synthetic template benchmark and optional operator-supplied labels",
+      "status": "awaiting_evidence",
+      "limitation": "Final validation requires independently authored English messages with human labels.",
       "implementation": "implemented"
     },
     {
@@ -285,16 +895,24 @@
         "English": {
           "questions": 50,
           "answerable": 50,
-          "Recall@5": 0.5523333333333333,
-          "HitRate@5": 0.58
+          "Recall@5": 0.8656666666666666,
+          "HitRate@5": 0.92
         },
         "French": {
           "questions": 50,
           "answerable": 50,
-          "Recall@5": 0.8859999999999999,
-          "HitRate@5": 0.9
+          "Recall@5": 0.91,
+          "HitRate@5": 0.92
         },
-        "faithfulness": "Requires human review of generated answers; retrieval scores alone do not establish faithfulness"
+        "faithfulness": "Requires human review of generated answers; retrieval scores alone do not establish faithfulness",
+        "local_human_reviews": {
+          "count": 0,
+          "reviewed_judged_drafts": 0,
+          "consensus_drafts": 0,
+          "disputed_drafts": 0,
+          "faithfulness": null,
+          "quality_kappa": null
+        }
       },
       "provenance": "real public pages + curated question/phrase benchmark",
       "status": "awaiting_evidence",
@@ -306,31 +924,17 @@
       "name": "Conversation orchestrator",
       "target": ">= 70% drafts approved without edit",
       "metrics": {
-        "workflow": [
-          "context",
-          "tools_and_draft",
-          "quality",
-          "advisor_review",
-          "simulated_dispatch"
-        ],
-        "live_workflows": [
-          {
-            "subject": "Corporate cross-sell",
-            "status": "awaiting_review"
-          },
-          {
-            "subject": "Individual renewal",
-            "status": "awaiting_review"
-          },
-          {
-            "subject": "Refusal handling",
-            "status": "awaiting_review"
-          }
-        ]
+        "approved_without_edit": 0,
+        "edited": 0,
+        "rejected": 0,
+        "escalated": 0,
+        "unreviewed": 0,
+        "reviewed": 0,
+        "approval_without_edit_rate": null
       },
-      "provenance": "live application; human review pending",
+      "provenance": "local advisor workflow records",
       "status": "awaiting_evidence",
-      "limitation": "Advisor acceptance must be measured from genuine review decisions.",
+      "limitation": "Use a dedicated runtime with genuine advisor decisions to establish acceptance.",
       "implementation": "implemented"
     },
     {
@@ -340,11 +944,11 @@
       "metrics": {
         "synthetic_spearman": 0.33159514637269294,
         "n": 500,
-        "real_longitudinal_result": null
+        "real_persistence_baseline": null
       },
-      "provenance": "synthetic longitudinal simulation",
-      "status": "target_not_met",
-      "limitation": "Future outcomes simulated with independent randomness and latent loyalty. Does not establish real future value.",
+      "provenance": "synthetic simulation and optional dated holdings baseline",
+      "status": "awaiting_evidence",
+      "limitation": "The synthetic result is exploratory. The dated baseline needs real snapshots and does not establish a validated prediction model.",
       "implementation": "implemented"
     },
     {
@@ -358,7 +962,15 @@
           "professional",
           "unsupported_claims"
         ],
-        "human_kappa": null
+        "human_kappa": null,
+        "local_human_reviews": {
+          "count": 0,
+          "reviewed_judged_drafts": 0,
+          "consensus_drafts": 0,
+          "disputed_drafts": 0,
+          "faithfulness": null,
+          "quality_kappa": null
+        }
       },
       "provenance": "live model; human comparison pending",
       "status": "awaiting_evidence",
@@ -372,26 +984,28 @@
       "metrics": {
         "metrics": {
           "cases_by_status": {
-            "awaiting_review": 9,
-            "failed": 1,
             "received": 1
           },
           "decisions": {},
           "simulated_dispatches": 0,
-          "draft_versions": 9,
-          "events": {
-            "agent_failed": 1,
-            "draft_generated": 9,
-            "tool_call": 19
+          "draft_versions": 0,
+          "renewal_dispatch": {
+            "contracts": 320,
+            "contracts_with_expiry": 320,
+            "scheduled_contacts": 320,
+            "timely_approved_dispatches": 0,
+            "approved_dispatch_coverage": 0.0
           },
-          "median_draft_seconds": 10.49,
+          "events": {
+            "pipeline_run": 20
+          },
+          "median_draft_seconds": null,
           "approval_without_edit_rate": 0.0,
           "provenance": "observed local demo activity; no real conversion or renewal uplift measured"
         },
-        "report": "- 9 drafts received (awaiting review)  \n- 1 draft failed  \n- 1 draft received (failed)  \n- 9 draft generations completed  \n- 1 agent failure event  \n- 19 tool calls made  \n- Median draft time: 10.49 seconds  \n- Approval without edit rate: 0%  \n- No real conversion or renewal uplift measured",
-        "live": true
+        "report_endpoint": "/api/monitoring/report"
       },
-      "provenance": "actual Ollama report over observed test activity",
+      "provenance": "observed local application activity",
       "status": "awaiting_evidence",
       "limitation": "Live report evidence stored separately. No real conversion or sales claim.",
       "implementation": "implemented"

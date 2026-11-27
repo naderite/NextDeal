@@ -1,0 +1,148 @@
+{
+  "source": "https://aclanthology.org/2024.acl-long.585/",
+  "model": "qwen3:4b-instruct",
+  "sample_size": 24,
+  "sample_seed": 42,
+  "sample_and_judge_signature": "d995194a7ebd4e0ded6fdccf76bd01be0c458d41d26430262b14e415a46e2712:28fcc08e2d0f70d20b93a7fd32d54b216e3aebd66f1ffd55c0ee176fb655e4a5",
+  "cases": [
+    {
+      "id": "12693",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "13564",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "14761",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "13262",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "14691",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "14702",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "12134",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "14352",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "14131",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "13311",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "15653",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "14290",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "15786",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "13535",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "15131",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "15203",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "15009",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "13941",
+      "human_grounded": true,
+      "judge_grounded": true
+    },
+    {
+      "id": "15735",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "16775",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "13342",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "14283",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "15753",
+      "human_grounded": false,
+      "judge_grounded": true
+    },
+    {
+      "id": "12458",
+      "human_grounded": false,
+      "judge_grounded": true
+    }
+  ],
+  "status": "complete",
+  "human_label": "Grounded when the response has no annotated unsupported spans.",
+  "target_kappa": 0.6,
+  "scope": "Balanced QA pilot from the publisher's human-labeled test split, one response per source. Measures agreement on general QA groundedness, not advisor acceptance.",
+  "test_kappa": 0.0,
+  "confusion_matrix_labels": [
+    false,
+    true
+  ],
+  "confusion_matrix": [
+    [
+      0,
+      12
+    ],
+    [
+      0,
+      12
+    ]
+  ]
+}

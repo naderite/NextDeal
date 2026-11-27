@@ -1,0 +1,22 @@
+{
+  "source": "https://datahack-prod.s3.amazonaws.com/train_file/train_ZoGVYWq.csv",
+  "outcome": "renewal == 0",
+  "scope": "Public renewal-premium challenge proxy. Non-renewal does not distinguish missed invoices from other reasons and the published table has no dates for temporal evaluation.",
+  "training_policies": 47911,
+  "validation_policies": 15971,
+  "test_policies": 15971,
+  "test_positive_policies": 999,
+  "prevalence": 0.06255087345814288,
+  "model": "histogram gradient boosting, max depth 5",
+  "validation_average_precision": 0.3425695320814445,
+  "threshold": 0.06155397415329317,
+  "alerts": 4119,
+  "recall": 0.7517517517517518,
+  "precision": 0.1823258072347657,
+  "pr_auc_average_precision": 0.34095320308784316,
+  "reference_targets": {
+    "recall": 0.7,
+    "pr_auc": 0.4
+  },
+  "reference_targets_met_on_proxy": false
+}

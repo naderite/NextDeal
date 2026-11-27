@@ -1,0 +1,14 @@
+{
+  "source": "https://cran.r-project.org/package=restaurant",
+  "scope": "Development benchmark across all unordered record pairs. The corporate matching rule was developed using this dataset.",
+  "records": 864,
+  "pairs": 372816,
+  "true_positives": 107,
+  "false_positives": 0,
+  "false_negatives": 5,
+  "precision": 1.0,
+  "recall": 0.9553571428571429,
+  "target_precision": 0.95,
+  "target_recall": 0.85,
+  "meets_development_targets": true
+}

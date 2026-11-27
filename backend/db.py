@@ -2,9 +2,9 @@
 import json
 import sqlite3
 from contextlib import contextmanager
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
-from .config import DB_PATH
+from .config import CUSTOM_DATASET, DATA_DIR, DB_PATH
 
 
 def now():
@@ -27,11 +27,16 @@ def connect():
 
 
 def init():
+    manifest = DATA_DIR / "dataset.json"
+    start_date = "2025-08-01"
+    if CUSTOM_DATASET and manifest.is_file():
+        metadata = json.loads(manifest.read_text())
+        if "demo_date" in metadata:
+            start_date = date.fromisoformat(metadata["demo_date"]).isoformat()
     with connect() as db:
         db.executescript("""
         PRAGMA journal_mode=WAL;
         CREATE TABLE IF NOT EXISTS settings(key TEXT PRIMARY KEY,value TEXT NOT NULL);
-        INSERT OR IGNORE INTO settings VALUES('demo_date','2025-08-01');
         CREATE TABLE IF NOT EXISTS clients(id TEXT PRIMARY KEY,kind TEXT NOT NULL,label TEXT NOT NULL,data TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS contracts(id TEXT PRIMARY KEY,client_id TEXT NOT NULL,data TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS cases(id INTEGER PRIMARY KEY,client_id TEXT NOT NULL REFERENCES clients(id),
@@ -57,6 +62,7 @@ def init():
         CREATE TABLE IF NOT EXISTS renewal_schedule(contract_id TEXT PRIMARY KEY REFERENCES contracts(id),
           contact_date TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'scheduled',case_id INTEGER REFERENCES cases(id));
         """)
+        db.execute("INSERT OR IGNORE INTO settings VALUES('demo_date', ?)", (start_date,))
 
 
 def event(kind, data=None, case_id=None):

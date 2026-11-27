@@ -1,0 +1,25 @@
+{
+  "source": "https://kdd.ics.uci.edu/databases/tic/tic.html",
+  "training_portfolios": 5822,
+  "test_portfolios": 4000,
+  "episodes": 5653,
+  "long_tail_episodes": 1105,
+  "hit_rate_at_3": 0.9073058552980718,
+  "long_tail_hit_rate_at_3": 0.5330316742081448,
+  "segmentation": {
+    "category_weight": 0.5,
+    "test_silhouette": 0.39275213233268574,
+    "test_segment_sizes": [
+      955,
+      882,
+      493,
+      483,
+      341,
+      626,
+      220
+    ],
+    "stability_ari_across_initializations": 0.9828230313132468,
+    "target_silhouette": 0.25
+  },
+  "scope": "Independent publisher split; reconstructs existing consumer portfolio holdings."
+}

@@ -1,0 +1,12 @@
+{
+  "source": "https://aclanthology.org/D19-1131/",
+  "dataset": "CLINC150",
+  "intents": 150,
+  "train": 15000,
+  "test": 4500,
+  "macro_f1": 0.9243101007344311,
+  "accuracy": 0.9251111111111111,
+  "target_macro_f1": 0.8,
+  "target_met": true,
+  "scope": "Original in-scope English intent labels; excludes out-of-scope rows and NextDeal's legacy rules."
+}

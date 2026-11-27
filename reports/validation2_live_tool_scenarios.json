@@ -1,0 +1,1239 @@
+{
+  "finished_at": "2026-11-27T11:46:23.683261+00:00",
+  "model": "qwen3:4b-instruct",
+  "scenarios": 50,
+  "valid_scenario_rate": 1.0,
+  "correct_route_rate": 1.0,
+  "source_sha256": {
+    "backend/agent.py": "2cff3b152af68ce09c14733851e91728cd331a0b258a2c6ccef0ddbd8508419a",
+    "backend/services.py": "e129143a18de7070e592cb5fe7eb619845da54f5a562d132bf8b8fd2f51d6de5",
+    "scripts/live_validation.py": "30dd8508aea414947b73d2de135c076cc8253821fdc04544f9b73e9b9c5f0e1e"
+  },
+  "results": [
+    {
+      "scenario": 0,
+      "client_id": "pm:6958",
+      "request": "Recommend additional business insurance products",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 4.84
+    },
+    {
+      "scenario": 1,
+      "client_id": "pp:117688",
+      "request": "Decide the next renewal action",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 2,
+      "client_id": "pm:27684",
+      "request": "Suggest cross-sell candidates",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.84
+    },
+    {
+      "scenario": 3,
+      "client_id": "pp:122209",
+      "request": "Help with an individual renewal reminder",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.8
+    },
+    {
+      "scenario": 4,
+      "client_id": "pm:55035",
+      "request": "What else could this company consider?",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.81
+    },
+    {
+      "scenario": 5,
+      "client_id": "pp:131664",
+      "request": "Review my renewal and payment priority",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.77
+    },
+    {
+      "scenario": 6,
+      "client_id": "pm:74818",
+      "request": "Find next insurance products not already held",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.8
+    },
+    {
+      "scenario": 7,
+      "client_id": "pp:497173",
+      "request": "Check upcoming policy expiry",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.83
+    },
+    {
+      "scenario": 8,
+      "client_id": "pm:103147",
+      "request": "Rank additional protection",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.89
+    },
+    {
+      "scenario": 9,
+      "client_id": "pp:678391",
+      "request": "Inspect this policyholder's renewal options",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.75
+    },
+    {
+      "scenario": 10,
+      "client_id": "pm:305243",
+      "request": "Recommend additional business insurance products",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.86
+    },
+    {
+      "scenario": 11,
+      "client_id": "pp:118750",
+      "request": "Decide the next renewal action",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.84
+    },
+    {
+      "scenario": 12,
+      "client_id": "pm:346150",
+      "request": "Suggest cross-sell candidates",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.81
+    },
+    {
+      "scenario": 13,
+      "client_id": "pp:416813",
+      "request": "Help with an individual renewal reminder",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.81
+    },
+    {
+      "scenario": 14,
+      "client_id": "pm:396349",
+      "request": "What else could this company consider?",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.8
+    },
+    {
+      "scenario": 15,
+      "client_id": "pp:492200",
+      "request": "Review my renewal and payment priority",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 16,
+      "client_id": "pm:425464",
+      "request": "Find next insurance products not already held",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.8
+    },
+    {
+      "scenario": 17,
+      "client_id": "pp:664405",
+      "request": "Check upcoming policy expiry",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 18,
+      "client_id": "pm:435898",
+      "request": "Rank additional protection",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.82
+    },
+    {
+      "scenario": 19,
+      "client_id": "pp:664474",
+      "request": "Inspect this policyholder's renewal options",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.73
+    },
+    {
+      "scenario": 20,
+      "client_id": "pm:448303",
+      "request": "Recommend additional business insurance products",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.83
+    },
+    {
+      "scenario": 21,
+      "client_id": "pp:115197",
+      "request": "Decide the next renewal action",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.83
+    },
+    {
+      "scenario": 22,
+      "client_id": "pm:508931",
+      "request": "Suggest cross-sell candidates",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.81
+    },
+    {
+      "scenario": 23,
+      "client_id": "pp:118760",
+      "request": "Help with an individual renewal reminder",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 24,
+      "client_id": "pm:550742",
+      "request": "What else could this company consider?",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.8
+    },
+    {
+      "scenario": 25,
+      "client_id": "pp:121843",
+      "request": "Review my renewal and payment priority",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.91
+    },
+    {
+      "scenario": 26,
+      "client_id": "pm:557810",
+      "request": "Find next insurance products not already held",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.83
+    },
+    {
+      "scenario": 27,
+      "client_id": "pp:131297",
+      "request": "Check upcoming policy expiry",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.78
+    },
+    {
+      "scenario": 28,
+      "client_id": "pm:560601",
+      "request": "Rank additional protection",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.85
+    },
+    {
+      "scenario": 29,
+      "client_id": "pp:563541",
+      "request": "Inspect this policyholder's renewal options",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.75
+    },
+    {
+      "scenario": 30,
+      "client_id": "pm:568835",
+      "request": "Recommend additional business insurance products",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.9
+    },
+    {
+      "scenario": 31,
+      "client_id": "pp:674882",
+      "request": "Decide the next renewal action",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.78
+    },
+    {
+      "scenario": 32,
+      "client_id": "pm:570996",
+      "request": "Suggest cross-sell candidates",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 33,
+      "client_id": "pp:116213",
+      "request": "Help with an individual renewal reminder",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 34,
+      "client_id": "pm:574859",
+      "request": "What else could this company consider?",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 35,
+      "client_id": "pp:673363",
+      "request": "Review my renewal and payment priority",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.83
+    },
+    {
+      "scenario": 36,
+      "client_id": "pm:579528",
+      "request": "Find next insurance products not already held",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 37,
+      "client_id": "pp:479786",
+      "request": "Check upcoming policy expiry",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.76
+    },
+    {
+      "scenario": 38,
+      "client_id": "pm:582585",
+      "request": "Rank additional protection",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.87
+    },
+    {
+      "scenario": 39,
+      "client_id": "pp:513829",
+      "request": "Inspect this policyholder's renewal options",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.74
+    },
+    {
+      "scenario": 40,
+      "client_id": "pm:588694",
+      "request": "Recommend additional business insurance products",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.83
+    },
+    {
+      "scenario": 41,
+      "client_id": "pp:663687",
+      "request": "Decide the next renewal action",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.8
+    },
+    {
+      "scenario": 42,
+      "client_id": "pm:593142",
+      "request": "Suggest cross-sell candidates",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.83
+    },
+    {
+      "scenario": 43,
+      "client_id": "pp:119286",
+      "request": "Help with an individual renewal reminder",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.88
+    },
+    {
+      "scenario": 44,
+      "client_id": "pm:16481",
+      "request": "What else could this company consider?",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.85
+    },
+    {
+      "scenario": 45,
+      "client_id": "pp:127876",
+      "request": "Review my renewal and payment priority",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.78
+    },
+    {
+      "scenario": 46,
+      "client_id": "pm:44849",
+      "request": "Find next insurance products not already held",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.79
+    },
+    {
+      "scenario": 47,
+      "client_id": "pp:338672",
+      "request": "Check upcoming policy expiry",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.77
+    },
+    {
+      "scenario": 48,
+      "client_id": "pm:69397",
+      "request": "Rank additional protection",
+      "expected_tool": "recommend_products",
+      "calls": [
+        {
+          "name": "recommend_products",
+          "arguments": {
+            "k": 3
+          },
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "held",
+            "recommendations",
+            "model",
+            "score_type",
+            "policy",
+            "version"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.84
+    },
+    {
+      "scenario": 49,
+      "client_id": "pp:512795",
+      "request": "Inspect this policyholder's renewal options",
+      "expected_tool": "renewal_action",
+      "calls": [
+        {
+          "name": "renewal_action",
+          "arguments": {},
+          "executed": true,
+          "output_keys": [
+            "client_id",
+            "demo_date",
+            "contracts",
+            "mode"
+          ]
+        }
+      ],
+      "valid": true,
+      "correct_route": true,
+      "elapsed_seconds": 0.82
+    }
+  ]
+}
